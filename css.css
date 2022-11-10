@@ -1,0 +1,139 @@
+html {
+  color: white;
+}
+body {
+  background: black;
+}
+img {
+  border: 0px;
+}
+h1 {
+  font-size: 30px;
+  color: white;
+  /* direction: rtl; */
+  text-align: left;
+  /* padding: 12px 15px; */
+  padding-top: 8px;
+  margin: 0px;
+}
+.fnt {
+  /* border: solid rgb(251, 251, 251) 1px; */
+  /* background: black; */
+  /* text-shadow: rgba(255, 255, 255, 0.244) -5px 0px 0px; */
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 45px);
+  /* z-index: 1; */
+  box-sizing: border-box;
+}
+.overlay {
+  background-color: rgba(255, 255, 255, 0.055);
+
+  box-sizing: border-box;
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* width: calc(100px + 200px + 1rem); */
+}
+.modal {
+  background: black;
+  color: white;
+}
+.navbar {
+  /* border: solid white 1px; */
+  background: rgb(0, 0, 0);
+  box-shadow: rgb(254, 254, 254) -0px -0px 1px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 20%;
+  height: 98%;
+}
+.navbarleft {
+  background: black;
+  box-shadow: rgb(254, 254, 254) -0px -0px 1px;
+  position: sticky;
+  top: 5px;
+  left: 5px;
+  width: 20%;
+  /* box-sizing: border-box; */
+  z-index: 1;
+}
+.card {
+  margin: 5px 5px;
+  width: 56.09px;
+  /* height: 155px; */
+}
+.border {
+  border: solid white 1px;
+  position: relative;
+}
+span {
+  position: absolute;
+  right: 2px;
+  margin: 0px;
+}
+.table {
+  width: 30%;
+  height: 30%;
+  border-radius: 30%;
+  background: rgba(255, 255, 255, 0.062);
+  position: absolute;
+  left: calc(50% - 15%);
+  top: calc(50% - 65px);
+  /* z-index: 1; */
+}
+.blockofavatars {
+  width: 30%;
+  height: 5em;
+  /* border: solid rgb(255, 255, 255) 1px; */
+  display: flex;
+  left: calc(50% - 15%);
+  top: calc(30% - 5%);
+  justify-content: space-around;
+  position: absolute;
+}
+.blockofavatars1 {
+  width: 30%;
+  height: 5em;
+  /* border: solid rgb(255, 255, 255) 1px; */
+  display: flex;
+  left: calc(50% - 15%);
+  top: calc(77% - 5%);
+  justify-content: space-around;
+  position: absolute;
+}
+.avatar {
+  width: 20%;
+  height: 70%;
+  border-radius: 20%;
+  background: rgba(255, 255, 255, 0.062);
+  /* position: absolute; */
+  left: calc(35% - 5%);
+  top: calc(30% - 5%);
+  /* z-index: 1; */
+}
+.avatar1 {
+  width: 20%;
+  height: 70%;
+  border-radius: 20%;
+  background: rgba(255, 255, 255, 0.062);
+  /* position: absolute; */
+  left: calc(47% - 5%);
+  top: calc(30% - 5%);
+  /* z-index: 1; */
+}
+.avatar2 {
+  width: 20%;
+  height: 70%;
+  border-radius: 20%;
+  background: rgba(255, 255, 255, 0.062);
+  /* position: absolute; */
+  left: calc(59% - 5%);
+  top: calc(30% - 5%);
+  /* z-index: 1; */
+}
