@@ -10,11 +10,10 @@ img {
 h1 {
   font-size: 30px;
   color: white;
-  /* direction: rtl; */
-  text-align: left;
-  /* padding: 12px 15px; */
   padding-top: 8px;
-  margin: 0px;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
 }
 .fnt {
   /* border: solid rgb(251, 251, 251) 1px; */
@@ -27,7 +26,7 @@ h1 {
   /* z-index: 1; */
   box-sizing: border-box;
 }
-.overlay {
+/* .overlay {
   background-color: rgba(255, 255, 255, 0.055);
 
   box-sizing: border-box;
@@ -37,7 +36,7 @@ h1 {
   height: 100vh;
   top: 0;
   left: 0;
-  /* width: calc(100px + 200px + 1rem); */
+  width: calc(100px + 200px + 1rem); */
 }
 .modal {
   background: black;
@@ -45,28 +44,32 @@ h1 {
 }
 .navbar {
   /* border: solid white 1px; */
-  background: rgb(0, 0, 0);
+  /* background: rgb(0, 0, 0); */
   box-shadow: rgb(254, 254, 254) -0px -0px 1px;
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 5px;
-  width: 20%;
-  height: 98%;
+  width: 10%;
+  height: 95%;
 }
 .navbarleft {
-  background: black;
-  box-shadow: rgb(254, 254, 254) -0px -0px 1px;
-  position: sticky;
+  background: rgb(0, 0, 0);
+  /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
+  width: 20%;
+  height: 95%;
+  position: absolute;
   top: 5px;
   left: 5px;
-  width: 20%;
-  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
   z-index: 1;
 }
 .card {
-  margin: 5px 5px;
-  width: 56.09px;
-  /* height: 155px; */
+  margin: 3px 3px;
+  width: 30%;
+  height: 90%;
 }
 .border {
   border: solid white 1px;
@@ -83,27 +86,27 @@ span {
   border-radius: 30%;
   background: rgba(255, 255, 255, 0.062);
   position: absolute;
-  left: calc(50% - 15%);
-  top: calc(50% - 65px);
+  left: calc(55% - 15%);
+  top: calc(50% - 15%);
   /* z-index: 1; */
 }
 .blockofavatars {
   width: 30%;
-  height: 5em;
+  height: 15%;
   /* border: solid rgb(255, 255, 255) 1px; */
   display: flex;
-  left: calc(50% - 15%);
-  top: calc(30% - 5%);
+  left: calc(55% - 15%);
+  top: 20%;
   justify-content: space-around;
   position: absolute;
 }
 .blockofavatars1 {
   width: 30%;
-  height: 5em;
+  height: 15%;
   /* border: solid rgb(255, 255, 255) 1px; */
   display: flex;
-  left: calc(50% - 15%);
-  top: calc(77% - 5%);
+  left: calc(55% - 15%);
+  top: 70%;
   justify-content: space-around;
   position: absolute;
 }
