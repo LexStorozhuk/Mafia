@@ -46,11 +46,14 @@ h1 {
   border: solid white 1px;
   background: rgb(0, 0, 0);
   box-shadow: rgb(254, 254, 254) -0px -0px 1px;
-  position: absolute;
-  top: 5px;
+  position: fixed;
+  bottom: 5px;
   right: 5px;
-  width: 10%;
-  height: 40%;
+  width: 20%;
+  height: 20%;
+}
+.novbar-fixed {
+  position: absolute;
 }
 .navbarleft {
   background: transparent;
@@ -66,15 +69,26 @@ h1 {
   /* overflow: hidden; */
   /* z-index: 1; */
 }
-.navbarleft > img {
+.navbarleft-second {
+  background: transparent;
+  width: 150px;
+  height: 700px;
+  /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* overflow: hidden; */
+  /* z-index: 1; */
+}
+.navbarleft img {
   width: 52%;
   height: 95%;
-}
-.card {
   margin: 3px 3px;
-  width: 50%;
-  height: 90%;
 }
+
 .border {
   border: solid white 1px;
   position: relative;
@@ -86,44 +100,35 @@ span {
   right: 2px;
   margin: 0px;
 }
-.table {
+.table img {
+  border: #ffff solid 1px;
   width: 500px;
   height: 200px;
   border-radius: 30%;
   background: rgba(255, 255, 255, 0.062);
-  /* position: absolute; */
-  /* left: calc(55% - 15%); */
-  /* top: calc(50% - 15%); */
-  /* z-index: 1; */
 }
 .blockof-avatars {
   width: 500px;
   height: 100px;
-  /* border: solid rgb(255, 255, 255) 1px; */
-  /* position: absolute; */
-  /* left: calc(55% - 15%); */
-  /* top: 20%; */
   display: flex;
   justify-content: space-around;
+  padding: 5px 5px;
 }
 .blockof-avatars1 {
-  /* border: solid rgb(255, 255, 255) 1px; */
   width: 500px;
   height: 100px;
-  /* position: absolute; */
-  /* left: calc(55% - 15%); */
-  /* top: 70%; */
   display: flex;
+  padding-bottom: 5px;
   justify-content: space-around;
 }
-.avatar {
+.avatar img {
+  border: solid white 1px;
   width: 100px;
   height: 100px;
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
 }
 .table-posit {
-  border: solid white 1px;
   position: absolute;
   transform: translate(400px, 100px);
 }
@@ -137,10 +142,10 @@ span {
     font-size: 30px;
     color: white;
     padding-top: 8px;
-    position: absolute;
-    left: 270px;
+    /* position: absolute; */
+    /* left: 270px; */
   }
-  .table {
+  .table img {
     width: 200px;
     height: 50px;
     border-radius: 30%;
@@ -158,16 +163,16 @@ span {
     display: flex;
     justify-content: space-around;
   }
-  .avatar {
+  .avatar img {
     width: 50px;
     height: 50px;
     border-radius: 20%;
     background: rgba(255, 255, 255, 0.062);
   }
   .table-posit {
-    border: solid white 1px;
+    /* border: solid white 1px; */
     position: absolute;
-    transform: translate(200px, 100px);
+    transform: translate(160px, 100px);
   }
 }
 /* .avatar1 {
@@ -217,6 +222,16 @@ span {
   background: rgb(0, 0, 139);
   position: absolute;
   bottom: 50px;
+  right: 2px;
+  cursor: pointer;
+}
+.btn-party {
+  border-radius: 20%;
+  color: #ffff;
+  font-size: 15px;
+  background: yellow;
+  position: absolute;
+  bottom: 73px;
   right: 2px;
   cursor: pointer;
 }
