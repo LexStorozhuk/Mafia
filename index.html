@@ -41,14 +41,17 @@
     <div class="navbarleft-second">
       <div class="border-score">
         <div class="k-score"></div>
-        <div class="h-score">
+        <div class="h-score">         
+           <img src="doccross.png" alt="">
         </div>
         <div class="i-score"></div>
         <div class="p-score"></div>
       </div>
       <div class="border-score">
         
-        <div class="k-score-m"></div>
+        <div class="k-score-m">
+          <img src="gun.png" alt="">
+        </div>
         <div class="h-score-m">
           <img src="doccross.png" alt="">
         
@@ -59,8 +62,12 @@
       </div>
       <div class="border-score">
         
-        <div class="k-score-s"></div>
-        <div class="h-score-s"></div>
+        <div class="k-score-s">
+          <img src="gun.png" alt="">
+        </div>
+        <div class="h-score-s">
+          <img src="doccross.png" alt="">
+        </div>
         <div class="i-score-s"></div>
         <div class="p-score-s"></div>
         <div class="r-score-s"></div>
@@ -69,9 +76,15 @@
       </div>
       <div class="border-score">
         
-        <div class="k-score-d"></div>
-        <div class="h-score-d"></div>
-        <div class="i-score-d"></div>
+        <div class="k-score-d">
+          <img src="gun.png" alt="">
+        </div>
+        <div class="h-score-d">
+          <img src="doccross.png" alt="">
+        </div>
+        <div class="i-score-d">
+          <img src="binoculars.png" alt="">
+        </div>
         <div class="p-score-d"></div>
         <div class="r-score-d "></div>
 
@@ -79,9 +92,15 @@
       </div>
       <div class="border-score">
         
-        <div class="k-score-l"></div>
-        <div class="h-score-l"></div>
-        <div class="i-score-l"></div>
+        <div class="k-score-l">
+          <img src="gun.png" alt="">
+        </div>
+        <div class="h-score-l">
+          <img src="doccross.png" alt="">
+        </div>
+        <div class="i-score-l">
+          <img src="binoculars.png" alt="">
+        </div>
         <div class="p-score-l"></div>
         <div class="r-score-l"></div>
 
@@ -89,9 +108,12 @@
       </div>
       <div class="border-score">
         
-        <div class="k-score-c"></div>
-        <div class="h-score-c"></div>
-        <div class="i-score-c"></div>
+        <div class="k-score-c"><img src="gun.png" alt=""></div>
+        <div class="h-score-c"><img src="doccross.png" alt="">
+        </div>
+        <div class="i-score-c">
+          <img src="binoculars.png" alt="">
+        </div>
         <div class="p-score-c"></div>
         <div class="r-score-c"></div>
 
@@ -99,9 +121,6 @@
 
     </div>
     <div class="found-kill-don-score">
-      <img src="gun.png" alt="">
-    </div>
-    <div class="found-kill-mafia-score">
       <img src="gun.png" alt="">
     </div>
     <div class="found-inspect-mafia-score">
@@ -122,7 +141,7 @@
           <img src="don.jpg" alt="don" />
           <div class="btn-flex">
             <button class="btn-kill" onclick="kill ();inspectScoreGunMafia(); killBackground(); killScore();">kill</button>
-            <button class="btn-heal" onclick="heal(); healBackground();healScore()">heal</button>
+            <button class="btn-heal" onclick="heal(); healDonImg(); healBackground();healScore()">heal</button>
             <button class="btn-inspect" onclick="inspectBackground(); inspectScoreBinoculars() ; inspectScore() ">inspect</button>
             <button class="btn-party" onclick="partyBackground(); partyScore()"> party</button>
 
@@ -130,10 +149,10 @@
       </div>
       <div class="border">
         <span>Mafia</span>
-        <img src="mafia.jpg" alt="don" />
+        <img src="mafia.jpg" alt="mafia" />
         <div class="btn-flex">
-          <button class="btn-kill" onclick="killBackgroundMaf(); killScoreMaf();">kill</button>
-          <button class="btn-heal" onclick="heal(); healBackgroundMaf();healScoreMaf()">heal</button>
+          <button class="btn-kill" onclick="killMafiaImg();">kill</button>
+          <button class="btn-heal" onclick="heal();healMafiaImg(); healBackgroundMaf();healScoreMaf()">heal</button>
           <button class="btn-inspect" onclick="inspectBackgroundMaf(); inspectScoreBinocularsMafia(); inspectScoreMaf() ">inspect</button>
           <button class="btn-party" onclick="partyBackgroundMaf(); partyScoreMaf()"> party</button>
         </div>
@@ -141,10 +160,10 @@
       </div>
       <div class="border">
         <span>Sherif</span>
-        <img src="shriff.jpg" alt="don" />
+        <img src="shriff.jpg" alt="sherif" />
         <div class="btn-flex">
-          <button class="btn-kill" onclick="killBackgroundSher(); killScoreSher();">kill</button>
-          <button class="btn-heal" onclick=" healBackgroundSher();healScoreSher()">heal</button>
+          <button class="btn-kill" onclick="killSherifImg()">kill</button>
+          <button class="btn-heal" onclick=" healSherifImg(); healBackgroundSher();healScoreSher()">heal</button>
           <button class="btn-inspect" onclick="inspectBackgroundSher(); inspectScoreSher() ">inspect</button>
           <button class="btn-party" onclick="partyBackgroundSher(); partyScoreSher()"> party</button>
           <button class="btn-rat" onclick="ratBackgroundSher();ratBackgroundSherRose();ratScoreSher() ">rat</button>
@@ -154,11 +173,11 @@
       </div>
       <div class="border">
         <span>Doctor</span>
-        <img src="doctor.jpg" alt="don" />
+        <img src="doctor.jpg" alt="doctor" />
         <div class="btn-flex">
           <button class="btn-kill" onclick="killBackgroundDoc(); killScoreDoc()">kill</button>
-          <button class="btn-heal" onclick=" healBackgroundDoc();healScoreDoc()">heal</button>
-          <button class="btn-inspect" onclick="inspectBackgroundDoc(); inspectScoreDoc() ">inspect</button>
+          <button class="btn-heal" onclick=" healDoctorImg();healBackgroundDoc();healScoreDoc()">heal</button>
+          <button class="btn-inspect" onclick=" inspectDoctorImg(); ">inspect</button>
           <button class="btn-party" onclick="partyBackgroundDoc(); partyScoreDoc()"> party</button>
           <button class="btn-rat" onclick="ratBackgroundDoc();ratScoreDoc() ">rat</button>
         </div>
@@ -167,22 +186,22 @@
 
       <div class="border">
         <span>Lady</span>
-        <img src="lady.jpg" alt="don" />
+        <img src="lady.jpg" alt="lady" />
         <div class="btn-flex">
           <button class="btn-kill" onclick="killBackgroundLad(); killScoreLad()">kill</button>
-          <button class="btn-heal" onclick=" healBackgroundLad();healScoreLad()">heal</button>
-          <button class="btn-inspect" onclick="inspectBackgroundLad(); inspectScoreLad() ">inspect</button>
+          <button class="btn-heal" onclick="healLadyImg(); healBackgroundLad();healScoreLad()">heal</button>
+          <button class="btn-inspect" onclick="inspectLadyImg(); inspectScoreLad() ">inspect</button>
           <button class="btn-party" onclick="partyBackgroundLad(); partyScoreLad()"> party</button>
           <button class="btn-rat" onclick="ratBackgroundLad();ratScoreLad() ">rat</button>
         </div>
       </div>
       <div class="border">
         <span>Civil</span>
-        <img src="civil.jpg" alt="don" />
+        <img src="civil.jpg" alt="civil" />
         <div class="btn-flex">
           <button class="btn-kill" onclick="killBackgroundCiv(); killScoreCiv()">kill</button>
-          <button class="btn-heal" onclick=" healBackgroundCiv();healScoreCiv()">heal</button>
-          <button class="btn-inspect" onclick="inspectBackgroundCiv(); inspectScoreCiv() ">inspect</button>
+          <button class="btn-heal" onclick=" healCivilImg();healBackgroundCiv();healScoreCiv()">heal</button>
+          <button class="btn-inspect" onclick="inspectCivilImg();; inspectScoreCiv() ">inspect</button>
           <button class="btn-party" onclick="partyBackgroundCiv(); partyScoreCiv()"> party</button>
           <button class="btn-rat" onclick="ratBackgroundCiv();ratScoreCiv() ">rat</button>
         </div>

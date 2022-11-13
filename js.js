@@ -47,7 +47,13 @@ function healScore() {
   // firstBlock.style.display = "none";
   firstBlock.style.background = "green";
 }
+function healDonImg() {
+  let firstBlock = document.querySelector(".h-score img");
+  //   second = document.querySelector(".border-d");
 
+  firstBlock.style.visibility = "visible";
+  //   second.style.background = "transparent";
+}
 function inspectBackground() {
   let firstBlock = document.querySelector(".border");
   // second = document.querySelector(".border-d");
@@ -115,25 +121,20 @@ function ratScore() {
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function killBackgroundMaf() {
-  let firstBlock = document.querySelector(".border:nth-of-type(2)");
-  // second = document.querySelector(".border-d");
-
-  // firstBlock.style.display = "none";
-  firstBlock.style.background = "red";
+function killMafiaImg() {
+  let firstBlock = document.querySelector(".k-score-m img");
+  second = document.querySelector(".k-score-m");
+  third = document.querySelector(".border:nth-of-type(2)");
+  firstBlock.style.visibility = "visible";
+  second.style.background = "red";
+  third.style.background = "red";
 }
-function killScoreMaf() {
-  let firstBlock = document.querySelector(".k-score-m");
-  //   second = document.querySelector(".k-score:nth-of-type(2)");
 
-  firstBlock.style.background = "red";
-  //   second.style.background = "green";
-}
-function healMaf() {
-  let firstBlock = document.querySelector(".border:nth-of-type(2)");
+function healMafiaImg() {
+  let firstBlock = document.querySelector(".h-score-m img");
   //   second = document.querySelector(".border-d");
 
-  firstBlock.style.display = "none";
+  firstBlock.style.visibility = "visible";
   //   second.style.background = "transparent";
 }
 function healBackgroundMaf() {
@@ -212,19 +213,13 @@ function ratScorMaf() {
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function killBackgroundSher() {
-  let firstBlock = document.querySelector(".border:nth-of-type(3)");
-  // second = document.querySelector(".border-d");
-
-  // firstBlock.style.display = "none";
-  firstBlock.style.background = "red";
-}
-function killScoreSher() {
-  let firstBlock = document.querySelector(".k-score-s");
-  //   second = document.querySelector(".k-score:nth-of-type(2)");
-
-  firstBlock.style.background = "red";
-  //   second.style.background = "green";
+function killSherifImg() {
+  let firstBlock = document.querySelector(".k-score-s img");
+  second = document.querySelector(".k-score-s");
+  third = document.querySelector(".border:nth-of-type(3)");
+  firstBlock.style.visibility = "visible";
+  second.style.background = "red";
+  third.style.background = "red";
 }
 // function healSher() {
 //   let firstBlock = document.querySelector(".border:nth-of-type(3)");
@@ -246,6 +241,13 @@ function healScoreSher() {
 
   // firstBlock.style.display = "none";
   firstBlock.style.background = "green";
+}
+function healSherifImg() {
+  let firstBlock = document.querySelector(".h-score-s img");
+  //   second = document.querySelector(".border-d");
+
+  firstBlock.style.visibility = "visible";
+  //   second.style.background = "transparent";
 }
 
 function inspectBackgroundSher() {
@@ -337,20 +339,35 @@ function healScoreDoc() {
   // firstBlock.style.display = "none";
   firstBlock.style.background = "green";
 }
+function healDoctorImg() {
+  let firstBlock = document.querySelector(".h-score-d img");
+  //   second = document.querySelector(".border-d");
 
-function inspectBackgroundDoc() {
-  let firstBlock = document.querySelector(".border:nth-of-type(4)");
-  // second = document.querySelector(".border-d");
-
-  // firstBlock.style.display = "none";
-  firstBlock.style.background = "blue";
+  firstBlock.style.visibility = "visible";
+  //   second.style.background = "transparent";
 }
+
+// function inspectBackgroundDoc() {
+//   let firstBlock = document.querySelector(".border:nth-of-type(4)");
+//   // second = document.querySelector(".border-d");
+
+//   // firstBlock.style.display = "none";
+//   firstBlock.style.background = "blue";
+// }
 function inspectScoreDoc() {
   let firstBlock = document.querySelector(".i-score-d");
   // second = document.querySelector(".border-d");
 
   // firstBlock.style.display = "none";
   firstBlock.style.background = "blue";
+}
+function inspectDoctorImg() {
+  let firstBlock = document.querySelector(".i-score-d img");
+  second = document.querySelector(".i-score-d");
+  third = document.querySelector(".border:nth-of-type(4)");
+  firstBlock.style.visibility = "visible";
+  second.style.background = "blue";
+  third.style.background = "blue";
 }
 function partyBackgroundDoc() {
   let firstBlock = document.querySelector(".border:nth-of-type(4)");
@@ -420,21 +437,22 @@ function healScoreLad() {
   // firstBlock.style.display = "none";
   firstBlock.style.background = "green";
 }
+function healLadyImg() {
+  let firstBlock = document.querySelector(".h-score-l img");
+  //   second = document.querySelector(".border-d");
 
-function inspectBackgroundLad() {
-  let firstBlock = document.querySelector(".border:nth-of-type(5)");
-  // second = document.querySelector(".border-d");
-
-  // firstBlock.style.display = "none";
-  firstBlock.style.background = "blue";
+  firstBlock.style.visibility = "visible";
+  //   second.style.background = "transparent";
 }
-function inspectScoreLad() {
-  let firstBlock = document.querySelector(".i-score-l");
-  // second = document.querySelector(".border-d");
-
-  // firstBlock.style.display = "none";
-  firstBlock.style.background = "blue";
+function inspectLadyImg() {
+  let firstBlock = document.querySelector(".i-score-l img");
+  second = document.querySelector(".i-score-l");
+  third = document.querySelector(".border:nth-of-type(5)");
+  firstBlock.style.visibility = "visible";
+  second.style.background = "blue";
+  third.style.background = "blue";
 }
+
 function partyBackgroundLad() {
   let firstBlock = document.querySelector(".border:nth-of-type(5)");
   // second = document.querySelector(".border-d");
@@ -466,7 +484,7 @@ function ratScoreLad() {
 
 // Block for civil
 //
-//
+///////////////////////////////////////////////////////////////////////////////////////////
 
 function killBackgroundCiv() {
   let firstBlock = document.querySelector(".border:nth-of-type(6)");
@@ -503,14 +521,22 @@ function healScoreCiv() {
   // firstBlock.style.display = "none";
   firstBlock.style.background = "green";
 }
+function healCivilImg() {
+  let firstBlock = document.querySelector(".h-score-c img");
+  //   second = document.querySelector(".border-d");
 
-function inspectBackgroundCiv() {
-  let firstBlock = document.querySelector(".border:nth-of-type(6)");
-  // second = document.querySelector(".border-d");
-
-  // firstBlock.style.display = "none";
-  firstBlock.style.background = "blue";
+  firstBlock.style.visibility = "visible";
+  //   second.style.background = "transparent";
 }
+function inspectCivilImg() {
+  let firstBlock = document.querySelector(".i-score-c img");
+  second = document.querySelector(".i-score-c");
+  third = document.querySelector(".border:nth-of-type(6)");
+  firstBlock.style.visibility = "visible";
+  second.style.background = "blue";
+  third.style.background = "blue";
+}
+
 function inspectScoreCiv() {
   let firstBlock = document.querySelector(".i-score-c");
   // second = document.querySelector(".border-d");
