@@ -78,6 +78,9 @@ h1 {
   position: absolute;
   top: 5px;
   left: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .navbarleft img {
