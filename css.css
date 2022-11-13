@@ -515,13 +515,13 @@ span {
     border: solid white 1px;
     background: transparent;
     width: 20px;
-    height: 750px;
+    height: 725px;
     position: absolute;
     top: 5px;
     left: 155px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
   }
   .table {
     width: 200px;
