@@ -55,12 +55,20 @@ function inspectBackground() {
   // firstBlock.style.display = "none";
   firstBlock.style.background = "blue";
 }
+
 function inspectScore() {
   let firstBlock = document.querySelector(".i-score");
   // second = document.querySelector(".border-d");
 
   // firstBlock.style.display = "none";
   firstBlock.style.background = "blue";
+}
+function inspectScoreBinoculars() {
+  let firstBlock = document.querySelector(".found-inspect-don-score");
+  // second = document.querySelector(".border-d");
+
+  // firstBlock.style.display = "none";
+  firstBlock.style.display = "block";
 }
 function partyBackground() {
   let firstBlock = document.querySelector(".border");
@@ -90,8 +98,6 @@ function ratScore() {
   // firstBlock.style.display = "none";
   firstBlock.style.background = "grey";
 }
-
-// Block for Mafia
 
 // function killMaf() {
 //   let firstBlock = document.querySelector(".border-d");
@@ -158,6 +164,20 @@ function inspectScoreMaf() {
 
   // firstBlock.style.display = "none";
   firstBlock.style.background = "blue";
+}
+function inspectScoreGunMafia() {
+  let firstBlock = document.querySelector(".found-kill-don-score");
+  // second = document.querySelector(".border-d");
+
+  // firstBlock.style.display = "none";
+  firstBlock.style.display = "block";
+}
+function inspectScoreBinocularsMafia() {
+  let firstBlock = document.querySelector(".found-inspect-mafia-score");
+  // second = document.querySelector(".border-d");
+
+  // firstBlock.style.display = "none";
+  firstBlock.style.display = "block";
 }
 function partyBackgroundMaf() {
   let firstBlock = document.querySelector(".border:nth-of-type(2)");

@@ -41,14 +41,18 @@
     <div class="navbarleft-second">
       <div class="border-score">
         <div class="k-score"></div>
-        <div class="h-score"></div>
+        <div class="h-score">
+        </div>
         <div class="i-score"></div>
         <div class="p-score"></div>
       </div>
       <div class="border-score">
         
         <div class="k-score-m"></div>
-        <div class="h-score-m"></div>
+        <div class="h-score-m">
+          <img src="doccross.png" alt="">
+        
+        </div>
         <div class="i-score-m"></div>
         <div class="p-score-m"></div>
       
@@ -94,6 +98,18 @@
       </div>
 
     </div>
+    <div class="found-kill-don-score">
+      <img src="gun.png" alt="">
+    </div>
+    <div class="found-kill-mafia-score">
+      <img src="gun.png" alt="">
+    </div>
+    <div class="found-inspect-mafia-score">
+      <img src="binoculars.png" alt="">
+    </div>
+    <div class="found-inspect-don-score">
+      <img src="binoculars.png" alt="">
+    </div>
     <div class="found-rat-score">
       <img src="rose.png" alt="">
     </div>
@@ -105,9 +121,9 @@
           <span>Don</span>
           <img src="don.jpg" alt="don" />
           <div class="btn-flex">
-            <button class="btn-kill" onclick="kill (); killBackground(); killScore();">kill</button>
+            <button class="btn-kill" onclick="kill ();inspectScoreGunMafia(); killBackground(); killScore();">kill</button>
             <button class="btn-heal" onclick="heal(); healBackground();healScore()">heal</button>
-            <button class="btn-inspect" onclick="inspectBackground(); inspectScore() ">inspect</button>
+            <button class="btn-inspect" onclick="inspectBackground(); inspectScoreBinoculars() ; inspectScore() ">inspect</button>
             <button class="btn-party" onclick="partyBackground(); partyScore()"> party</button>
 
       </div>
@@ -118,7 +134,7 @@
         <div class="btn-flex">
           <button class="btn-kill" onclick="killBackgroundMaf(); killScoreMaf();">kill</button>
           <button class="btn-heal" onclick="heal(); healBackgroundMaf();healScoreMaf()">heal</button>
-          <button class="btn-inspect" onclick="inspectBackgroundMaf(); inspectScoreMaf() ">inspect</button>
+          <button class="btn-inspect" onclick="inspectBackgroundMaf(); inspectScoreBinocularsMafia(); inspectScoreMaf() ">inspect</button>
           <button class="btn-party" onclick="partyBackgroundMaf(); partyScoreMaf()"> party</button>
         </div>
 
