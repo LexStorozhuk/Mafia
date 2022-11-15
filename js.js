@@ -61,21 +61,21 @@ function ratScore() {
 function killMafiaImg() {
   let firstBlock = document.querySelector(".k-score-m img");
   second = document.querySelector(".k-score-m");
-  third = document.querySelector(".border:nth-of-type(2)");
+  third = document.querySelector(".navbarleft .background-border-m .border");
   fourth = document.querySelector(".cross-mafia-kill");
   fifth = document.querySelector(".avatar:nth-of-type(2) img");
 
   firstBlock.style.visibility = "visible";
-  fourth.style.display = "block";
   second.style.background = "red";
   third.style.background = "red";
+  fourth.style.display = "block";
   fifth.style.visibility = "hidden";
 }
 
 function healMafiaImg() {
   let firstBlock = document.querySelector(".h-score-m img");
   second = document.querySelector(".h-score-m");
-  third = document.querySelector(".border:nth-of-type(2)");
+  third = document.querySelector(".navbarleft .background-border-m .border");
   fourth = document.querySelector(".cross-mafia-kill");
   fifth = document.querySelector(".avatar:nth-of-type(2) img");
 
@@ -89,7 +89,7 @@ function healMafiaImg() {
 function inspectMafiaImg() {
   let firstBlock = document.querySelector(".i-score-m img");
   second = document.querySelector(".i-score-m");
-  third = document.querySelector(".border:nth-of-type(2)");
+  third = document.querySelector(".navbarleft .background-border-m .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "blue";
   third.style.background = "blue";
@@ -98,13 +98,15 @@ function inspectMafiaImg() {
 function partyMafiaImg() {
   let firstBlock = document.querySelector(".p-score-m img");
   second = document.querySelector(".p-score-m");
-  third = document.querySelector(".border:nth-of-type(2)");
+  third = document.querySelector(".navbarleft .background-border-m .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "yellow";
   third.style.background = "yellow";
 }
 function ratBackgroundMaf() {
-  let firstBlock = document.querySelector(".border:nth-of-type(2)");
+  let firstBlock = document.querySelector(
+    ".navbarleft .background-border-m .border"
+  );
 
   firstBlock.style.background = "grey";
 }
@@ -121,7 +123,7 @@ function ratScorMaf() {
 function killSherifImg() {
   let firstBlock = document.querySelector(".k-score-s img");
   second = document.querySelector(".k-score-s");
-  third = document.querySelector(".border:nth-of-type(3)");
+  third = document.querySelector(".navbarleft .background-border-s .border");
   fourth = document.querySelector(".cross-sherif-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   firstBlock.style.visibility = "visible";
@@ -133,7 +135,7 @@ function killSherifImg() {
 function healSherifImg() {
   let firstBlock = document.querySelector(".h-score-s img");
   second = document.querySelector(".h-score-s");
-  third = document.querySelector(".border:nth-of-type(3)");
+  third = document.querySelector(".navbarleft .background-border-s .border");
   fourth = document.querySelector(".cross-sherif-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
 
@@ -146,7 +148,7 @@ function healSherifImg() {
 function inspectSherifImg() {
   let firstBlock = document.querySelector(".i-score-s img");
   second = document.querySelector(".i-score-s");
-  third = document.querySelector(".border:nth-of-type(3)");
+  third = document.querySelector(".navbarleft .background-border-s .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "blue";
   third.style.background = "blue";
@@ -154,7 +156,7 @@ function inspectSherifImg() {
 function partySherifImg() {
   let firstBlock = document.querySelector(".p-score-s img");
   second = document.querySelector(".p-score-s");
-  third = document.querySelector(".border:nth-of-type(3)");
+  third = document.querySelector(".navbarleft .background-border-s .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "yellow";
   third.style.background = "yellow";
@@ -162,12 +164,14 @@ function partySherifImg() {
 function ratSherifImg() {
   let firstBlock = document.querySelector(".r-score-s img");
   second = document.querySelector(".r-score-s");
-  third = document.querySelector(".border:nth-of-type(3)");
+  third = document.querySelector(".navbarleft .background-border-s .border");
   fourth = document.querySelector(".cross-sherif-kill");
+  fifth = document.querySelector(".avatar:nth-of-type(3) img");
   firstBlock.style.visibility = "visible";
   second.style.background = "grey";
   third.style.background = "grey";
   fourth.style.display = "block";
+  fifth.style.visibility = "hidden";
 }
 
 // Block for doctor
@@ -181,19 +185,19 @@ function crossKillDoctor() {
 function killDoctorImg() {
   let firstBlock = document.querySelector(".k-score-d img");
   second = document.querySelector(".k-score-d");
-  third = document.querySelector(".border:nth-of-type(4)");
+  third = document.querySelector(".navbarleft .background-border-doc .border");
   fourth = document.querySelector(".cross-doctor-kill");
   fifth = document.querySelector(".blockof-avatars1 .avatar img");
-  fifth.style.visibility = "hidden";
   firstBlock.style.visibility = "visible";
   second.style.background = "red";
   third.style.background = "red";
   fourth.style.display = "block";
+  fifth.style.visibility = "hidden";
 }
 function healDoctorImg() {
   let firstBlock = document.querySelector(".h-score-d img");
   second = document.querySelector(".h-score-d");
-  third = document.querySelector(".border:nth-of-type(4)");
+  third = document.querySelector(".navbarleft .background-border-doc .border");
   fourth = document.querySelector(".cross-doctor-kill");
   fifth = document.querySelector(".blockof-avatars1 .avatar img");
 
@@ -206,7 +210,7 @@ function healDoctorImg() {
 function inspectDoctorImg() {
   let firstBlock = document.querySelector(".i-score-d img");
   second = document.querySelector(".i-score-d");
-  third = document.querySelector(".border:nth-of-type(4)");
+  third = document.querySelector(".navbarleft .background-border-doc .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "blue";
   third.style.background = "blue";
@@ -214,7 +218,7 @@ function inspectDoctorImg() {
 function partyDoctorImg() {
   let firstBlock = document.querySelector(".p-score-d img");
   second = document.querySelector(".p-score-d");
-  third = document.querySelector(".border:nth-of-type(4)");
+  third = document.querySelector(".navbarleft .background-border-doc .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "yellow";
   third.style.background = "yellow";
@@ -222,7 +226,7 @@ function partyDoctorImg() {
 function ratDoctorImg() {
   let firstBlock = document.querySelector(".r-score-d img");
   second = document.querySelector(".r-score-d");
-  third = document.querySelector(".border:nth-of-type(4)");
+  third = document.querySelector(".navbarleft .background-border-doc .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "grey";
   third.style.background = "grey";
@@ -235,7 +239,7 @@ function ratDoctorImg() {
 function killLadyImg() {
   let firstBlock = document.querySelector(".k-score-l img");
   second = document.querySelector(".k-score-l");
-  third = document.querySelector(".border:nth-of-type(5)");
+  third = document.querySelector(".navbarleft .background-border-l .border");
   fourth = document.querySelector(".cross-lady-kill");
   fifth = document.querySelector(
     ".blockof-avatars1 .avatar:nth-of-type(2) img"
@@ -249,7 +253,7 @@ function killLadyImg() {
 function healLadyImg() {
   let firstBlock = document.querySelector(".h-score-l img");
   second = document.querySelector(".h-score-l");
-  third = document.querySelector(".border:nth-of-type(5)");
+  third = document.querySelector(".navbarleft .background-border-l .border");
   fourth = document.querySelector(".cross-lady-kill");
   fifth = document.querySelector(
     ".blockof-avatars1 .avatar:nth-of-type(2) img"
@@ -264,7 +268,7 @@ function healLadyImg() {
 function inspectLadyImg() {
   let firstBlock = document.querySelector(".i-score-l img");
   second = document.querySelector(".i-score-l");
-  third = document.querySelector(".border:nth-of-type(5)");
+  third = document.querySelector(".navbarleft .background-border-l .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "blue";
   third.style.background = "blue";
@@ -273,7 +277,7 @@ function inspectLadyImg() {
 function partyLadyImg() {
   let firstBlock = document.querySelector(".p-score-l img");
   second = document.querySelector(".p-score-l");
-  third = document.querySelector(".border:nth-of-type(5)");
+  third = document.querySelector(".navbarleft .background-border-l .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "yellow";
   third.style.background = "yellow";
@@ -281,7 +285,7 @@ function partyLadyImg() {
 function ratLadyImg() {
   let firstBlock = document.querySelector(".r-score-l img");
   second = document.querySelector(".r-score-l");
-  third = document.querySelector(".border:nth-of-type(5)");
+  third = document.querySelector(".navbarleft .background-border-l .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "grey";
   third.style.background = "grey";
@@ -297,7 +301,7 @@ function crossKillCivil() {
 function killCivilImg() {
   let firstBlock = document.querySelector(".k-score-c img");
   second = document.querySelector(".k-score-c");
-  third = document.querySelector(".border:nth-of-type(6)");
+  third = document.querySelector(".navbarleft .background-border-c .border");
   fourth = document.querySelector(".cross-civil-kill");
   fifth = document.querySelector(
     ".blockof-avatars1 .avatar:nth-of-type(3) img"
@@ -311,16 +315,20 @@ function killCivilImg() {
 function healCivilImg() {
   let firstBlock = document.querySelector(".h-score-c img");
   second = document.querySelector(".h-score-c");
-  third = document.querySelector(".border:nth-of-type(6)");
+  third = document.querySelector(".navbarleft .background-border-c .border");
+  fifth = document.querySelector(
+    ".blockof-avatars1 .avatar:nth-of-type(3) img"
+  );
 
   firstBlock.style.visibility = "visible";
   second.style.background = "green";
   third.style.background = "green";
+  fifth.style.visibility = "visible";
 }
 function inspectCivilImg() {
   let firstBlock = document.querySelector(".i-score-c img");
   second = document.querySelector(".i-score-c");
-  third = document.querySelector(".border:nth-of-type(6)");
+  third = document.querySelector(".navbarleft .background-border-c .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "blue";
   third.style.background = "blue";
@@ -328,7 +336,7 @@ function inspectCivilImg() {
 function partyCivilImg() {
   let firstBlock = document.querySelector(".p-score-c img");
   second = document.querySelector(".p-score-c");
-  third = document.querySelector(".border:nth-of-type(6)");
+  third = document.querySelector(".navbarleft .background-border-c .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "yellow";
   third.style.background = "yellow";
@@ -336,7 +344,7 @@ function partyCivilImg() {
 function ratCivilImg() {
   let firstBlock = document.querySelector(".r-score-c img");
   second = document.querySelector(".r-score-c");
-  third = document.querySelector(".border:nth-of-type(6)");
+  third = document.querySelector(".navbarleft .background-border-c .border");
   firstBlock.style.visibility = "visible";
   second.style.background = "grey";
   third.style.background = "grey";
