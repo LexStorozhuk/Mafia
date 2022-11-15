@@ -13,19 +13,18 @@ function killDonImg() {
   fourth.style.display = "block";
   fifth.style.visibility = "hidden";
 }
-function inspectScoreGunMafia() {
-  let firstBlock = document.querySelector(".found-kill-don-score");
-
-  firstBlock.style.display = "block";
-}
 function healDonImg() {
   let firstBlock = document.querySelector(".h-score img");
   second = document.querySelector(".border");
   third = document.querySelector(".h-score");
+  fourth = document.querySelector(".cross-kill");
+  fifth = document.querySelector(".avatar img");
 
   firstBlock.style.visibility = "visible";
   second.style.background = "green";
   third.style.background = "green";
+  fourth.style.display = "none";
+  fifth.style.visibility = "visible";
 }
 
 function heal() {
@@ -64,11 +63,7 @@ function ratScore() {
 // Block for Mafia
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-function crossKillMafia() {
-  let firstBlock = document.querySelector(".cross-don-kill");
 
-  firstBlock.style.display = "block";
-}
 function killMafiaImg() {
   let firstBlock = document.querySelector(".k-score-m img");
   second = document.querySelector(".k-score-m");
@@ -87,10 +82,14 @@ function healMafiaImg() {
   let firstBlock = document.querySelector(".h-score-m img");
   second = document.querySelector(".h-score-m");
   third = document.querySelector(".border:nth-of-type(2)");
+  fourth = document.querySelector(".cross-mafia-kill");
+  fifth = document.querySelector(".avatar:nth-of-type(2) img");
 
   firstBlock.style.visibility = "visible";
   second.style.background = "green";
   third.style.background = "green";
+  fourth.style.display = "none";
+  fifth.style.visibility = "visible";
 }
 
 function inspectMafiaImg() {
@@ -141,10 +140,14 @@ function healSherifImg() {
   let firstBlock = document.querySelector(".h-score-s img");
   second = document.querySelector(".h-score-s");
   third = document.querySelector(".border:nth-of-type(3)");
+  fourth = document.querySelector(".cross-sherif-kill");
+  fifth = document.querySelector(".avatar:nth-of-type(3) img");
 
   firstBlock.style.visibility = "visible";
   second.style.background = "green";
   third.style.background = "green";
+  fourth.style.display = "none";
+  fifth.style.visibility = "visible";
 }
 function inspectSherifImg() {
   let firstBlock = document.querySelector(".i-score-s img");
@@ -195,10 +198,14 @@ function healDoctorImg() {
   let firstBlock = document.querySelector(".h-score-d img");
   second = document.querySelector(".h-score-d");
   third = document.querySelector(".border:nth-of-type(4)");
+  fourth = document.querySelector(".cross-doctor-kill");
+  fifth = document.querySelector(".blockof-avatars1 .avatar img");
 
   firstBlock.style.visibility = "visible";
   second.style.background = "green";
   third.style.background = "green";
+  fourth.style.display = "none";
+  fifth.style.visibility = "visible";
 }
 function inspectDoctorImg() {
   let firstBlock = document.querySelector(".i-score-d img");
@@ -247,10 +254,16 @@ function healLadyImg() {
   let firstBlock = document.querySelector(".h-score-l img");
   second = document.querySelector(".h-score-l");
   third = document.querySelector(".border:nth-of-type(5)");
+  fourth = document.querySelector(".cross-lady-kill");
+  fifth = document.querySelector(
+    ".blockof-avatars1 .avatar:nth-of-type(2) img"
+  );
 
   firstBlock.style.visibility = "visible";
   second.style.background = "green";
   third.style.background = "green";
+  fourth.style.display = "none";
+  fifth.style.visibility = "visible";
 }
 function inspectLadyImg() {
   let firstBlock = document.querySelector(".i-score-l img");

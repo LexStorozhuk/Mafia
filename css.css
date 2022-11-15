@@ -717,6 +717,60 @@ span {
     top: 150px;
     transform: rotate(90deg);
   }
+  .border-score-d {
+    /* border: solid white 1px; */
+    width: 20px;
+    height: 105px;
+    position: absolute;
+    left: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .border-score-m {
+    /* border: solid white 1px; */
+    width: 20px;
+    height: 105px;
+    position: absolute;
+    left: 155px;
+    top: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .border-score-s {
+    /* border: solid white 1px; */
+    width: 20px;
+    height: 105px;
+    position: absolute;
+    left: 155px;
+    top: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .border-score-doc {
+    /* border: solid white 1px; */
+    width: 20px;
+    height: 105px;
+    position: absolute;
+    left: 155px;
+    top: 387px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .border-score-l {
+    /* border: solid white 1px; */
+    width: 20px;
+    height: 105px;
+    position: absolute;
+    left: 155px;
+    top: 500x;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .border-score-c {
     border: solid white 1px;
     width: 20px;
