@@ -27,12 +27,6 @@ function healDonImg() {
   fifth.style.visibility = "visible";
 }
 
-function heal() {
-  let firstBlock = document.querySelector(".h-score img");
-
-  firstBlock.style.visibility = "visible";
-}
-
 function inspectDonImg() {
   let firstBlock = document.querySelector(".i-score img");
   second = document.querySelector(".i-score");
@@ -169,9 +163,11 @@ function ratSherifImg() {
   let firstBlock = document.querySelector(".r-score-s img");
   second = document.querySelector(".r-score-s");
   third = document.querySelector(".border:nth-of-type(3)");
+  fourth = document.querySelector(".cross-sherif-kill");
   firstBlock.style.visibility = "visible";
   second.style.background = "grey";
   third.style.background = "grey";
+  fourth.style.display = "block";
 }
 
 // Block for doctor

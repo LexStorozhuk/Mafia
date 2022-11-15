@@ -223,7 +223,7 @@ span {
   height: 105px;
   position: absolute;
   left: 155px;
-  top: 124px;
+  top: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,7 +234,7 @@ span {
   height: 105px;
   position: absolute;
   left: 155px;
-  top: 240px;
+  top: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -733,7 +733,7 @@ span {
     height: 105px;
     position: absolute;
     left: 155px;
-    top: 139px;
+    top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -744,7 +744,7 @@ span {
     height: 105px;
     position: absolute;
     left: 155px;
-    top: 260px;
+    top: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -755,7 +755,7 @@ span {
     height: 105px;
     position: absolute;
     left: 155px;
-    top: 387px;
+    top: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -772,12 +772,11 @@ span {
     justify-content: space-between;
   }
   .border-score-c {
-    border: solid white 1px;
     width: 20px;
     height: 105px;
     position: absolute;
     left: 155px;
-    top: 620px;
+    top: 590px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
