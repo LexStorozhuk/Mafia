@@ -106,14 +106,15 @@ h1 {
 .border {
   /* border: solid white 1px; */
   border: solid 1px rgba(255, 255, 255, 0.956);
-  position: relative;
+  position: absolute;
   width: 140px;
   height: 120px;
   border-radius: 10%;
+  /* background: rgb(74, 74, 74); */
 }
 .border-m {
   /* border: solid white 1px; */
-  position: relative;
+  position: absolute;
   width: 140px;
   height: 120px;
   border-radius: 10%;
@@ -799,9 +800,11 @@ span {
 }*/
 .btn-kill {
   border-radius: 20%;
-  color: black;
-  font-size: 13px;
-  background: rgb(118, 17, 17);
+  color: #ffff;
+  border: solid rgb(255, 255, 255) 1px;
+
+  font-size: 13 px;
+  background: black;
   /* position: absolute; */
   bottom: 0px;
   right: 2px;
@@ -811,7 +814,8 @@ span {
   border-radius: 20%;
   color: #ffff;
   font-size: 13px;
-  background: rgb(12, 58, 12);
+  border: solid rgb(255, 255, 255) 1px;
+  background: black;
   /* position: absolute; */
   bottom: 27px;
   right: 2px;
@@ -821,7 +825,8 @@ span {
   border-radius: 20%;
   color: #ffff;
   font-size: 13px;
-  background: rgb(54, 6, 126);
+  border: solid rgb(255, 255, 255) 1px;
+  background: black;
   /* position: absolute; */
   bottom: 50px;
   right: 2px;
@@ -829,9 +834,10 @@ span {
 }
 .btn-party {
   border-radius: 20%;
-  color: black;
+  color: #ffff;
   font-size: 13px;
-  background: rgb(145, 145, 35);
+  border: solid rgb(255, 255, 255) 1px;
+  background: black;
   /* position: absolute; */
   bottom: 73px;
   right: 2px;
@@ -841,7 +847,8 @@ span {
   border-radius: 20%;
   color: #ffff;
   font-size: 13px;
-  background: rgb(65, 65, 65);
+  border: solid rgb(255, 255, 255) 1px;
+  background: black;
   /* position: absolute; */
   top: 0px;
   right: 2px;
@@ -852,7 +859,7 @@ span {
   height: 110px;
   position: absolute;
   top: 5px;
-  right: 27px;
+  right: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
