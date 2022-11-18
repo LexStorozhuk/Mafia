@@ -569,7 +569,7 @@ function blocksSizing() {
 //       if (borderL)
 //         if (borderC)
 
-function clearHealDon() {
+function clearScore() {
   let k1 = document.querySelector(".k-score img");
   k2 = document.querySelector(".k-score-m img");
   k3 = document.querySelector(".k-score-s img");
@@ -741,6 +741,7 @@ function clearHealDon() {
   bInspectSherif.style.background = "black";
   bInspectMafia.style.background = "black";
   bInspectDon.style.background = "black";
+  bInspectCivil.style.background = "black";
 
   bHeallCivil.style.background = "black";
   bHeallLady.style.background = "black";
