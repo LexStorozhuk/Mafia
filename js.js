@@ -1,6 +1,10 @@
 // function kill() {
 //   alert("Mafia killed personage");
 // }
+function kill() {
+  let firstBlock = document.querySelector(".background-border-d ");
+  firstBlock.style.display = "none";
+}
 function killDonImg() {
   let firstBlock = document.querySelector(".k-score img");
   second = document.querySelector(".k-score ");
@@ -50,9 +54,9 @@ function partyDonImg() {
   third = document.querySelector(".border");
   fourth = document.querySelector(".background-border-d .btn-flex .btn-party");
   firstBlock.style.visibility = "visible";
-  second.style.background = "#0E3532";
-  third.style.background = "#0E3532";
-  fourth.style.background = "#0E3532";
+  second.style.background = "#2F1637";
+  third.style.background = "#2F1637";
+  fourth.style.background = "#2F1637";
 }
 function ratBackground() {
   let firstBlock = document.querySelector(".border");
@@ -122,9 +126,9 @@ function partyMafiaImg() {
   fourth = document.querySelector(".background-border-m .btn-flex .btn-party");
 
   firstBlock.style.visibility = "visible";
-  second.style.background = "#0E3532";
-  third.style.background = "#0E3532";
-  fourth.style.background = "#0E3532";
+  second.style.background = "#2F1637";
+  third.style.background = "#2F1637";
+  fourth.style.background = "#2F1637";
 }
 function ratBackgroundMaf() {
   let firstBlock = document.querySelector(
@@ -193,9 +197,8 @@ function partySherifImg() {
   fourth = document.querySelector(".background-border-s .btn-flex .btn-party");
 
   firstBlock.style.visibility = "visible";
-  second.style.background = "#0E3532";
-  third.style.background = "#0E3532";
-  fourth.style.background = "#0E3532";
+  second.style.background = "#2F1637";
+  fourth.style.background = "#2F1637";
 }
 function ratSherifImg() {
   let firstBlock = document.querySelector(".r-score-s img");
@@ -238,6 +241,7 @@ function healDoctorImg() {
   fourth = document.querySelector(".cross-doctor-kill");
   fifth = document.querySelector(".blockof-avatars1 .avatar img");
   sixth = document.querySelector(".background-border-doc .btn-flex .btn-heal");
+
   firstBlock.style.visibility = "visible";
   second.style.background = "#0D310D";
   third.style.background = "#0D310D";
@@ -256,7 +260,7 @@ function inspectDoctorImg() {
 
   second.style.background = "#00103D";
   third.style.background = "#00103D";
-  fourth.style.background = "#0D310D";
+  fourth.style.background = "#00103D";
 }
 function partyDoctorImg() {
   let firstBlock = document.querySelector(".p-score-d img");
@@ -267,9 +271,9 @@ function partyDoctorImg() {
   );
 
   firstBlock.style.visibility = "visible";
-  second.style.background = "#0E3532";
-  third.style.background = "#0E3532";
-  fourth.style.background = "#0E3532";
+  second.style.background = "#2F1637";
+  third.style.background = "#2F1637";
+  fourth.style.background = "#2F1637";
 }
 function ratDoctorImg() {
   let firstBlock = document.querySelector(".r-score-d img");
@@ -331,7 +335,7 @@ function inspectLadyImg() {
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
   third.style.background = "#00103D";
-  fourth.style.background = "#0D310D";
+  fourth.style.background = "#00103D";
 }
 
 function partyLadyImg() {
@@ -341,9 +345,9 @@ function partyLadyImg() {
   fourth = document.querySelector(".background-border-l .btn-flex .btn-party");
 
   firstBlock.style.visibility = "visible";
-  second.style.background = "#0E3532";
-  third.style.background = "#0E3532";
-  fourth.style.background = "#0E3532";
+  second.style.background = "#2F1637";
+  third.style.background = "#2F1637";
+  fourth.style.background = "#2F1637";
 }
 function ratLadyImg() {
   let firstBlock = document.querySelector(".r-score-l img");
@@ -409,7 +413,7 @@ function inspectCivilImg() {
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
   third.style.background = "#00103D";
-  fourth.style.background = "#0D310D";
+  fourth.style.background = "#00103D";
 }
 function partyCivilImg() {
   let firstBlock = document.querySelector(".p-score-c img");
@@ -418,9 +422,9 @@ function partyCivilImg() {
   fourth = document.querySelector(".background-border-c .btn-flex .btn-party");
 
   firstBlock.style.visibility = "visible";
-  second.style.background = "#0E3532";
-  third.style.background = "#0E3532";
-  fourth.style.background = "#0E3532";
+  second.style.background = "#2F1637";
+  third.style.background = "#2F1637";
+  fourth.style.background = "#2F1637";
 }
 function ratCivilImg() {
   let firstBlock = document.querySelector(".r-score-c img");
@@ -433,34 +437,137 @@ function ratCivilImg() {
   third.style.background = "#4a4a4a";
   fourth.style.background = "#4a4a4a";
 }
-// New Buttom ////////////////////////////////////////////////////////////////////////////////////////////
-let c = 0;
-function donAvatars() {
-  c = 0 + 1;
-  console.log(c);
-  return c;
-}
-donAvatars();
+///Block number/////////////////////////////////////////////////////////////////////////////
+let border = 0,
+  borderM = 0,
+  borderS = 0,
+  borderD = 0,
+  borderL = 0,
+  borderC = 0;
 
-function donAvatarsZero() {
-  c = 0;
-  console.log(c);
+function border1() {
+  border = 1;
 }
-// donAvatarsZero();
+function borderM1() {
+  borderM = 1;
+}
+function borderS1() {
+  borderS = 1;
+}
+function borderD1() {
+  borderD = 1;
+}
+function borderL1() {
+  borderL = 1;
+}
+function borderC1() {
+  borderC = 0;
+}
+//////Zero for border sector///////////////////////////////////////////////////////////////////////////
+function border0() {
+  border = 0;
+}
+function borderM0() {
+  borderM = 0;
+}
+function borderS0() {
+  borderS = 0;
+}
+function borderD0() {
+  borderD = 0;
+}
+function borderL0() {
+  borderL = 0;
+}
+function borderC0() {
+  borderC = 0;
+}
+///Delite Blocks////////////////////////////////////////////////////////////////////////////
+function kill() {
+  let firstBlock = document.querySelector(".background-border-d ");
+  firstBlock.style.display = "none";
+}
+function deliteBackgroundD() {
+  let first = document.querySelector(".background-border-d");
 
-function newButton() {
-  if (c) {
-    clearHealDon();
+  first.style.display = "none";
+}
+function deliteBackgroundM() {
+  let first = document.querySelector(".background-border-m");
+
+  first.style.display = "none";
+}
+function deliteBackgroundS() {
+  let first = document.querySelector(".background-border-s");
+
+  first.style.display = "none";
+}
+function deliteBackgroundDoc() {
+  let first = document.querySelector(".background-border-doc");
+
+  first.style.display = "none";
+}
+function deliteBackgroundL() {
+  let first = document.querySelector(".background-border-l");
+
+  first.style.display = "none";
+}
+function deliteBackgroundC() {
+  let first = document.querySelector(".background-border-c");
+
+  first.style.display = "none";
+}
+function deliteBlocks() {
+  if (border) {
+    deliteBackgroundD();
+  }
+  if (borderM) {
+    deliteBackgroundM();
+  }
+  if (borderS) {
+    deliteBackgroundS();
+  }
+  if (borderD) {
+    deliteBackgroundDoc();
+  }
+  if (borderL) {
+    deliteBackgroundL();
+  }
+  if (borderC) {
+    deliteBackgroundC();
   }
 }
-second = document.querySelector(".border");
-second.style.background = "green";
-third.style.background = "green";
-third = document.querySelector(".k-score");
-fifth = document.querySelector(".avatar img");
-fifth.style.visibility = "visible";
-second = document.querySelector(".cross-kill");
-second.style.display = "none";
+///Blocks Sizing/////////////////////////////////////////////////////////////////////////////////
+function sizing() {
+  let firstBlock = document.querySelector(".navbarleft");
+
+  firstBlock.style.height = "590px";
+}
+function blocksSizing() {
+  if (border) {
+    sizing();
+  }
+  if (borderM) {
+    sizing();
+  }
+  if (borderS) {
+    sizing();
+  }
+  if (borderD) {
+    sizing();
+  }
+  if (borderL) {
+    sizing();
+  }
+  if (borderC) {
+    sizing();
+  }
+}
+// if (borderM)
+//   if (borderS)
+//     if (borderD)
+//       if (borderL)
+//         if (borderC)
 
 function clearHealDon() {
   let k1 = document.querySelector(".k-score img");
@@ -530,6 +637,124 @@ function clearHealDon() {
   ra2 = document.querySelector(".r-score-d");
   ra3 = document.querySelector(".r-score-l");
   ra4 = document.querySelector(".r-score-c");
+
+  ////Buttom Background////////////////////////////////////////////////////////////////////////
+
+  bKilllDon = document.querySelector(
+    ".background-border-d .btn-flex .btn-kill"
+  );
+  bKilllMafia = document.querySelector(
+    ".background-border-m .btn-flex .btn-kill"
+  );
+  bKilllSherif = document.querySelector(
+    ".background-border-s .btn-flex .btn-kill"
+  );
+  bKilllDoctor = document.querySelector(
+    ".background-border-doc .btn-flex .btn-kill"
+  );
+  bKilllLady = document.querySelector(
+    ".background-border-l .btn-flex .btn-kill"
+  );
+  bKilllCivil = document.querySelector(
+    ".background-border-c .btn-flex .btn-kill"
+  );
+
+  bHeallDon = document.querySelector(
+    ".background-border-d .btn-flex .btn-heal"
+  );
+  bHeallMafia = document.querySelector(
+    ".background-border-m .btn-flex .btn-heal"
+  );
+  bHeallSherif = document.querySelector(
+    ".background-border-s .btn-flex .btn-heal"
+  );
+  bHeallDoctor = document.querySelector(
+    ".background-border-doc .btn-flex .btn-heal"
+  );
+  bHeallLady = document.querySelector(
+    ".background-border-l .btn-flex .btn-heal"
+  );
+  bHeallCivil = document.querySelector(
+    ".background-border-c .btn-flex .btn-heal"
+  );
+
+  bInspectDon = document.querySelector(
+    ".background-border-d .btn-flex .btn-inspect"
+  );
+  bInspectMafia = document.querySelector(
+    ".background-border-m .btn-flex .btn-inspect"
+  );
+  bInspectSherif = document.querySelector(
+    ".background-border-s .btn-flex .btn-inspect"
+  );
+  bInspectDoctor = document.querySelector(
+    ".background-border-doc .btn-flex .btn-inspect"
+  );
+  bInspectLady = document.querySelector(
+    ".background-border-l .btn-flex .btn-inspect"
+  );
+  bInspectCivil = document.querySelector(
+    ".background-border-c .btn-flex .btn-inspect"
+  );
+  bPartyDon = document.querySelector(
+    ".background-border-d .btn-flex .btn-party"
+  );
+  bPartyMafia = document.querySelector(
+    ".background-border-m .btn-flex .btn-party"
+  );
+  bPartySherif = document.querySelector(
+    ".background-border-s .btn-flex .btn-party"
+  );
+  bPartyDoctor = document.querySelector(
+    ".background-border-doc .btn-flex .btn-party"
+  );
+  bPartyLady = document.querySelector(
+    ".background-border-l .btn-flex .btn-party"
+  );
+  bPartyCivil = document.querySelector(
+    ".background-border-c .btn-flex .btn-party"
+  );
+
+  bPartyCivil.style.background = "black";
+  bPartyLady.style.background = "black";
+  bPartyDoctor.style.background = "black";
+  bPartySherif.style.background = "black";
+  bPartyMafia.style.background = "black";
+  bPartyDon.style.background = "black";
+
+  bRatSherif = document.querySelector(
+    ".background-border-s .btn-flex .btn-rat"
+  );
+  bRatDoctor = document.querySelector(
+    ".background-border-doc .btn-flex .btn-rat"
+  );
+  bRatLady = document.querySelector(".background-border-l .btn-flex .btn-rat");
+  bRatCivil = document.querySelector(".background-border-c .btn-flex .btn-rat");
+
+  bRatCivil.style.background = "black";
+  bRatLady.style.background = "black";
+  bRatDoctor.style.background = "black";
+  bRatSherif.style.background = "black";
+
+  bInspectLady.style.background = "black";
+  bInspectDoctor.style.background = "black";
+  bInspectSherif.style.background = "black";
+  bInspectMafia.style.background = "black";
+  bInspectDon.style.background = "black";
+
+  bHeallCivil.style.background = "black";
+  bHeallLady.style.background = "black";
+  bHeallDoctor.style.background = "black";
+  bHeallSherif.style.background = "black";
+  bHeallMafia.style.background = "black";
+  bHeallDon.style.background = "black";
+
+  bKilllDon.style.background = "black";
+  bKilllMafia.style.background = "black";
+  bKilllSherif.style.background = "black";
+  bKilllDoctor.style.background = "black";
+  bKilllLady.style.background = "black";
+  bKilllCivil.style.background = "black";
 
   ra1.style.background = "black";
   ra2.style.background = "black";

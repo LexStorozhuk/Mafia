@@ -69,7 +69,7 @@ h1 {
   left: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   /* overflow: hidden; */
   /* z-index: 1; */
 }
@@ -110,7 +110,7 @@ h1 {
   width: 140px;
   height: 120px;
   border-radius: 10%;
-  /* background: rgb(74, 74, 74); */
+  /* background: rgb(47, 22, 55); */
 }
 .border-m {
   /* border: solid white 1px; */
