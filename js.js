@@ -461,7 +461,7 @@ function borderL1() {
   borderL = 1;
 }
 function borderC1() {
-  borderC = 0;
+  borderC = 1;
 }
 //////Zero for border sector///////////////////////////////////////////////////////////////////////////
 function border0() {
