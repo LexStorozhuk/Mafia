@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css.css " />
     <script src="js.js " ></script>
   </head>
-  <body>
+  <body style="font-family: droid-sans-mono,monospace;
+  font-weight: 200;
+  font-style: normal;">
     <div class="fnt">
       <h1>Mafia</h1>
     </div>
     <div class="table-posit">
       <div class="blockof-avatars">
         <div class="avatar">
-          <img src="don.jpg" alt="" />
+          <img src="img/don.jpg" alt="" />
         </div>
         <div class="avatar">
-          <img src="mafia.jpg" alt="" />
+          <img src="img/mafia.jpg" alt="" />
         </div>
         <div class="avatar">
-          <img src="shriff.jpg" alt="" />
+          <img src="img/sherif.jpg" alt="" />
         </div>
       </div>
 
@@ -42,17 +44,18 @@
       <div class="navbarleft">
         <div class="background-border-d">
           <div class="btn-flex">
-            <button class="btn-kill" onclick=" border1();killDonImg();">kill</button>
-            <button class="btn-heal" onclick="border0();healDonImg();">heal</button>
-            <button class="btn-inspect" onclick="inspectDonImg(); ">inspect</button>
-            <button class="btn-party" onclick="partyDonImg(); "> party</button>
+            <button class="btn-kill" onclick="killlDon();countKillD();border1();killDonImg();">Kill</button>
+            <button class="btn-heal" onclick="border0();healDonImg();healDon()">Heal</button>
+            <button class="btn-inspect" onclick="inspectDonImg(); ">Inspect</button>
+            <button class="btn-party" onclick="partyDonImg(); "> Party</button>
           </div>
-          <div class="border-score-d">
-          <div class="k-score">
-            <img src="gun.png" alt="">
-          </div>
-          <div class="h-score">         
-             <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/pill_1f48a.png" alt="">
+          
+          <div class="border-score-d" >
+            <div class="k-score">
+              <img src="gun.png" alt="">
+            </div>
+            <div class="h-score">         
+              <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/pill_1f48a.png" alt="">
             </div>
             <div class="i-score">
             <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/detective_1f575-fe0f.png" alt="">
@@ -62,19 +65,17 @@
           </div>
         </div>
         <div class="border">
+          <img class="cross-kill"src="grave.png" alt=""/>
+           <img src="img/don.jpg" alt="don"/>
           <span>Don</span>
-            <div>
-              <img class="cross-kill"src="grave.png" alt="">
-            </div>
-            <img src="don.jpg" alt="don" />
-          </div>
+        </div>
         </div>
         <div class="background-border-m">
           <div class="btn-flex">
-            <button class="btn-kill" onclick="borderM1();killMafiaImg();">kill</button>
-            <button class="btn-heal" onclick="borderM0();healMafiaImg();">heal</button>
-            <button class="btn-inspect" onclick="inspectMafiaImg(); ">inspect</button>
-            <button class="btn-party" onclick="partyMafiaImg();"> party</button>
+            <button class="btn-kill" onclick="killMafia();countKillM();borderM1();killMafiaImg();">Kill</button>
+            <button class="btn-heal" onclick="borderM0();healMafiaImg();">Heal</button>
+            <button class="btn-inspect" onclick="inspectMafiaImg(); ">Inspect</button>
+            <button class="btn-party" onclick=" partyMafiaImg();"> Party</button>
           </div>
           <div class="border-score-m">
             <div class="k-score-m">
@@ -96,16 +97,16 @@
           <div>
             <img class="cross-mafia-kill"src="grave.png" alt="">
           </div>
-          <img src="mafia.jpg" alt="mafia" />
+          <img src="img/mafia.jpg" alt="mafia" />
         </div>
       </div>
       <div class="background-border-s">
         <div class="btn-flex">
-          <button class="btn-kill" onclick="borderS1();killSherifImg()">kill</button>
-          <button class="btn-heal" onclick=" borderS0();healSherifImg(); ">heal</button>
-          <button class="btn-inspect" onclick="inspectSherifImg();">inspect</button>
-          <button class="btn-party" onclick="partySherifImg();"> party</button>
-          <button class="btn-rat" onclick="ratSherifImg();">rat</button>
+          <button class="btn-kill" onclick="killSherif();countKillS();borderS1();killSherifImg()">Kill</button>
+          <button class="btn-heal" onclick=" borderS0();healSherifImg(); ">Heal</button>
+          <button class="btn-inspect" onclick="inspectSherifImg();">Inspect</button>
+          <button class="btn-party" onclick="partySherifImg();"> Party</button>
+          <button class="btn-rat" onclick="ratSherifImg();">Rat</button>
         </div>
         <div class="border-score-s">
         <div class="k-score-s">
@@ -126,19 +127,19 @@
       </div>
       <div class="border">
         <span>Sherif</span>
-        <img src="shriff.jpg" alt="sherif" />
         <div>
           <img class="cross-sherif-kill"src="grave.png" alt="">
         </div>
+        <img src="img/sherif.jpg" alt="sherif" />
       </div>
     </div>
     <div class="background-border-doc">
       <div class="btn-flex">
-        <button class="btn-kill" onclick="borderD1();killDoctorImg();">kill</button>
-        <button class="btn-heal" onclick=" borderD0();healDoctorImg();">heal</button>
-        <button class="btn-inspect" onclick=" inspectDoctorImg(); ">inspect</button>
-        <button class="btn-party" onclick="partyDoctorImg();"> party</button>
-        <button class="btn-rat" onclick="ratDoctorImg()">rat</button>
+        <button class="btn-kill" onclick="killDoctor();countKillDoc();borderD1();killDoctorImg();">Kill</button>
+        <button class="btn-heal" onclick=" borderD0();healDoctorImg();">Heal</button>
+        <button class="btn-inspect" onclick="inspectDoctorImg(); ">Inspect</button>
+        <button class="btn-party" onclick="partyDoctorImg();"> Party</button>
+        <button class="btn-rat" onclick="ratDoctorImg()">Rat</button>
       </div>
       <div class="border-score-doc">
         <div class="k-score-d">
@@ -167,11 +168,11 @@
       </div>
       <div class="background-border-l">
         <div class="btn-flex">
-          <button class="btn-kill" onclick="borderL1();killLadyImg();">kill</button>
-          <button class="btn-heal" onclick="borderL0();healLadyImg(); ">heal</button>
-          <button class="btn-inspect" onclick="inspectLadyImg(); ">inspect</button>
-          <button class="btn-party" onclick="partyLadyImg()";> party</button>
-          <button class="btn-rat" onclick=" ratLadyImg(); ">rat</button>
+          <button class="btn-kill" onclick="killLady();countKillL();borderL1();killLadyImg();">Kill</button>
+          <button class="btn-heal" onclick="borderL0();healLadyImg(); ">Heal</button>
+          <button class="btn-inspect" onclick=" inspectLadyImg(); ">Inspect</button>
+          <button class="btn-party" onclick="partyLadyImg()";> Party</button>
+          <button class="btn-rat" onclick="ratLadyImg(); ">Rat</button>
         </div>
         <div class="border-score-l">
           <div class="k-score-l">
@@ -200,11 +201,11 @@
       </div>
       <div class="background-border-c">
         <div class="btn-flex">
-          <button class="btn-kill" onclick="borderC1();killCivilImg();">kill</button>
-          <button class="btn-heal" onclick=" borderC0();healCivilImg();">heal</button>
-          <button class="btn-inspect" onclick="inspectCivilImg();">inspect</button>
-          <button class="btn-party" onclick="partyCivilImg();"> party</button>
-          <button class="btn-rat" onclick="ratCivilImg ();">rat</button>
+          <button class="btn-kill" onclick="KillCivil();countKillD();borderC1();killCivilImg();">Kill</button>
+          <button class="btn-heal" onclick=" borderC0();healCivilImg();">Heal</button>
+          <button class="btn-inspect" onclick="inspectCivilImg();">Inspect</button>
+          <button class="btn-party" onclick="partyCivilImg();"> Party</button>
+          <button class="btn-rat" onclick="ratCivilImg ();">Rat</button>
         </div>
         <div class="border-score-c">
         
@@ -237,9 +238,10 @@
     </ul>
     <div class="novbar-fixed">
       <div class="navbar">
-        <button class="new-round-buttom" onclick="deliteBlocks();clearScore(); blocksSizing();">New Round</button>
+        <button class="new-round-buttom" onclick="deliteBlocks(); clearScore(); blocksSizing();">New Round</button>
       </div>
     </div>
     <div class=""></div>
+    
   </body>
 </html>

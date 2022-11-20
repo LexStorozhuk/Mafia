@@ -56,7 +56,7 @@ h1 {
   display: block;
   cursor: pointer;
 }
-.novbar-fixed {
+.navbar-fixed {
   position: absolute;
 }
 .navbarleft {
@@ -72,6 +72,12 @@ h1 {
   justify-content: space-around;
   /* overflow: hidden; */
   /* z-index: 1; */
+}
+.navbarleft img {
+  width: 59%;
+  height: 94%;
+  border-radius: 4%;
+  margin: 4px 5px;
 }
 /* .navbarleft-second {
   border: solid white 1px;
@@ -96,46 +102,37 @@ h1 {
   justify-content: space-between;
 }
 
-.navbarleft img {
-  width: 60%;
-  height: 95%;
-  margin: 3px 3px;
-  border-radius: 10%;
-}
 /* Border////////////////////////////////////////////////////////////////////////////////// */
 .border {
   /* border: solid white 1px; */
   border: solid 1px rgba(255, 255, 255, 0.956);
+  box-shadow: black inset 0px 0px 700px;
   position: absolute;
+
   width: 140px;
   height: 120px;
   border-radius: 10%;
-  /* background: rgb(47, 22, 55); */
+  box-sizing: border-box;
+  z-index: 1;
+  /* background: rgba(177, 177, 177, 0.403); */
 }
 .border-m {
-  /* border: solid white 1px; */
   position: absolute;
   width: 140px;
   height: 120px;
   border-radius: 10%;
 }
 .border-s {
-  /* border: solid white 1px; */
-  /* position: relative; */
   width: 140px;
   height: 120px;
   border-radius: 10%;
 }
 .border-d {
-  /* border: solid white 1px; */
-  /* position: relative; */
   width: 140px;
   height: 120px;
   border-radius: 10%;
 }
 .border-l {
-  /* border: solid white 1px; */
-  /* position: relative; */
   width: 140px;
   height: 120px;
   border-radius: 10%;
@@ -150,68 +147,80 @@ h1 {
 /* Crosses///////////////////////////////////////////////////////////////////////// */
 
 .cross-kill {
-  width: 73px;
-  height: 110px;
+  background: rgba(0, 0, 0, 0.523);
+  width: 140px;
+  height: 10px;
   display: none;
 
   position: absolute;
-  top: 2px;
-  left: 2px;
+  /* top: 2px; */
+  /* left: 2px; */
   z-index: 2;
 }
 .cross-mafia-kill {
+  background: rgba(0, 0, 0, 0.523);
   width: 73px;
   height: 110px;
   display: none;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  /* top: 2px; */
+  /* left: 2px; */
   z-index: 2;
 }
 .cross-sherif-kill {
+  background: rgba(0, 0, 0, 0.523);
   width: 73px;
   height: 110px;
-  border-radius: 20%;
   display: none;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  /* top: 2px; */
+  /* left: 2px; */
   z-index: 2;
 }
 .cross-doctor-kill {
+  background: rgba(0, 0, 0, 0.523);
   width: 73px;
   height: 110px;
   display: none;
-
   position: absolute;
-  top: 2px;
-  left: 2px;
+  /* top: 2px; */
+  /* left: 2px; */
   z-index: 1;
 }
 .cross-lady-kill {
+  background: rgba(0, 0, 0, 0.523);
   width: 73px;
   height: 110px;
   display: none;
-
   position: absolute;
-  top: 2px;
-  left: 2px;
+  /* top: 2px; */
+  /* left: 2px; */
   z-index: 1;
 }
 .cross-civil-kill {
+  background: rgba(0, 0, 0, 0.523);
   width: 73px;
   height: 110px;
   display: none;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  /* top: 2px; */
+  /* left: 2px; */
   z-index: 1;
 }
 span {
   position: absolute;
   left: 10px;
   bottom: 1px;
-  background-color: rgba(69, 69, 69, 0.756);
+  background-color: rgba(3, 3, 3, 0.756);
+}
+.size-img {
+  width: 84%;
+  height: 101%;
+  position: absolute;
+  z-index: 1;
+}
+.size-img img {
+  margin: 3px 3px !important;
 }
 /* Background border///////////////////////////////////////////////////////////////////////////////////////////////// */
 .background-border-d {
@@ -220,6 +229,7 @@ span {
   width: 175px;
   height: 120px;
   border-radius: 10%;
+  background-image: url(https://ibb.co/G3LNnFS);
 }
 .background-border-m {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
@@ -337,6 +347,8 @@ span {
 .k-score {
   border-radius: 20%;
   height: 20px;
+  box-shadow: black inset 0px 0px 12px;
+  z-index: 2;
 }
 .k-score img {
   width: 18px;
@@ -346,6 +358,7 @@ span {
 .k-score-m {
   border-radius: 20%;
   height: 20px;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
 }
 .k-score-m img {
@@ -357,6 +370,7 @@ span {
 .k-score-s {
   border-radius: 20%;
   height: 20px;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
 }
 .k-score-s img {
@@ -369,6 +383,7 @@ span {
 .k-score-d {
   border-radius: 20%;
   height: 20px;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
 }
 .k-score-d img {
@@ -380,6 +395,7 @@ span {
 .k-score-l {
   border-radius: 20%;
   height: 20px;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
 }
 .k-score-l img {
@@ -391,6 +407,7 @@ span {
 .k-score-c {
   border-radius: 20%;
   height: 20px;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
 }
 .k-score-c img {
@@ -402,6 +419,7 @@ span {
 
 .h-score {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .h-score img {
@@ -414,6 +432,7 @@ span {
   border-radius: 20%;
   height: 20px;
   box-sizing: border-box;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
 }
 .h-score-m img {
@@ -424,6 +443,7 @@ span {
 }
 .h-score-s {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .h-score-s img {
@@ -434,6 +454,7 @@ span {
 }
 .h-score-d {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .h-score-d img {
@@ -444,6 +465,7 @@ span {
 }
 .h-score-l {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .h-score-l img {
@@ -454,6 +476,7 @@ span {
 }
 .h-score-c {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .h-score-c img {
@@ -464,6 +487,7 @@ span {
 }
 .i-score {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .i-score img {
@@ -474,6 +498,7 @@ span {
 }
 .i-score-m {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .i-score-m img {
@@ -484,6 +509,7 @@ span {
 }
 .i-score-s {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .i-score-s img {
@@ -494,6 +520,7 @@ span {
 }
 .i-score-d {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .i-score-d img {
@@ -504,6 +531,7 @@ span {
 }
 .i-score-l {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .i-score-l img {
@@ -514,6 +542,7 @@ span {
 }
 .i-score-c {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 
@@ -525,6 +554,7 @@ span {
 }
 .p-score {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .p-score img {
@@ -535,6 +565,7 @@ span {
 }
 .p-score-m {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .p-score-m img {
@@ -545,6 +576,7 @@ span {
 }
 .p-score-s {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .p-score-s img {
@@ -555,6 +587,7 @@ span {
 }
 .p-score-d {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .p-score-d img {
@@ -565,6 +598,7 @@ span {
 }
 .p-score-l {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .p-score-l img {
@@ -575,6 +609,7 @@ span {
 }
 .p-score-c {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .p-score-c img {
@@ -586,6 +621,7 @@ span {
 
 .r-score-s {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .r-score-s img {
@@ -596,6 +632,7 @@ span {
 }
 .r-score-d {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .r-score-d img {
@@ -606,6 +643,7 @@ span {
 }
 .r-score-l {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .r-score-l img {
@@ -616,6 +654,7 @@ span {
 }
 .r-score-c {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   height: 20px;
 }
 .r-score-c img {
@@ -802,29 +841,33 @@ span {
   border-radius: 20%;
   color: #ffff;
   border: solid rgb(255, 255, 255) 1px;
-
-  font-size: 13 px;
+  box-shadow: black inset 0px 0px 12px;
   background: black;
+  font-size: 11px;
   /* position: absolute; */
   bottom: 0px;
   right: 2px;
   cursor: pointer;
+  font-weight: 100;
 }
 .btn-heal {
   border-radius: 20%;
+  box-shadow: black inset 0px 0px 12px;
   color: #ffff;
-  font-size: 13px;
+  font-size: 11px;
   border: solid rgb(255, 255, 255) 1px;
   background: black;
   /* position: absolute; */
   bottom: 27px;
   right: 2px;
+  font-weight: 100;
   cursor: pointer;
 }
 .btn-inspect {
+  box-shadow: black inset 0px 0px 12px;
   border-radius: 20%;
   color: #ffff;
-  font-size: 13px;
+  font-size: 11px;
   border: solid rgb(255, 255, 255) 1px;
   background: black;
   /* position: absolute; */
@@ -833,27 +876,32 @@ span {
   cursor: pointer;
 }
 .btn-party {
+  box-shadow: black inset 0px 0px 12px;
   border-radius: 20%;
   color: #ffff;
-  font-size: 13px;
+  font-size: 11px;
   border: solid rgb(255, 255, 255) 1px;
   background: black;
   /* position: absolute; */
   bottom: 73px;
   right: 2px;
+  font-weight: 100;
   cursor: pointer;
 }
 .btn-rat {
+  box-shadow: black inset 0px 0px 12px;
   border-radius: 20%;
   color: #ffff;
-  font-size: 13px;
+  font-size: 11px;
   border: solid rgb(255, 255, 255) 1px;
   background: black;
   /* position: absolute; */
   top: 0px;
   right: 2px;
+  font-weight: 100;
   cursor: pointer;
 }
+
 .btn-flex {
   width: 60px;
   height: 110px;
