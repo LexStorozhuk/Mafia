@@ -816,6 +816,19 @@ span {
     top: 150px;
     transform: rotate(90deg);
   }
+  .btn-inspect {
+    box-shadow: black inset 0px 0px 12px;
+    border-radius: 20%;
+    color: #ffff;
+    font-size: 11px;
+    border: solid rgb(255, 255, 255) 1px;
+    background: black;
+    /* position: absolute; */
+    bottom: 50px;
+    right: 2px;
+    cursor: pointer;
+    text-align: center;
+  }
 }
 /* .avatar1 {
   width: 20%;
