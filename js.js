@@ -1,26 +1,6 @@
 // function kill() {
 //   alert("Mafia killed personage");
 // }
-function hidepick() {
-  let first = document.querySelector(".pop");
-  second = document.querySelector(".close-pick-btn");
-  first.style.visibility = "hidden";
-  second.style.visibility = "hidden";
-}
-function pick() {
-  let first = document.querySelector(".pop");
-  second = document.querySelector(".close-pick-btn");
-
-  first.style.visibility = "visible";
-  second.style.visibility = "visible";
-}
-let border = 0,
-  borderM = 0,
-  borderS = 0,
-  borderD = 0,
-  borderL = 0,
-  borderC = 0;
-
 let cKD = 0,
   cKM = 0,
   cKS = 0,
@@ -49,7 +29,7 @@ let cKD = 0,
   cRDoc = 0,
   cRL = 0,
   cRC = 0;
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function countKillD() {
   cKD++;
 }
@@ -68,161 +48,40 @@ function countKillL() {
 function countKillC() {
   cKC++;
 }
-/////////////////////////////////////////////////////////////////
-function countHealD() {
-  cHD++;
-}
-function countHealM() {
-  cHM++;
-}
-function countHealS() {
-  cHS++;
-}
-function countHealDoc() {
-  cHDoc++;
-}
-function countHealL() {
-  cHL++;
-}
-function countHealC() {
-  cHC++;
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////
-function countInspectD() {
-  cID++;
-}
-function countInspectM() {
-  cIM++;
-}
-function countInspectS() {
-  cIS++;
-}
-function countInspectDoc() {
-  cIDoc++;
-}
-function countInspectL() {
-  cIL++;
-}
-function countInspectC() {
-  cIC++;
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////
-function countPartyD() {
-  cPD++;
-}
-function countPartyM() {
-  cPM++;
-}
-function countPartyS() {
-  cPS++;
-}
-function countPartyDoc() {
-  cPDoc++;
-}
-function countPartyL() {
-  cPL++;
-}
-function countPartyC() {
-  cPC++;
-}
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-function countRatS() {
-  cRS++;
-}
-function countRatDoc() {
-  cRDoc++;
-}
-function countRatL() {
-  cRL++;
-}
-function countRatC() {
-  cRC++;
-}
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-function killD() {
-  let first = document.querySelector(
-    ".background-border-d .btn-flex .btn-kill"
-  );
-  first.style.background = "#ffff";
-}
-function killDon() {
+function killlDon() {
   if (cKD > 1) {
-    let firstBlock = document.querySelector(".k-score img");
-    second = document.querySelector(".k-score ");
-    third = document.querySelector(".border");
-    fourth = document.querySelector(".cross-kill");
-    fifth = document.querySelector(".avatar img");
-    sixth = document.querySelector(".background-border-d .btn-flex .btn-kill");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.display = "none";
-    fifth.style.visibility = "visible";
-    sixth.style.background = "black";
+    let back = document.querySelector(
+      ".background-border-d .btn-flex .btn-kill"
+    );
+    back.style.background = "black";
     cKD = 0;
-    border = 0;
   }
 }
 function killMafia() {
   if (cKM > 1) {
-    let firstBlock = document.querySelector(".k-score-m img");
-    second = document.querySelector(".k-score-m");
-    third = document.querySelector(".navbarleft .background-border-m .border");
-    fourth = document.querySelector(".cross-mafia-kill");
-    fifth = document.querySelector(".avatar:nth-of-type(2) img");
-    sixth = document.querySelector(".background-border-m .btn-flex .btn-kill");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.display = "none";
-    fifth.style.visibility = "visible";
-    sixth.style.background = "black";
+    let back = document.querySelector(
+      ".background-border-m .btn-flex .btn-kill"
+    );
+    back.style.background = "black";
     cKM = 0;
-    borderM = 0;
   }
 }
-function killSheriff() {
+function killSherif() {
   if (cKS > 1) {
-    let firstBlock = document.querySelector(".k-score-s img");
-    second = document.querySelector(".k-score-s");
-    third = document.querySelector(".navbarleft .background-border-s .border");
-    fourth = document.querySelector(".cross-sheriff-kill");
-    fifth = document.querySelector(".avatar:nth-of-type(3) img");
-    sixth = document.querySelector(".background-border-s .btn-flex .btn-kill");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.display = "none";
-    fifth.style.visibility = "visible";
-    sixth.style.background = "black";
+    let back = document.querySelector(
+      ".background-border-s .btn-flex .btn-kill"
+    );
+    back.style.background = "black";
     cKS = 0;
-    borderS = 0;
   }
 }
 function killDoctor() {
-  if (cKDoc > 1) {
-    let firstBlock = document.querySelector(".k-score-d img");
-    second = document.querySelector(".k-score-d");
-    third = document.querySelector(
-      ".navbarleft .background-border-doc .border"
-    );
-    fourth = document.querySelector(".cross-doctor-kill");
-    fifth = document.querySelector(".blockof-avatars1 .avatar img");
-    sixth = document.querySelector(
+  if (cKD > 1) {
+    let back = document.querySelector(
       ".background-border-doc .btn-flex .btn-kill"
     );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.display = "none";
-    fifth.style.visibility = "visible";
-    sixth.style.background = "black";
-    cKDoc = 0;
-    borderD = 0;
+    back.style.background = "black";
+    cKD = 0;
   }
 }
 function killLady() {
@@ -230,23 +89,8 @@ function killLady() {
     let back = document.querySelector(
       ".background-border-l .btn-flex .btn-kill"
     );
-    firstBlock = document.querySelector(".k-score-l img");
-    second = document.querySelector(".k-score-l ");
-    third = document.querySelector(".navbarleft .background-border-l .border");
-    fourth = document.querySelector(
-      ".blockof-avatars1 .avatar:nth-of-type(2) img"
-    );
-    fifth = document.querySelector(".cross-lady-kill");
-
     back.style.background = "black";
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.visibility = "visible";
-    fifth.style.display = "none";
-
     cKL = 0;
-    borderL = 0;
   }
 }
 function KillCivil() {
@@ -254,367 +98,11 @@ function KillCivil() {
     let back = document.querySelector(
       ".background-border-c .btn-flex .btn-kill"
     );
-    let firstBlock = document.querySelector(".k-score-c img");
-    second = document.querySelector(".k-score-c ");
-    third = document.querySelector(".navbarleft .background-border-c .border");
-    fourth = document.querySelector(".cross-civil-kill");
-    fifth = document.querySelector(
-      ".blockof-avatars1 .avatar:nth-of-type(3) img"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.display = "none";
-    fifth.style.visibility = "visible";
     back.style.background = "black";
     cKS = 0;
-    borderC = 0;
   }
 }
-///////////////////////////////////////////////////////////////////////////////
-function healDon() {
-  if (cHD > 1) {
-    let firstBlock = document.querySelector(".h-score img");
-    second = document.querySelector(".border");
-    third = document.querySelector(".h-score");
-    sixth = document.querySelector(".background-border-d .btn-flex .btn-heal");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    sixth.style.background = "black";
-    cHD = 0;
-  }
-}
-function healMafia() {
-  if (cHM > 1) {
-    let firstBlock = document.querySelector(".h-score-m img");
-    second = document.querySelector(".h-score-m");
-    third = document.querySelector(".navbarleft .background-border-m .border");
-    sixth = document.querySelector(".background-border-m .btn-flex .btn-heal");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    sixth.style.background = "black";
-    cHM = 0;
-  }
-}
-
-function healSheriff() {
-  if (cHS > 1) {
-    let firstBlock = document.querySelector(".h-score-s img");
-    second = document.querySelector(".h-score-s");
-    third = document.querySelector(".navbarleft .background-border-s .border");
-    sixth = document.querySelector(".background-border-s .btn-flex .btn-heal");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    sixth.style.background = "black";
-    cHS = 0;
-  }
-}
-function healDoctor() {
-  if (cHDoc > 1) {
-    let firstBlock = document.querySelector(".h-score-d img");
-    second = document.querySelector(".h-score-d");
-    third = document.querySelector(
-      ".navbarleft .background-border-doc .border"
-    );
-    sixth = document.querySelector(
-      ".background-border-doc .btn-flex .btn-heal"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    sixth.style.background = "black";
-    cHDoc = 0;
-  }
-}
-function healLady() {
-  if (cHL > 1) {
-    let firstBlock = document.querySelector(".h-score-l img");
-    second = document.querySelector(".h-score-l");
-    third = document.querySelector(".navbarleft .background-border-l .border");
-    sixth = document.querySelector(".background-border-l .btn-flex .btn-heal");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    sixth.style.background = "black";
-    cHL = 0;
-  }
-}
-function healCivil() {
-  if (cHC > 1) {
-    let firstBlock = document.querySelector(".h-score-c img");
-    second = document.querySelector(".h-score-c");
-    third = document.querySelector(".navbarleft .background-border-c .border");
-    sixth = document.querySelector(".background-border-c .btn-flex .btn-heal");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    sixth.style.background = "black";
-    cHC = 0;
-  }
-}
-function inspectDon() {
-  if (cID > 1) {
-    let firstBlock = document.querySelector(".i-score img");
-    second = document.querySelector(".i-score");
-    third = document.querySelector(".background-border-d .border");
-    fourth = document.querySelector(
-      ".background-border-d .btn-flex .btn-inspect"
-    );
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cID = 0;
-  }
-}
-function inspectMafia() {
-  if (cIM > 1) {
-    let firstBlock = document.querySelector(".i-score-m img");
-    second = document.querySelector(".i-score-m");
-    third = document.querySelector(".background-border-m .border");
-    fourth = document.querySelector(
-      ".background-border-m .btn-flex .btn-inspect"
-    );
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cIM = 0;
-  }
-}
-function inspectSheriff() {
-  if (cIS > 1) {
-    let firstBlock = document.querySelector(".i-score-s img");
-    second = document.querySelector(".i-score-s");
-    third = document.querySelector(".background-border-s .border");
-    fourth = document.querySelector(
-      ".background-border-s .btn-flex .btn-inspect"
-    );
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cIS = 0;
-  }
-}
-function inspectDoc() {
-  if (cIDoc > 1) {
-    let firstBlock = document.querySelector(".i-score-d img");
-    second = document.querySelector(".i-score-d");
-    third = document.querySelector(".background-border-doc .border");
-    fourth = document.querySelector(
-      ".background-border-doc .btn-flex .btn-inspect"
-    );
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cIDoc = 0;
-  }
-}
-function inspectLady() {
-  if (cIL > 1) {
-    let firstBlock = document.querySelector(".i-score-l img");
-    second = document.querySelector(".i-score-l");
-    third = document.querySelector(".background-border-l .border");
-    fourth = document.querySelector(
-      ".background-border-l .btn-flex .btn-inspect"
-    );
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cIL = 0;
-  }
-}
-function inspectCivil() {
-  if (cIC > 1) {
-    let firstBlock = document.querySelector(".i-score-c img");
-    second = document.querySelector(".i-score-c");
-    third = document.querySelector(".background-border-c .border");
-    fourth = document.querySelector(
-      ".background-border-c .btn-flex .btn-inspect"
-    );
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cIC = 0;
-  }
-}
-//////////////////////////////////////////////////////////////////////////////////////
-function partyDon() {
-  if (cPD > 1) {
-    let firstBlock = document.querySelector(".p-score img");
-    second = document.querySelector(".p-score");
-    third = document.querySelector(".navbarleft .background-border-d .border");
-    fourth = document.querySelector(
-      ".background-border-d .btn-flex .btn-party"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cPD = 0;
-  }
-}
-function partyMafia() {
-  if (cPM > 1) {
-    let firstBlock = document.querySelector(".p-score-m img");
-    second = document.querySelector(".p-score-m");
-    third = document.querySelector(".navbarleft .background-border-m .border");
-    fourth = document.querySelector(
-      ".background-border-m .btn-flex .btn-party"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cPM = 0;
-  }
-}
-function partyfSheriff() {
-  if (cPS > 1) {
-    let firstBlock = document.querySelector(".p-score-s img");
-    second = document.querySelector(".p-score-s");
-    third = document.querySelector(".navbarleft .background-border-s .border");
-    fourth = document.querySelector(
-      ".background-border-s .btn-flex .btn-party"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cPS = 0;
-  }
-}
-function partyDoctor() {
-  if (cPDoc > 1) {
-    let firstBlock = document.querySelector(".p-score-d img");
-    second = document.querySelector(".p-score-d");
-    third = document.querySelector(
-      ".navbarleft .background-border-doc .border"
-    );
-    fourth = document.querySelector(
-      ".background-border-doc .btn-flex .btn-party"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cPDoc = 0;
-  }
-}
-function partyLady() {
-  if (cPL > 1) {
-    let firstBlock = document.querySelector(".p-score-l img");
-    second = document.querySelector(".p-score-l");
-    third = document.querySelector(".navbarleft .background-border-l .border");
-    fourth = document.querySelector(
-      ".background-border-l .btn-flex .btn-party"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cPL = 0;
-  }
-}
-function partyCivil() {
-  if (cPC > 1) {
-    let firstBlock = document.querySelector(".p-score-c img");
-    second = document.querySelector(".p-score-c");
-    third = document.querySelector(".navbarleft .background-border-c .border");
-    fourth = document.querySelector(
-      ".background-border-c .btn-flex .btn-party"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cPC = 0;
-  }
-}
-////////////////////////////////////////////////////////////////////////////////////////////
-function ratSheriff() {
-  if (cRS > 1) {
-    let firstBlock = document.querySelector(".r-score-s img");
-    second = document.querySelector(".r-score-s");
-    third = document.querySelector(".navbarleft .background-border-s .border");
-    fourth = document.querySelector(".background-border-s .btn-flex .btn-rat");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cRS = 0;
-  }
-}
-function ratDoctor() {
-  if (cRDoc > 1) {
-    let firstBlock = document.querySelector(".r-score-d img");
-    second = document.querySelector(".r-score-d");
-    third = document.querySelector(
-      ".navbarleft .background-border-doc .border"
-    );
-    fourth = document.querySelector(
-      ".background-border-doc .btn-flex .btn-rat"
-    );
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cRDoc = 0;
-  }
-}
-function ratLady() {
-  if (cRL > 1) {
-    let firstBlock = document.querySelector(".r-score-l img");
-    second = document.querySelector(".r-score-l");
-    third = document.querySelector(".navbarleft .background-border-l .border");
-    fourth = document.querySelector(".background-border-l .btn-flex .btn-rat");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cRC = 0;
-    cRL = 0;
-  }
-}
-function ratCivil() {
-  if (cRC > 1) {
-    let firstBlock = document.querySelector(".r-score-c img");
-    second = document.querySelector(".r-score-c");
-    third = document.querySelector(".navbarleft .background-border-c .border");
-    fourth = document.querySelector(".background-border-c .btn-flex .btn-rat");
-
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
-    third.style.background = "black";
-    fourth.style.background = "black";
-    cRC = 0;
-  }
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 function kill() {
   let firstBlock = document.querySelector(".background-border-d ");
   firstBlock.style.display = "none";
@@ -761,11 +249,11 @@ function ratScorMaf() {
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function killSheriffImg() {
+function killSherifImg() {
   let firstBlock = document.querySelector(".k-score-s img");
   second = document.querySelector(".k-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
-  fourth = document.querySelector(".cross-sheriff-kill");
+  fourth = document.querySelector(".cross-sherif-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   sixth = document.querySelector(".background-border-s .btn-flex .btn-kill");
 
@@ -776,11 +264,11 @@ function killSheriffImg() {
   fifth.style.visibility = "hidden";
   sixth.style.background = "#AF2222";
 }
-function healSheriffImg() {
+function healSherifImg() {
   let firstBlock = document.querySelector(".h-score-s img");
   second = document.querySelector(".h-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
-  fourth = document.querySelector(".cross-sheriff-kill");
+  fourth = document.querySelector(".cross-sherif-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   sixth = document.querySelector(".background-border-s .btn-flex .btn-heal");
 
@@ -791,7 +279,7 @@ function healSheriffImg() {
   fifth.style.visibility = "visible";
   sixth.style.background = "#286214";
 }
-function inspectSheriffImg() {
+function inspectSherifImg() {
   let firstBlock = document.querySelector(".i-score-s img");
   second = document.querySelector(".i-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
@@ -804,7 +292,7 @@ function inspectSheriffImg() {
   third.style.background = "#00103D";
   fourth.style.background = "#00103D";
 }
-function partySheriffImg() {
+function partySherifImg() {
   let firstBlock = document.querySelector(".p-score-s img");
   second = document.querySelector(".p-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
@@ -814,11 +302,11 @@ function partySheriffImg() {
   second.style.background = "#2B1534";
   fourth.style.background = "#2F1637";
 }
-function ratSheriffImg() {
+function ratSherifImg() {
   let firstBlock = document.querySelector(".r-score-s img");
   second = document.querySelector(".r-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
-  fourth = document.querySelector(".cross-sheriff-kill");
+  fourth = document.querySelector(".cross-sherif-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   fourth = document.querySelector(".background-border-s .btn-flex .btn-rat");
 
@@ -1052,6 +540,12 @@ function ratCivilImg() {
   fourth.style.background = "#4a4a4a";
 }
 ///Block number/////////////////////////////////////////////////////////////////////////////
+let border = 0,
+  borderM = 0,
+  borderS = 0,
+  borderD = 0,
+  borderL = 0,
+  borderC = 0;
 
 function border1() {
   border = 1;
@@ -1254,7 +748,7 @@ function clearScore() {
   bKilllMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-kill"
   );
-  bKilllSheriff = document.querySelector(
+  bKilllSherif = document.querySelector(
     ".background-border-s .btn-flex .btn-kill"
   );
   bKilllDoctor = document.querySelector(
@@ -1273,7 +767,7 @@ function clearScore() {
   bHeallMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-heal"
   );
-  bHeallSheriff = document.querySelector(
+  bHeallSherif = document.querySelector(
     ".background-border-s .btn-flex .btn-heal"
   );
   bHeallDoctor = document.querySelector(
@@ -1292,7 +786,7 @@ function clearScore() {
   bInspectMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-inspect"
   );
-  bInspectSheriff = document.querySelector(
+  bInspectSherif = document.querySelector(
     ".background-border-s .btn-flex .btn-inspect"
   );
   bInspectDoctor = document.querySelector(
@@ -1310,7 +804,7 @@ function clearScore() {
   bPartyMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-party"
   );
-  bPartySheriff = document.querySelector(
+  bPartySherif = document.querySelector(
     ".background-border-s .btn-flex .btn-party"
   );
   bPartyDoctor = document.querySelector(
@@ -1326,11 +820,11 @@ function clearScore() {
   bPartyCivil.style.background = "black";
   bPartyLady.style.background = "black";
   bPartyDoctor.style.background = "black";
-  bPartySheriff.style.background = "black";
+  bPartySherif.style.background = "black";
   bPartyMafia.style.background = "black";
   bPartyDon.style.background = "black";
 
-  bRatSheriff = document.querySelector(
+  bRatSherif = document.querySelector(
     ".background-border-s .btn-flex .btn-rat"
   );
   bRatDoctor = document.querySelector(
@@ -1342,11 +836,11 @@ function clearScore() {
   bRatCivil.style.background = "black";
   bRatLady.style.background = "black";
   bRatDoctor.style.background = "black";
-  bRatSheriff.style.background = "black";
+  bRatSherif.style.background = "black";
 
   bInspectLady.style.background = "black";
   bInspectDoctor.style.background = "black";
-  bInspectSheriff.style.background = "black";
+  bInspectSherif.style.background = "black";
   bInspectMafia.style.background = "black";
   bInspectDon.style.background = "black";
   bInspectCivil.style.background = "black";
@@ -1354,13 +848,13 @@ function clearScore() {
   bHeallCivil.style.background = "black";
   bHeallLady.style.background = "black";
   bHeallDoctor.style.background = "black";
-  bHeallSheriff.style.background = "black";
+  bHeallSherif.style.background = "black";
   bHeallMafia.style.background = "black";
   bHeallDon.style.background = "black";
 
   bKilllDon.style.background = "black";
   bKilllMafia.style.background = "black";
-  bKilllSheriff.style.background = "black";
+  bKilllSherif.style.background = "black";
   bKilllDoctor.style.background = "black";
   bKilllLady.style.background = "black";
   bKilllCivil.style.background = "black";
@@ -1449,7 +943,7 @@ function clearScore() {
   ///Cross kill /////////////////////////////////////////////////////////////////////////////////////////////
   c1 = document.querySelector(".cross-kill");
   c2 = document.querySelector(".cross-mafia-kill");
-  c3 = document.querySelector(".cross-sheriff-kill");
+  c3 = document.querySelector(".cross-sherif-kill");
   c4 = document.querySelector(".cross-doctor-kill");
   c5 = document.querySelector(".cross-lady-kill");
   c6 = document.querySelector(".cross-civil-kill");
