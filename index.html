@@ -23,11 +23,17 @@
           <img src="img/mafia.jpg" alt="" />
         </div>
         <div class="avatar">
-          <img src="img/sherif.jpg" alt="" />
+          <img src="img/sheriff.jpg" alt="" />
         </div>
       </div>
-
-      <div class="table"></div>
+      
+      <div class="table">
+        <div class="new-img">
+          <img src="reload.png" alt="">
+        </div>
+          <button class="new-round-buttom" onclick="deliteBlocks(); clearScore(); blocksSizing();">New Round
+          </button>
+      </div>
       <div class="blockof-avatars1">
         <div class="avatar">
           <img src="doctor.jpg" alt="" />
@@ -72,7 +78,7 @@
         </div>
         <div class="background-border-m">
           <div class="btn-flex">
-            <button class="btn-kill" onclick="countKillM();borderM1();killMafiaImg();killMafia();killSherif();">Kill</button>
+            <button class="btn-kill" onclick="countKillM();borderM1();killMafiaImg();killMafia();killSheriff();">Kill</button>
             <button class="btn-heal" onclick="countHealM();borderM0();healMafiaImg();healMafia()">Heal</button>
             <button class="btn-inspect" onclick="countInspectM();inspectMafiaImg();inspectMafia() ">Inspect</button>
             <button class="btn-party" onclick=" countPartyM();partyMafiaImg();partyMafia()"> Party</button>
@@ -102,11 +108,11 @@
       </div>
       <div class="background-border-s">
         <div class="btn-flex">
-          <button class="btn-kill" onclick="countKillS();borderS1();killSherifImg();killSherif();">Kill</button>
-          <button class="btn-heal" onclick="countHealS();borderS0();healSherifImg();healSherif(); ">Heal</button>
-          <button class="btn-inspect" onclick="countInspectS();inspectSherifImg();inspectSherif(); ">Inspect</button>
-          <button class="btn-party" onclick="countPartyS();partySherifImg();partySherif()"> Party</button>
-          <button class="btn-rat" onclick="countRatS();ratSherifImg();ratSherif()">Rat</button>
+          <button class="btn-kill" onclick="countKillS();borderS1();killSheriffImg();killSheriff();">Kill</button>
+          <button class="btn-heal" onclick="countHealS();borderS0();healSheriffImg();healSheriff(); ">Heal</button>
+          <button class="btn-inspect" onclick="countInspectS();inspectSheriffImg();inspectSheriff(); ">Inspect</button>
+          <button class="btn-party" onclick="countPartyS();partySheriffImg();partySheriff()"> Party</button>
+          <button class="btn-rat" onclick="countRatS();ratSheriffImg();ratSheriff()">Rat</button>
         </div>
         <div class="border-score-s">
         <div class="k-score-s">
@@ -126,11 +132,11 @@
         </div>
       </div>
       <div class="border">
-        <span>Sherif</span>
+        <span>Sheriff</span>
         <div>
-          <img class="cross-sherif-kill"src="grave.jpg" alt="">
+          <img class="cross-sheriff-kill"src="grave.jpg" alt="">
         </div>
-        <img src="img/sherif.jpg" alt="sherif" />
+        <img src="img/sheriff.jpg" alt="sheriff" />
       </div>
     </div>
     <div class="background-border-doc">
@@ -227,8 +233,8 @@
   
         </div>
         <div class="border">
-          <span>Civil</span>
           <div>
+            <span>Civil</span>
             <img class="cross-civil-kill"src="grave.jpg" alt="">
           </div>
           <img src="civil.jpg" alt="civil" />
@@ -236,12 +242,66 @@
       </div>
     </div>
     </ul>
-    <div class="novbar-fixed">
-      <div class="navbar">
-        <button class="new-round-buttom" onclick="deliteBlocks(); clearScore(); blocksSizing();">New Round</button>
-      </div>
+    <div class="pop">
+      <div class="text-position">
+          <div class="avatars-of-don">
+            <button class="p-btn">
+              <img src="img/don.jpg" alt="don">
+            </button>
+            <samp>Add Don</samp>
+          </div>
+        </div>
+        <div class="text-position-m">
+          <div class="avatars-of-mafia">
+            <button class="p-btn">
+
+              <img src="img/mafia.jpg" alt="">
+            </button>
+            <samp>Add Mafia</samp>
+          </div>
+        </div>
+        <div class="text-position-s">
+          <div class="avatars-of-sheriff">
+            <button class="p-btn">
+
+              <img src="img/sheriff.jpg" alt="Sheriff">
+            </button>
+            <samp>Add Sheriff</samp>
+          </div>
+        </div>
+        <div class="text-position-d">
+          <div class="avatars-of-doctor">
+            <button class="p-btn">
+
+              <img src="doctor.jpg" alt="doctor">
+            </button>
+            <samp>Add Doctor</samp>
+          </div>
+          </div>
+        <div class="text-position-l">
+          <div class="avatars-of-lady">
+            <button class="p-btn">
+
+              <img src="lady.jpg" alt="lady">
+            </button>
+            <samp>Add Lady</samp>
+          </div>
+          </div>
+        <div class="text-position-c">
+          <div class="avatars-of-civil"> 
+            <button class="p-btn">
+
+            <img src="civil.jpg" alt="civil">
+          </button>
+            <samp>Add Civil</samp>
+          </div>
+        </div>
     </div>
-    <div class=""></div>
-    
+    <div > 
+      <button class="pick-btn" onclick="pick()">Pick</button>
+    </div>
+    <div>
+      <button class="close-pick-btn" onclick="hidepick()">Close</button>
+    </div>
   </body>
 </html>

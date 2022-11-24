@@ -1,6 +1,19 @@
 // function kill() {
 //   alert("Mafia killed personage");
 // }
+function hidepick() {
+  let first = document.querySelector(".pop");
+  second = document.querySelector(".close-pick-btn");
+  first.style.visibility = "hidden";
+  second.style.visibility = "hidden";
+}
+function pick() {
+  let first = document.querySelector(".pop");
+  second = document.querySelector(".close-pick-btn");
+
+  first.style.visibility = "visible";
+  second.style.visibility = "visible";
+}
 let border = 0,
   borderM = 0,
   borderS = 0,
@@ -170,12 +183,12 @@ function killMafia() {
     borderM = 0;
   }
 }
-function killSherif() {
+function killSheriff() {
   if (cKS > 1) {
     let firstBlock = document.querySelector(".k-score-s img");
     second = document.querySelector(".k-score-s");
     third = document.querySelector(".navbarleft .background-border-s .border");
-    fourth = document.querySelector(".cross-sherif-kill");
+    fourth = document.querySelector(".cross-sheriff-kill");
     fifth = document.querySelector(".avatar:nth-of-type(3) img");
     sixth = document.querySelector(".background-border-s .btn-flex .btn-kill");
 
@@ -289,7 +302,7 @@ function healMafia() {
   }
 }
 
-function healSherif() {
+function healSheriff() {
   if (cHS > 1) {
     let firstBlock = document.querySelector(".h-score-s img");
     second = document.querySelector(".h-score-s");
@@ -379,7 +392,7 @@ function inspectMafia() {
     cIM = 0;
   }
 }
-function inspectSherif() {
+function inspectSheriff() {
   if (cIS > 1) {
     let firstBlock = document.querySelector(".i-score-s img");
     second = document.querySelector(".i-score-s");
@@ -472,7 +485,7 @@ function partyMafia() {
     cPM = 0;
   }
 }
-function partySherif() {
+function partyfSheriff() {
   if (cPS > 1) {
     let firstBlock = document.querySelector(".p-score-s img");
     second = document.querySelector(".p-score-s");
@@ -539,7 +552,7 @@ function partyCivil() {
   }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////
-function ratSherif() {
+function ratSheriff() {
   if (cRS > 1) {
     let firstBlock = document.querySelector(".r-score-s img");
     second = document.querySelector(".r-score-s");
@@ -748,11 +761,11 @@ function ratScorMaf() {
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function killSherifImg() {
+function killSheriffImg() {
   let firstBlock = document.querySelector(".k-score-s img");
   second = document.querySelector(".k-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
-  fourth = document.querySelector(".cross-sherif-kill");
+  fourth = document.querySelector(".cross-sheriff-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   sixth = document.querySelector(".background-border-s .btn-flex .btn-kill");
 
@@ -763,11 +776,11 @@ function killSherifImg() {
   fifth.style.visibility = "hidden";
   sixth.style.background = "#AF2222";
 }
-function healSherifImg() {
+function healSheriffImg() {
   let firstBlock = document.querySelector(".h-score-s img");
   second = document.querySelector(".h-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
-  fourth = document.querySelector(".cross-sherif-kill");
+  fourth = document.querySelector(".cross-sheriff-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   sixth = document.querySelector(".background-border-s .btn-flex .btn-heal");
 
@@ -778,7 +791,7 @@ function healSherifImg() {
   fifth.style.visibility = "visible";
   sixth.style.background = "#286214";
 }
-function inspectSherifImg() {
+function inspectSheriffImg() {
   let firstBlock = document.querySelector(".i-score-s img");
   second = document.querySelector(".i-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
@@ -791,7 +804,7 @@ function inspectSherifImg() {
   third.style.background = "#00103D";
   fourth.style.background = "#00103D";
 }
-function partySherifImg() {
+function partySheriffImg() {
   let firstBlock = document.querySelector(".p-score-s img");
   second = document.querySelector(".p-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
@@ -801,11 +814,11 @@ function partySherifImg() {
   second.style.background = "#2B1534";
   fourth.style.background = "#2F1637";
 }
-function ratSherifImg() {
+function ratSheriffImg() {
   let firstBlock = document.querySelector(".r-score-s img");
   second = document.querySelector(".r-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
-  fourth = document.querySelector(".cross-sherif-kill");
+  fourth = document.querySelector(".cross-sheriff-kill");
   fifth = document.querySelector(".avatar:nth-of-type(3) img");
   fourth = document.querySelector(".background-border-s .btn-flex .btn-rat");
 
@@ -1241,7 +1254,7 @@ function clearScore() {
   bKilllMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-kill"
   );
-  bKilllSherif = document.querySelector(
+  bKilllSheriff = document.querySelector(
     ".background-border-s .btn-flex .btn-kill"
   );
   bKilllDoctor = document.querySelector(
@@ -1260,7 +1273,7 @@ function clearScore() {
   bHeallMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-heal"
   );
-  bHeallSherif = document.querySelector(
+  bHeallSheriff = document.querySelector(
     ".background-border-s .btn-flex .btn-heal"
   );
   bHeallDoctor = document.querySelector(
@@ -1279,7 +1292,7 @@ function clearScore() {
   bInspectMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-inspect"
   );
-  bInspectSherif = document.querySelector(
+  bInspectSheriff = document.querySelector(
     ".background-border-s .btn-flex .btn-inspect"
   );
   bInspectDoctor = document.querySelector(
@@ -1297,7 +1310,7 @@ function clearScore() {
   bPartyMafia = document.querySelector(
     ".background-border-m .btn-flex .btn-party"
   );
-  bPartySherif = document.querySelector(
+  bPartySheriff = document.querySelector(
     ".background-border-s .btn-flex .btn-party"
   );
   bPartyDoctor = document.querySelector(
@@ -1313,11 +1326,11 @@ function clearScore() {
   bPartyCivil.style.background = "black";
   bPartyLady.style.background = "black";
   bPartyDoctor.style.background = "black";
-  bPartySherif.style.background = "black";
+  bPartySheriff.style.background = "black";
   bPartyMafia.style.background = "black";
   bPartyDon.style.background = "black";
 
-  bRatSherif = document.querySelector(
+  bRatSheriff = document.querySelector(
     ".background-border-s .btn-flex .btn-rat"
   );
   bRatDoctor = document.querySelector(
@@ -1329,11 +1342,11 @@ function clearScore() {
   bRatCivil.style.background = "black";
   bRatLady.style.background = "black";
   bRatDoctor.style.background = "black";
-  bRatSherif.style.background = "black";
+  bRatSheriff.style.background = "black";
 
   bInspectLady.style.background = "black";
   bInspectDoctor.style.background = "black";
-  bInspectSherif.style.background = "black";
+  bInspectSheriff.style.background = "black";
   bInspectMafia.style.background = "black";
   bInspectDon.style.background = "black";
   bInspectCivil.style.background = "black";
@@ -1341,13 +1354,13 @@ function clearScore() {
   bHeallCivil.style.background = "black";
   bHeallLady.style.background = "black";
   bHeallDoctor.style.background = "black";
-  bHeallSherif.style.background = "black";
+  bHeallSheriff.style.background = "black";
   bHeallMafia.style.background = "black";
   bHeallDon.style.background = "black";
 
   bKilllDon.style.background = "black";
   bKilllMafia.style.background = "black";
-  bKilllSherif.style.background = "black";
+  bKilllSheriff.style.background = "black";
   bKilllDoctor.style.background = "black";
   bKilllLady.style.background = "black";
   bKilllCivil.style.background = "black";
@@ -1436,7 +1449,7 @@ function clearScore() {
   ///Cross kill /////////////////////////////////////////////////////////////////////////////////////////////
   c1 = document.querySelector(".cross-kill");
   c2 = document.querySelector(".cross-mafia-kill");
-  c3 = document.querySelector(".cross-sherif-kill");
+  c3 = document.querySelector(".cross-sheriff-kill");
   c4 = document.querySelector(".cross-doctor-kill");
   c5 = document.querySelector(".cross-lady-kill");
   c6 = document.querySelector(".cross-civil-kill");
