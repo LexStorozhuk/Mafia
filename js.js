@@ -48,21 +48,23 @@ function hidepick() {
 
   if (blockOfCivil >= 2) {
     let first = document.querySelector(
-      ".navbar-right-migrate .background-border-c"
+      ".navbar-right-migrate .background-border-c2"
     );
     second = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(3)"
+      ".navbar-right-migrate .background-border-m2"
     );
     third = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(4)"
+      ".navbar-right-migrate .background-border-c3"
     );
     fourth = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(5)"
+      ".navbar-right-migrate .background-border-c4"
     );
     five = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(6)"
+      ".navbar-right-migrate .background-border-c5"
     );
-    sixth = document.querySelector(".navbar-right .background-border-c");
+    sixth = document.querySelector(
+      ".navbar-right-migrate .background-border-c6"
+    );
 
     first.style.display = "none";
     second.style.display = "none";
@@ -76,56 +78,36 @@ function hidepick() {
     first.style.display = "block";
   }
   if (blockOfCivil === 3) {
-    let first = document.querySelector(".navbar-right .background-border-c");
-    second = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(3)"
-    );
+    let first = document.querySelector(".navbar-right .background-border-c2");
+    second = document.querySelector(".navbar-right .background-border-c3");
     first.style.display = "block";
     second.style.display = "block";
   }
 
   if (blockOfCivil === 4) {
-    let first = document.querySelector(".navbar-right .background-border-c");
-    second = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(3)"
-    );
-    third = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(4)"
-    );
+    let first = document.querySelector(".navbar-right .background-border-c2");
+    second = document.querySelector(".navbar-right .background-border-c3");
+    third = document.querySelector(".navbar-right .background-border-c4");
     first.style.display = "block";
     second.style.display = "block";
     third.style.display = "block";
   }
   if (blockOfCivil === 5) {
-    let first = document.querySelector(".navbar-right .background-border-c");
-    second = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(3)"
-    );
-    third = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(4)"
-    );
-    fourth = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(5)"
-    );
+    let first = document.querySelector(".navbar-right .background-border-c2");
+    second = document.querySelector(".navbar-right .background-border-c3");
+    third = document.querySelector(".navbar-right .background-border-c4");
+    fourth = document.querySelector(".navbar-right .background-border-c5");
     first.style.display = "block";
     second.style.display = "block";
     third.style.display = "block";
     fourth.style.display = "block";
   }
   if (blockOfCivil === 6) {
-    let first = document.querySelector(".navbar-right .background-border-c");
-    second = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(3)"
-    );
-    third = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(4)"
-    );
-    fourth = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(5)"
-    );
-    fifth = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(6)"
-    );
+    let first = document.querySelector(".navbar-right .background-border-c2");
+    second = document.querySelector(".navbar-right .background-border-c3");
+    third = document.querySelector(".navbar-right .background-border-c4");
+    fourth = document.querySelector(".navbar-right .background-border-c5");
+    fifth = document.querySelector(".navbar-right .background-border-c6");
     first.style.display = "block";
     second.style.display = "block";
     third.style.display = "block";
@@ -227,7 +209,7 @@ function addCivil() {
   }
   if (blockOfCivil === 2) {
     let first = document.querySelector(
-      ".navbar-right-migrate .background-border-c"
+      ".navbar-right-migrate .background-border-c2"
     );
     second = document.querySelector(".avatar-round-table-c2");
 
@@ -236,7 +218,7 @@ function addCivil() {
   }
   if (blockOfCivil === 3) {
     let third = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(3)"
+      ".navbar-right-migrate .background-border-c3"
     );
     fourth = document.querySelector(".avatar-round-table-c3");
 
@@ -245,7 +227,7 @@ function addCivil() {
   }
   if (blockOfCivil === 4) {
     let fourth = document.querySelector(
-      " .navbar-right-migrate .background-border-c:nth-of-type(4)"
+      " .navbar-right-migrate .background-border-c4"
     );
     fifth = document.querySelector(".avatar-round-table-c4");
 
@@ -254,7 +236,7 @@ function addCivil() {
   }
   if (blockOfCivil === 5) {
     let fifth = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(5)"
+      ".navbar-right-migrate .background-border-c5"
     );
     sixth = document.querySelector(".avatar-round-table-c5");
     seventh = document.querySelector(".navbar-right-migrate ");
@@ -265,7 +247,7 @@ function addCivil() {
   }
   if (blockOfCivil === 6) {
     let sixth = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(6)"
+      ".navbar-right-migrate .background-border-c6"
     );
     seventh = document.querySelector(".avatar-round-table-c6");
 
@@ -274,26 +256,26 @@ function addCivil() {
   }
   if (blockOfCivil === 7) {
     let first = document.querySelector(
-      ".navbar-right-migrate .background-border-c"
+      ".navbar-right-migrate .background-border-c2"
     );
-    second = document.querySelector(
-      ".navbar-right-migrate .background-border-c"
-    );
+    // second = document.querySelector(
+    //   ".navbar-right-migrate .background-border-c"
+    // );
     third = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(3)"
+      ".navbar-right-migrate .background-border-c3:"
     );
     fourth = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(4)"
+      ".navbar-right-migrate .background-border-c4"
     );
     fifth = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(5)"
+      ".navbar-right-migrate .background-border-c5"
     );
     sixth = document.querySelector(
-      ".navbar-right-migrate .background-border-c:nth-of-type(6)"
+      ".navbar-right-migrate .background-border-c6"
     );
 
     first.style.display = "none";
-    second.style.display = "none";
+    // second.style.display = "none";
     third.style.display = "none";
     fourth.style.display = "none";
     fifth.style.display = "none";

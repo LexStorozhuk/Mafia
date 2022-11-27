@@ -71,7 +71,7 @@ h1 {
 }
 
 .navbar-right {
-  background: transparent;
+  background: black;
   width: 160px;
   height: 735px;
   /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
@@ -118,7 +118,7 @@ h1 {
 .border-score {
   border: solid white 1px;
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   left: 155px;
   display: flex;
@@ -184,7 +184,7 @@ h1 {
 .cross-mafia-kill {
   background: rgba(0, 0, 0, 0.523);
   width: 73px;
-  height: 100px;
+  height: 113px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -194,7 +194,7 @@ h1 {
 .cross-sheriff-kill {
   background: rgba(0, 0, 0, 0.523);
   width: 73px;
-  height: 100px;
+  height: 113px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -204,7 +204,7 @@ h1 {
 .cross-doctor-kill {
   background: rgba(0, 0, 0, 0.523);
   width: 73px;
-  height: 100px;
+  height: 113px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -214,7 +214,7 @@ h1 {
 .cross-lady-kill {
   background: rgba(0, 0, 0, 0.523);
   width: 73px;
-  height: 100px;
+  height: 113px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -224,7 +224,7 @@ h1 {
 .cross-civil-kill {
   background: rgba(0, 0, 0, 0.523);
   width: 73px;
-  height: 100px;
+  height: 113px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -254,6 +254,7 @@ span {
   width: 175px;
   height: 120px;
   border-radius: 10%;
+  animation: 1s show ease;
 }
 .background-border-m {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
@@ -261,6 +262,16 @@ span {
   position: relative;
   width: 175px;
   height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
+.background-border-m2 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
   border-radius: 10%;
 }
 .background-border-s {
@@ -269,6 +280,7 @@ span {
   position: relative;
   width: 175px;
   height: 120px;
+  animation: 1s show ease;
   border-radius: 10%;
 }
 .background-border-doc {
@@ -277,6 +289,7 @@ span {
   position: relative;
   width: 175px;
   height: 120px;
+  animation: 1s show ease;
   border-radius: 10%;
 }
 .background-border-l {
@@ -285,6 +298,7 @@ span {
   position: relative;
   width: 175px;
   height: 120px;
+  animation: 1s show ease;
   border-radius: 10%;
 }
 .background-border-c {
@@ -293,6 +307,52 @@ span {
   position: relative;
   width: 175px;
   height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
+.background-border-c2 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
+.background-border-c3 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
+.background-border-c4 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
+.background-border-c5 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
+.background-border-c6 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
   border-radius: 10%;
 }
 /* Border score /////////////////////////////////////////////////////////////////////////////////// */
@@ -300,7 +360,7 @@ span {
   /* border: solid white 1px; */
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   right: 2px;
   top: 7px;
@@ -320,7 +380,7 @@ span {
 .border-score-m {
   /* border: solid white 1px; */
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   right: 2px;
   top: 7px;
@@ -331,7 +391,7 @@ span {
 .border-score-s {
   /* border: solid white 1px; */
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   top: 5px;
   right: 2px;
@@ -342,7 +402,7 @@ span {
 .border-score-doc {
   /* border: solid white 1px; */
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   top: 5px;
   right: 3px;
@@ -353,7 +413,7 @@ span {
 .border-score-l {
   /* border: solid white 1px; */
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   top: 5px;
   right: 3px;
@@ -364,7 +424,7 @@ span {
 .border-score-c {
   /* border: solid white 1px; */
   width: 20px;
-  height: 105px;
+  height: 113px;
   position: absolute;
   top: 5px;
   right: 3px;
@@ -769,12 +829,12 @@ span {
 }
 .table-posit-1 {
   position: absolute;
-  transform: translate(705px, 100px);
+  transform: translate(705px, 113px);
   display: none;
 }
 .blockof-avatars {
   width: 400px;
-  height: 100px;
+  height: 113px;
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -784,7 +844,7 @@ span {
 }
 .blockof-avatars1 {
   width: 400px;
-  height: 100px;
+  height: 113px;
   display: flex;
   position: absolute;
   bottom: 5px;
@@ -866,8 +926,8 @@ span {
 }
 .avatar-midle-lady {
   border: solid white 1px;
-  width: 100px;
-  height: 100px;
+  width: 113px;
+  height: 113px;
   position: relative;
   top: 5px;
   border-radius: 20%;
@@ -876,8 +936,8 @@ span {
 }
 .avatar-midle-mafia {
   border: solid white 1px;
-  width: 100px;
-  height: 100px;
+  width: 113px;
+  height: 113px;
   position: relative;
   bottom: 8px;
   border-radius: 20%;
@@ -899,27 +959,35 @@ span {
 }
 .avatar-midle img {
   border: solid white 1px;
-  width: 100px;
-  height: 100px;
+  width: 113px;
+  height: 113px;
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
 .avatar-midle-lady img {
   border: solid white 1px;
-  width: 100px;
-  height: 100px;
+  width: 113px;
+  height: 113px;
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
 .avatar-midle-mafia img {
   border: solid white 1px;
-  width: 100px;
-  height: 100px;
+  width: 113px;
+  height: 113px;
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
   visibility: visible;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* media////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 700px) {
@@ -1072,7 +1140,7 @@ span {
 
 .btn-flex {
   width: 60px;
-  height: 100px;
+  height: 113px;
   position: absolute;
   top: 5px;
   right: 25px;
@@ -1082,6 +1150,7 @@ span {
   box-sizing: border-box;
   z-index: 2;
 }
+
 .new-round-buttom {
   color: aliceblue;
   background: transparent;
@@ -1089,8 +1158,8 @@ span {
   position: absolute;
   left: calc(50% - 50px);
   top: 50px;
-  width: 100px;
-  height: 100px;
+  width: 113px;
+  height: 113px;
   display: block;
   cursor: pointer;
   z-index: 3;
@@ -1147,7 +1216,7 @@ span {
 .pop {
   background-color: rgb(0, 0, 0);
   width: 180px;
-  height: 620px;
+  height: 700px;
   border-radius: 1%;
   position: absolute;
   top: 0px;
@@ -1166,54 +1235,56 @@ span {
 .text-position-l,
 .text-position-c {
   width: 180px;
-  height: 100px;
+  height: 113px;
   display: block;
   /* border: solid 1px white; */
 }
 samp {
   position: absolute;
-  right: 2px;
+  right: 5px;
   top: 5px;
   z-index: 2;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 .avatars-of-don {
   width: 160px;
-  height: 100px;
+  height: 113px;
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
 }
 .avatars-of-mafia {
   width: 160px;
-  height: 100px;
+  height: 113px;
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
 }
 .avatars-of-sheriff {
   width: 160px;
-  height: 100px;
+  height: 113px;
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
 }
 .avatars-of-doctor {
   width: 160px;
-  height: 100px;
+  height: 113px;
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
 }
 .avatars-of-lady {
   width: 160px;
-  height: 100px;
+  height: 113px;
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
 }
 .avatars-of-civil {
   width: 160px;
-  height: 100px;
+  height: 113px;
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
@@ -1224,9 +1295,9 @@ samp {
 .avatars-of-doctor img,
 .avatars-of-lady img,
 .avatars-of-civil img {
-  border-radius: 40%;
-  width: 82px;
-  height: 98px;
+  border-radius: 30%;
+  width: 100px;
+  height: 110px;
 }
 /* .pops {
   background: black;
