@@ -40,9 +40,11 @@ let cKD = 0,
 function hidepick() {
   let first = document.querySelector(".pop");
   second = document.querySelector(".close-pick-btn");
+  third = document.querySelector(".navbar-right-migrate");
 
   first.style.visibility = "hidden";
   second.style.visibility = "hidden";
+  third.style.visibility = "hidden";
 
   if (blockOfCivil >= 2) {
     let first = document.querySelector(
@@ -158,18 +160,24 @@ function hidepick() {
       ".navbar-right-migrate .background-border-m"
     );
     second = document.querySelector(".navbar-right .background-border-m");
+    third = document.querySelector(
+      ".navbar-right-migrate .background-border-m"
+    );
 
     first.style.display = "none";
     second.style.display = "block";
+    third.style.transition = " 3s";
   }
   // if(blockOfMaf )
 }
 function pick() {
   let first = document.querySelector(".pop");
   second = document.querySelector(".close-pick-btn");
+  third = document.querySelector(".navbar-right-migrate");
 
   first.style.visibility = "visible";
   second.style.visibility = "visible";
+  third.style.visibility = "visible";
 }
 function addDon() {
   let first = document.querySelector(".background-border-d");
@@ -186,10 +194,12 @@ function addMafia() {
     let first = document.querySelector(
       ".navbar-right-migrate .background-border-m"
     );
-    second = document.querySelector(".blockof-avatars-vertical");
+    second = document.querySelector(".avatar-round-table-m");
+    third = document.querySelector(".navbar-right-migrate");
 
     first.style.display = "block";
     second.style.display = "block";
+    third.style.visibility = "visible";
   }
 
   if (blockOfMaf === 3) {
@@ -197,7 +207,9 @@ function addMafia() {
     second = document.querySelector(
       ".navbar-right-migrate .background-border-m"
     );
-    third = document.querySelector(".blockof-avatars-vertical");
+    third = document.querySelector(
+      ".navbar-right-migrate .background-border-m"
+    );
 
     first.style.display = "none";
     second.style.display = "none";
@@ -245,9 +257,11 @@ function addCivil() {
       ".navbar-right-migrate .background-border-c:nth-of-type(5)"
     );
     sixth = document.querySelector(".avatar-round-table-c5");
+    seventh = document.querySelector(".navbar-right-migrate ");
 
     fifth.style.display = "block";
     sixth.style.display = "block";
+    seventh.style.height = "730px";
   }
   if (blockOfCivil === 6) {
     let sixth = document.querySelector(
