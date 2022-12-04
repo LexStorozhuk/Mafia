@@ -10,8 +10,7 @@ h1 {
   padding-top: 8px;
   /* text-align: center; */
   position: absolute;
-  top: 10px;
-  left: 500px;
+  left: calc(50% - 6%);
 }
 /* .fnt {
   /* border: solid rgb(251, 251, 251) 1px; */
@@ -38,7 +37,7 @@ h1 {
 }
 
 .navbarleft {
-  background: transparent;
+  background: black;
   width: 160px;
   height: 735px;
   /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
@@ -49,12 +48,12 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   /* overflow: hidden; */
-  /* z-index: 1; */
+  z-index: 2;
 }
 
 .navbar-right-migrate {
   border-radius: 4%;
-  background: rgb(0, 0, 0);
+  background: transparent;
   width: 140px;
   height: 0px;
   /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
@@ -63,11 +62,12 @@ h1 {
   right: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* overflow: hidden; */
-  z-index: 1;
+  z-index: 3;
   visibility: hidden;
   padding-left: 3px;
+  padding-top: 0px;
 }
 
 .navbar-right {
@@ -77,12 +77,12 @@ h1 {
   /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   /* overflow: hiddenc; */
-  /* z-index: 1; */
+  z-index: 2;
 }
 
 .navbarleft img {
@@ -92,10 +92,10 @@ h1 {
   margin: 4px 5px;
 }
 .navbar-right-migrate img {
-  width: 59%;
-  height: 94%;
-  border-radius: 4%;
-  margin: 4px 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 7%;
+  /* margin: 4px 5px; */
 }
 .navbar-right img {
   width: 59%;
@@ -116,6 +116,7 @@ h1 {
   justify-content: space-around;
 } */
 .border-score {
+  background: black;
   border: solid white 1px;
   width: 20px;
   height: 113px;
@@ -137,7 +138,20 @@ h1 {
   height: 120px;
   border-radius: 10%;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 3;
+  /* background: rgba(177, 177, 177, 0.403); */
+}
+.border2 {
+  /* border: solid white 1px; */
+  border: solid 1px rgba(255, 255, 255, 0.956);
+  box-shadow: black inset 0px 0px 700px;
+  position: absolute;
+
+  width: 100px;
+  height: 120px;
+  border-radius: 10%;
+  box-sizing: border-box;
+  z-index: 3;
   /* background: rgba(177, 177, 177, 0.403); */
 }
 .border-m {
@@ -231,11 +245,15 @@ h1 {
   /* left: 2px; */
   z-index: 1;
 }
+
 span {
   position: absolute;
-  left: 10px;
-  bottom: 1px;
+  left: 6px;
+  bottom: 3px;
   background-color: rgba(3, 3, 3, 0.756);
+  color: #cacacaa6;
+  font-size: 13px;
+  border-radius: 10%;
 }
 .size-img {
   width: 84%;
@@ -274,6 +292,15 @@ span {
   animation: 1s show ease;
   border-radius: 10%;
 }
+.background-border-m3 {
+  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  display: none;
+  position: relative;
+  width: 175px;
+  height: 120px;
+  animation: 1s show ease;
+  border-radius: 10%;
+}
 .background-border-s {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
   display: none;
@@ -303,7 +330,7 @@ span {
 }
 .background-border-c {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: block;
+  display: none;
   position: relative;
   width: 175px;
   height: 120px;
@@ -312,7 +339,7 @@ span {
 }
 .background-border-c2 {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: block;
+  display: none;
   position: relative;
   width: 175px;
   height: 120px;
@@ -321,7 +348,7 @@ span {
 }
 .background-border-c3 {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: block;
+  display: none;
   position: relative;
   width: 175px;
   height: 120px;
@@ -330,7 +357,7 @@ span {
 }
 .background-border-c4 {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: block;
+  display: none;
   position: relative;
   width: 175px;
   height: 120px;
@@ -339,7 +366,7 @@ span {
 }
 .background-border-c5 {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: block;
+  display: none;
   position: relative;
   width: 175px;
   height: 120px;
@@ -348,7 +375,7 @@ span {
 }
 .background-border-c6 {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: block;
+  display: none;
   position: relative;
   width: 175px;
   height: 120px;
@@ -359,6 +386,7 @@ span {
 .border-score-d {
   /* border: solid white 1px; */
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
+  background: black;
   width: 20px;
   height: 113px;
   position: absolute;
@@ -379,6 +407,7 @@ span {
 }
 .border-score-m {
   /* border: solid white 1px; */
+  background: black;
   width: 20px;
   height: 113px;
   position: absolute;
@@ -390,6 +419,7 @@ span {
 }
 .border-score-s {
   /* border: solid white 1px; */
+  background: black;
   width: 20px;
   height: 113px;
   position: absolute;
@@ -401,6 +431,7 @@ span {
 }
 .border-score-doc {
   /* border: solid white 1px; */
+  background: black;
   width: 20px;
   height: 113px;
   position: absolute;
@@ -412,6 +443,7 @@ span {
 }
 .border-score-l {
   /* border: solid white 1px; */
+  background: black;
   width: 20px;
   height: 113px;
   position: absolute;
@@ -423,6 +455,7 @@ span {
 }
 .border-score-c {
   /* border: solid white 1px; */
+  background: black;
   width: 20px;
   height: 113px;
   position: absolute;
@@ -979,7 +1012,6 @@ span {
   height: 113px;
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
-  visibility: visible;
 }
 @keyframes show {
   from {
@@ -1050,6 +1082,24 @@ span {
     left: 170px;
     top: 140px;
     transform: rotate(90deg);
+  }
+  .navbar-right-migrate {
+    border-radius: 4%;
+    background: rgb(0, 0, 0);
+    width: 140px;
+    height: 0px;
+    /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
+    position: absolute;
+    top: 5px;
+    right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+    z-index: 1;
+    visibility: hidden;
+    padding-left: 3px;
+    padding-top: 0px;
   }
 }
 /* .avatar1 {
@@ -1148,7 +1198,7 @@ span {
   flex-direction: column;
   justify-content: space-around;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 4;
 }
 
 .new-round-buttom {
@@ -1171,7 +1221,7 @@ span {
   border-radius: 20%;
   position: absolute;
   top: 20px;
-  right: 190px;
+  right: 187px;
   width: 50px;
   height: 50px;
   display: block;
@@ -1186,12 +1236,12 @@ span {
   border-radius: 20%;
   position: absolute;
   top: 20px;
-  right: 190px;
+  right: 187px;
   width: 50px;
   height: 50px;
   display: block;
   cursor: pointer;
-  z-index: 3;
+  z-index: 6;
   visibility: hidden;
 }
 .p-btn {
