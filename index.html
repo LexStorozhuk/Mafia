@@ -41,9 +41,9 @@
       </div>
       
       <div class="table">
-        <div class="new-img">
+        <!-- <div class="new-img">
           <img src="reload.png" alt="">
-        </div>
+        </div> -->
           <button class="new-round-buttom" onclick="deliteBlocks(); clearScore(); blocksSizing();">New Round
           </button>
       </div>
@@ -339,10 +339,10 @@
   <div class="navbar-right">    
     <div class="background-border-m2">
       <div class="btn-flex">
-        <button class="btn-kill" onclick="countKillM();borderM1();killMafiaImg();killMafia();killSheriff();">Kill</button>
-        <button class="btn-heal" onclick="countHealM();borderM0();healMafiaImg();healMafia()">Heal</button>
-        <button class="btn-inspect" onclick="countInspectM();inspectMafiaImg();inspectMafia() ">Inspect</button>
-        <button class="btn-party" onclick=" countPartyM();partyMafiaImg();partyMafia()"> Party</button>
+        <button class="btn-kill" onclick="border2M();countKillM2();killMafiaImg2();">Kill</button>
+        <button class="btn-heal" onclick="healMafiaImg2();">Heal</button>
+        <button class="btn-inspect" onclick="inspectMafiaImg2(); ">Inspect</button>
+        <button class="btn-party" onclick=" partyMafiaImg2();"> Party</button>
       </div>
       <div class="border-score-m">
         <div class="k-score-m">
@@ -369,11 +369,11 @@
   </div>
   <div class="background-border-c2">
     <div class="btn-flex">
-      <button class="btn-kill" onclick="countKillC3();killCivilImg3();">Kill</button>
-      <button class="btn-heal" onclick=" healCivilImg3();">Heal</button>
-      <button class="btn-inspect" onclick=";inspectCivilImg3()">Inspect</button>
-      <button class="btn-party" onclick="partyCivilImg3()"> Party</button>
-      <button class="btn-rat" onclick="ratCivilImg3()">Rat</button>
+      <button class="btn-kill" onclick="border2C();countKillC2();killCivilImg2();">Kill</button>
+      <button class="btn-heal" onclick=" healCivilImg2();">Heal</button>
+      <button class="btn-inspect" onclick="inspectCivilImg2()">Inspect</button>
+      <button class="btn-party" onclick="partyCivilImg2()"> Party</button>
+      <button class="btn-rat" onclick="ratCivilImg2()">Rat</button>
     </div>
     <div class="border-score-c">
     
@@ -404,7 +404,7 @@
   </div>
   <div class="background-border-c3">
     <div class="btn-flex">
-      <button class="btn-kill" onclick="countKillC3();killCivilImg3();">Kill</button>
+      <button class="btn-kill" onclick="border3C();countKillC3();killCivilImg3();">Kill</button>
       <button class="btn-heal" onclick=" healCivilImg3();">Heal</button>
       <button class="btn-inspect" onclick=";inspectCivilImg3()">Inspect</button>
       <button class="btn-party" onclick="partyCivilImg3()"> Party</button>
@@ -439,7 +439,7 @@
   </div>
   <div class="background-border-c4">
     <div class="btn-flex">
-      <button class="btn-kill" onclick="countKillC4();killCivilImg4();;">Kill</button>
+      <button class="btn-kill" onclick="border4C();countKillC4();killCivilImg4();;">Kill</button>
       <button class="btn-heal" onclick=" healCivilImg4();">Heal</button>
       <button class="btn-inspect" onclick="inspectCivilImg4()">Inspect</button>
       <button class="btn-party" onclick="partyCivilImg4()"> Party</button>
@@ -474,7 +474,7 @@
   </div>
   <div class="background-border-c5">
     <div class="btn-flex">
-      <button class="btn-kill" onclick="countKillC5(); killCivilImg5();;">Kill</button>
+      <button class="btn-kill" onclick="border5C();countKillC5(); killCivilImg5();;">Kill</button>
       <button class="btn-heal" onclick=" ;healCivilImg5();">Heal</button>
       <button class="btn-inspect" onclick="inspectCivilImg5();">Inspect</button>
       <button class="btn-party" onclick="partyCivilImg5()"> Party</button>
@@ -509,11 +509,11 @@
   </div>
   <div class="background-border-c6">
     <div class="btn-flex">
-      <button class="btn-kill" onclick="countKillC6(); killCivilImg6(); KillCivil()">Kill</button>
-      <button class="btn-heal" onclick=" countHealC6() ;healCivilImg6();">Heal</button>
-      <button class="btn-inspect" onclick="countInspectC6(); inspectCivilImg6();">Inspect</button>
-      <button class="btn-party" onclick="countPartyC6(); partyCivilImg6()"> Party</button>
-      <button class="btn-rat" onclick="countRatC6(); ratCivilImg6() ">Rat</button>
+      <button class="btn-kill" onclick="border6C();countKillC6(); killCivilImg6(); KillCivil()">Kill</button>
+      <button class="btn-heal" onclick=" healCivilImg6();">Heal</button>
+      <button class="btn-inspect" onclick="inspectCivilImg6();">Inspect</button>
+      <button class="btn-party" onclick=" partyCivilImg6()"> Party</button>
+      <button class="btn-rat" onclick="ratCivilImg6() ">Rat</button>
     </div>
     <div class="border-score-c">
     
@@ -545,14 +545,6 @@
   </div>
   </ul>
     <div class="pop">
-      <div class="text-position">
-          <div class="avatars-of-don">
-            <button class="p-btn" onclick="addDon()">
-              <img src="img/don.jpg" alt="don">
-            </button>
-            <samp>Add Don</samp>
-          </div>
-        </div>
         <div class="text-position-m">
           <div class="avatars-of-mafia">
             <button class="p-btn" onclick="addMafia()">
@@ -562,33 +554,7 @@
             <samp>Add Mafia</samp>
           </div>
         </div>
-        <div class="text-position-s">
-          <div class="avatars-of-sheriff">
-            <button class="p-btn" onclick="addSheriff()">
-
-              <img src="img/sheriff.jpg" alt="Sheriff">
-            </button>
-            <samp>Add Sheriff</samp>
-          </div>
-        </div>
-        <div class="text-position-d">
-          <div class="avatars-of-doctor">
-            <button class="p-btn" onclick="addDoctor()">
-
-              <img src="doctor.jpg" alt="doctor">
-            </button>
-            <samp>Add Doctor</samp>
-          </div>
-          </div>
-        <div class="text-position-l">
-          <div class="avatars-of-lady">
-            <button class="p-btn" onclick="addLady()">
-
-              <img src="lady.jpg" alt="lady">
-            </button>
-            <samp>Add Lady</samp>
-          </div>
-          </div>
+      
         <div class="text-position-c">
           <div class="avatars-of-civil"> 
             <button class="p-btn" onclick="addCivil()">

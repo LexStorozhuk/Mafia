@@ -3,10 +3,16 @@ let blockOfMaf = 0,
 
 let border = 0,
   borderM = 0,
+  borderM2 = 0,
   borderS = 0,
   borderD = 0,
   borderL = 0,
-  borderC = 0;
+  borderC = 0,
+  borderC2 = 0,
+  borderC3 = 0,
+  borderC4 = 0,
+  borderC5 = 0,
+  borderC6 = 0;
 
 let cKD = 0,
   cKM = 0,
@@ -81,11 +87,11 @@ function hidepick() {
   second = document.querySelector(".close-pick-btn");
   third = document.querySelector(".navbar-right-migrate");
 
-  first.style.visibility = "hidden";
-  second.style.visibility = "hidden";
+  first.style.display = "none";
+  second.style.display = "none";
   third.style.visibility = "hidden";
 
-  if (blockOfCivil >= 2) {
+  if (blockOfCivil >= 1) {
     let first = document.querySelector(
       ".navbar-right-migrate .background-border-c2"
     );
@@ -113,22 +119,18 @@ function hidepick() {
     sixth.style.display = "none";
   }
   if (blockOfCivil === 1) {
-    let first = document.querySelector(".background-border-c2");
-    first.style.display = "block";
-  }
-  if (blockOfCivil === 2) {
     let first = document.querySelector(".navbar-right .background-border-c2");
     first.style.display = "block";
   }
 
-  if (blockOfCivil === 3) {
+  if (blockOfCivil === 2) {
     let first = document.querySelector(".navbar-right .background-border-c2");
     second = document.querySelector(".navbar-right .background-border-c3");
     first.style.display = "block";
     second.style.display = "block";
   }
 
-  if (blockOfCivil === 4) {
+  if (blockOfCivil === 3) {
     let first = document.querySelector(".navbar-right .background-border-c2");
     second = document.querySelector(".navbar-right .background-border-c3");
     third = document.querySelector(".navbar-right .background-border-c4");
@@ -136,7 +138,7 @@ function hidepick() {
     second.style.display = "block";
     third.style.display = "block";
   }
-  if (blockOfCivil === 5) {
+  if (blockOfCivil === 4) {
     let first = document.querySelector(".navbar-right .background-border-c2");
     second = document.querySelector(".navbar-right .background-border-c3");
     third = document.querySelector(".navbar-right .background-border-c4");
@@ -146,7 +148,7 @@ function hidepick() {
     third.style.display = "block";
     fourth.style.display = "block";
   }
-  if (blockOfCivil === 6) {
+  if (blockOfCivil === 5) {
     let first = document.querySelector(".navbar-right .background-border-c2");
     second = document.querySelector(".navbar-right .background-border-c3");
     third = document.querySelector(".navbar-right .background-border-c4");
@@ -158,20 +160,12 @@ function hidepick() {
     fourth.style.display = "block";
     fifth.style.display = "block";
   }
-  if (blockOfCivil === 7) {
-    let first = document.querySelector(".navbar-right .background-border-c");
-    third = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(3)"
-    );
-    fourth = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(4)"
-    );
-    fifth = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(5)"
-    );
-    sixth = document.querySelector(
-      ".navbar-right .background-border-c:nth-of-type(6)"
-    );
+  if (blockOfCivil === 6) {
+    let first = document.querySelector(".navbar-right .background-border-c2");
+    third = document.querySelector(".navbar-right .background-border-c3");
+    fourth = document.querySelector(".navbar-right .background-border-c4");
+    fifth = document.querySelector(".navbar-right .background-border-c5");
+    sixth = document.querySelector(".navbar-right .background-border-c6");
 
     first.style.display = "none";
     third.style.display = "none";
@@ -181,7 +175,7 @@ function hidepick() {
 
     blockOfCivil = 0;
   }
-  if (blockOfMaf >= 2) {
+  if (blockOfMaf >= 1) {
     let first = document.querySelector(
       ".navbar-right-migrate .background-border-m3"
     );
@@ -190,16 +184,23 @@ function hidepick() {
     first.style.display = "none";
     second.style.display = "block";
   }
+  if (blockOfMaf >= 2) {
+    blockOfMaf = 0;
+  }
   // if(blockOfMaf )
 }
 function pick() {
   let first = document.querySelector(".pop");
   second = document.querySelector(".close-pick-btn");
-  third = document.querySelector(".navbar-right-migrate");
+  third = document.querySelector(".avatars-of-mafia");
+  fourth = document.querySelector(".avatars-of-civil");
+  fifth = document.querySelector(".navbar-right-migrate");
 
-  first.style.visibility = "visible";
-  second.style.visibility = "visible";
-  third.style.visibility = "visible";
+  first.style.display = "block";
+  second.style.display = "block";
+  third.style.display = "block";
+  fourth.style.display = "block";
+  fifth.style.visibility = "visible";
 }
 function addDon() {
   let first = document.querySelector(".background-border-d");
@@ -207,12 +208,8 @@ function addDon() {
 }
 function addMafia() {
   blockOfMaf++;
-  if (blockOfMaf === 1) {
-    let first = document.querySelector(".background-border-m");
 
-    first.style.display = "block";
-  }
-  if (blockOfMaf === 2) {
+  if (blockOfMaf === 1) {
     let first = document.querySelector(
       ".navbar-right-migrate .background-border-m3"
     );
@@ -222,7 +219,7 @@ function addMafia() {
     second.style.display = "block";
   }
 
-  if (blockOfMaf === 3) {
+  if (blockOfMaf === 2) {
     let first = document.querySelector(".background-border-m3");
     second = document.querySelector(".avatar-round-table-m");
 
@@ -234,12 +231,8 @@ function addMafia() {
 }
 function addCivil() {
   blockOfCivil++;
-  if (blockOfCivil === 1) {
-    let first = document.querySelector(".background-border-c");
 
-    first.style.display = "block";
-  }
-  if (blockOfCivil === 2) {
+  if (blockOfCivil === 1) {
     let first = document.querySelector(
       ".navbar-right-migrate .background-border-c2"
     );
@@ -250,7 +243,7 @@ function addCivil() {
     second.style.display = "block";
     seventh.style.height = "300px";
   }
-  if (blockOfCivil === 3) {
+  if (blockOfCivil === 2) {
     let third = document.querySelector(
       ".navbar-right-migrate .background-border-c3"
     );
@@ -261,7 +254,7 @@ function addCivil() {
     fourth.style.display = "block";
     seventh.style.height = "400px";
   }
-  if (blockOfCivil === 4) {
+  if (blockOfCivil === 3) {
     let fourth = document.querySelector(
       " .navbar-right-migrate .background-border-c4"
     );
@@ -271,7 +264,7 @@ function addCivil() {
     fifth.style.display = "block";
     seventh.style.height = "520px";
   }
-  if (blockOfCivil === 5) {
+  if (blockOfCivil === 4) {
     let fifth = document.querySelector(
       ".navbar-right-migrate .background-border-c5"
     );
@@ -282,7 +275,7 @@ function addCivil() {
     sixth.style.display = "block";
     seventh.style.height = "620px";
   }
-  if (blockOfCivil === 6) {
+  if (blockOfCivil === 5) {
     let sixth = document.querySelector(
       ".navbar-right-migrate .background-border-c6"
     );
@@ -292,7 +285,7 @@ function addCivil() {
     seventh.style.display = "block";
     eight.style.height = "730px";
   }
-  if (blockOfCivil === 7) {
+  if (blockOfCivil === 6) {
     let first = document.querySelector(
       ".navbar-right-migrate .background-border-c2"
     );
@@ -321,7 +314,6 @@ function addCivil() {
     sixth.style.display = "none";
     seventh.style.height = "150px";
     blockOfCivil = 0;
-    hidepick();
   }
 }
 // function addMafia2() {
@@ -332,18 +324,18 @@ function addCivil() {
 //   let first = document.querySelector(".background-border-m:nth-of-type(3)");
 //   first.style.display = "block";
 // }
-function addSheriff() {
-  let first = document.querySelector(".background-border-s");
-  first.style.display = "block";
-}
-function addDoctor() {
-  let first = document.querySelector(".background-border-doc");
-  first.style.display = "block";
-}
-function addLady() {
-  let first = document.querySelector(".background-border-l");
-  first.style.display = "block";
-}
+// function addSheriff() {
+//   let first = document.querySelector(".background-border-s");
+//   first.style.display = "block";
+// }
+// function addDoctor() {
+//   let first = document.querySelector(".background-border-doc");
+//   first.style.display = "block";
+// }
+// function addLady() {
+//   let first = document.querySelector(".background-border-l");
+//   first.style.display = "block";
+// }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function countKillD() {
@@ -448,7 +440,7 @@ function countInspectM2() {
 function countPartyM2() {
   cPM2++;
 }
-////////////////////////Count kills for civil2 > civil6////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////Count for civil2 > civil6////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function countKillC2() {
   cKC2++;
 }
@@ -1562,7 +1554,7 @@ function killMafiaImg2() {
   fourth = document.querySelector(
     ".navbar-right .background-border-m2 .cross-mafia-kill"
   );
-  fifth = document.querySelector(".avatar-round-table-m .avatar-midle-mafia");
+  fifth = document.querySelector(".avatar-round-table-m");
   sixth = document.querySelector(
     ".navbar-right .background-border-m2 .btn-flex .btn-kill"
   );
@@ -1571,11 +1563,38 @@ function killMafiaImg2() {
   second.style.background = "#AF2222";
   third.style.background = "#AF2222";
   fourth.style.display = "block";
-  fifth.style.visibility = "hidden";
+  fifth.style.display = "none";
   sixth.style.background = "#AF2222";
+  if (cKM2 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-m2 .border-score-m .k-score-m img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-m2 .border-score-m .k-score-m"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-m2 .border"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-m2 .cross-mafia-kill"
+    );
+    fifth = document.querySelector(".avatar-round-table-m");
+    sixth = document.querySelector(
+      ".navbar-right .background-border-m2 .btn-flex .btn-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.display = "none";
+    fifth.style.display = "block";
+    sixth.style.background = "black";
+  }
 }
 
 function healMafiaImg2() {
+  cHM2++;
+
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-m2 .border-score-m .h-score-m img"
   );
@@ -1584,17 +1603,52 @@ function healMafiaImg2() {
   );
   third = document.querySelector(".navbar-right .background-border-m2 .border");
   fourth = document.querySelector(".cross-mafia-kill");
-  fifth = document.querySelector(".avatar-round-table-m .avatar-midle-mafia ");
+  fifth = document.querySelector(".avatar-round-table-m ");
   sixth = document.querySelector(
     ".navbar-right .background-border-m2 .btn-flex .btn-heal"
+  );
+  seventh = document.querySelector(
+    ".navbar-right .background-border-m2 .cross-mafia-kill"
   );
 
   firstBlock.style.visibility = "visible";
   second.style.background = "#286214";
   third.style.background = "#286214";
   fourth.style.display = "none";
-  fifth.style.visibility = "visible";
+  fifth.style.display = "block";
   sixth.style.background = "#286214";
+  seventh.style.display = "none";
+  if (cKM2 >= 1) {
+    let fifth = document.querySelector(".avatar-round-table-m");
+
+    fifth.style.display = "block";
+  }
+  if (cHM2 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-m2 .border-score-m .h-score-m img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-m2 .border-score-m .h-score-m"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-m2 .border"
+    );
+    sixth = document.querySelector(
+      ".navbar-right .background-border-m2 .btn-flex .btn-heal"
+    );
+    seventh = document.querySelector(
+      ".navbar-right .background-border-m2 .cross-mafia-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+
+    sixth.style.background = "black";
+    seventh.style.display = "none";
+    cHM2 = 0;
+  }
+  borderM2 = 0;
 }
 
 function inspectMafiaImg2() {
@@ -1674,8 +1728,35 @@ function killCivilImg2() {
   fourth.style.background = "#AF2222";
   fifth.style.display = "block";
   sixth.style.display = "none";
+  if (cKC2 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c2 .k-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c2 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c2 .btn-flex .btn-kill"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c2 .border-score-c .k-score-c"
+    );
+    fifth = document.querySelector(
+      ".navbar-right .background-border-c2 .cross-civil-kill"
+    );
+    sixth = document.querySelector(".avatar-round-table-c2");
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    fifth.style.display = "none";
+    sixth.style.display = "block";
+    cKC2 = 0;
+  }
 }
 function healCivilImg2() {
+  cHC2++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c2 .h-score-c img"
   );
@@ -1703,6 +1784,31 @@ function healCivilImg2() {
 
     fifth.style.display = "block";
   }
+  if (cHC2 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c2 .h-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c2 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c2 .btn-flex .btn-heal"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c2 .border-score-c .h-score-c"
+    );
+    sixth = document.querySelector(
+      ".navbar-right .background-border-c2 .cross-civil-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    sixth.style.display = "none";
+    cHC2 = 0;
+  }
+  borderC2 = 0;
 }
 function inspectCivilImg2() {
   let firstBlock = document.querySelector(
@@ -1788,8 +1894,35 @@ function killCivilImg3() {
   fourth.style.background = "#AF2222";
   fifth.style.display = "block";
   sixth.style.display = "none";
+  if (cKC3 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c3 .k-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c3 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c3 .btn-flex .btn-kill"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c3 .border-score-c .k-score-c"
+    );
+    fifth = document.querySelector(
+      ".navbar-right .background-border-c3 .cross-civil-kill"
+    );
+    sixth = document.querySelector(".avatar-round-table-c2");
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    fifth.style.display = "none";
+    sixth.style.display = "block";
+    cKC3 = 0;
+  }
 }
 function healCivilImg3() {
+  cHC3++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c3 .h-score-c img"
   );
@@ -1817,6 +1950,31 @@ function healCivilImg3() {
 
     fifth.style.display = "block";
   }
+  if (cHC3 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c3 .h-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c3 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c3 .btn-flex .btn-heal"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c3 .border-score-c .h-score-c"
+    );
+    sixth = document.querySelector(
+      ".navbar-right .background-border-c3 .cross-civil-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    sixth.style.display = "none";
+    cHC3 = 0;
+  }
+  borderC3 = 0;
 }
 function inspectCivilImg3() {
   let firstBlock = document.querySelector(
@@ -1901,8 +2059,35 @@ function killCivilImg4() {
   fourth.style.background = "#AF2222";
   fifth.style.display = "block";
   sixth.style.display = "none";
+  if (cKC4 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c4 .k-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c4 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c4 .btn-flex .btn-kill"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c4 .border-score-c .k-score-c"
+    );
+    fifth = document.querySelector(
+      ".navbar-right .background-border-c2 .cross-civil-kill"
+    );
+    sixth = document.querySelector(".avatar-round-table-c4");
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    fifth.style.display = "none";
+    sixth.style.display = "block";
+    cKC4 = 0;
+  }
 }
 function healCivilImg4() {
+  cHC4++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c4 .h-score-c img"
   );
@@ -1930,6 +2115,31 @@ function healCivilImg4() {
 
     fifth.style.display = "block";
   }
+  if (cHC4 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c4 .h-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c4 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c4 .btn-flex .btn-heal"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c4 .border-score-c .h-score-c"
+    );
+    sixth = document.querySelector(
+      ".navbar-right .background-border-c4 .cross-civil-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    sixth.style.display = "none";
+    cHC4 = 0;
+  }
+  borderC4 = 0;
 }
 function inspectCivilImg4() {
   let firstBlock = document.querySelector(
@@ -1944,14 +2154,11 @@ function inspectCivilImg4() {
   fourth = document.querySelector(
     ".navbar-right .background-border-c4 .border-score-c .i-score-c"
   );
-  fifth = document.querySelector(
-    ".navbar-right .background-border-c5 .cross-civil-kill"
-  );
+
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
   third.style.background = "#00103D";
   fourth.style.background = "#00103D";
-  fifth.style.display = "block";
 }
 function partyCivilImg4() {
   let firstBlock = document.querySelector(
@@ -2018,8 +2225,35 @@ function killCivilImg5() {
   fourth.style.background = "#AF2222";
   fifth.style.display = "block";
   sixth.style.display = "none";
+  if (cKC5 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c5 .k-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c5 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c5 .btn-flex .btn-kill"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c5 .border-score-c .k-score-c"
+    );
+    fifth = document.querySelector(
+      ".navbar-right .background-border-c5 .cross-civil-kill"
+    );
+    sixth = document.querySelector(".avatar-round-table-c5");
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    fifth.style.display = "none";
+    sixth.style.display = "block";
+    cKC5 = 0;
+  }
 }
 function healCivilImg5() {
+  cHC5++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c5 .h-score-c img"
   );
@@ -2047,6 +2281,31 @@ function healCivilImg5() {
 
     fifth.style.display = "block";
   }
+  if (cHC5 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c5 .h-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c5 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c5 .btn-flex .btn-heal"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c5 .border-score-c .h-score-c"
+    );
+    sixth = document.querySelector(
+      ".navbar-right .background-border-c5 .cross-civil-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    sixth.style.display = "none";
+    cHC5 = 0;
+  }
+  borderC5 = 0;
 }
 function inspectCivilImg5() {
   let firstBlock = document.querySelector(
@@ -2132,8 +2391,35 @@ function killCivilImg6() {
   fourth.style.background = "#AF2222";
   fifth.style.display = "block";
   sixth.style.display = "none";
+  if (cKC6 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c6 .k-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c6 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c6 .btn-flex .btn-kill"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c6 .border-score-c .k-score-c"
+    );
+    fifth = document.querySelector(
+      ".navbar-right .background-border-c6 .cross-civil-kill"
+    );
+    sixth = document.querySelector(".avatar-round-table-c6");
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    fifth.style.display = "none";
+    sixth.style.display = "block";
+    cKC6 = 0;
+  }
 }
 function healCivilImg6() {
+  cHC6++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c6 .h-score-c img"
   );
@@ -2161,6 +2447,31 @@ function healCivilImg6() {
 
     fifth.style.display = "block";
   }
+  if (cHC6 > 1) {
+    let firstBlock = document.querySelector(
+      ".navbar-right .background-border-c6 .h-score-c img"
+    );
+    second = document.querySelector(
+      ".navbar-right .background-border-c6 .border"
+    );
+    third = document.querySelector(
+      ".navbar-right .background-border-c6 .btn-flex .btn-heal"
+    );
+    fourth = document.querySelector(
+      ".navbar-right .background-border-c6 .border-score-c .h-score-c"
+    );
+    sixth = document.querySelector(
+      ".navbar-right .background-border-c6 .cross-civil-kill"
+    );
+
+    firstBlock.style.visibility = "hidden";
+    second.style.background = "black";
+    third.style.background = "black";
+    fourth.style.background = "black";
+    sixth.style.display = "none";
+    cHC6 = 0;
+  }
+  borderC6 = 0;
 }
 function inspectCivilImg6() {
   let firstBlock = document.querySelector(
@@ -2226,6 +2537,9 @@ function border1() {
 function borderM1() {
   borderM = 1;
 }
+function border2M() {
+  borderM2 = 1;
+}
 function borderS1() {
   borderS = 1;
 }
@@ -2237,6 +2551,21 @@ function borderL1() {
 }
 function borderC1() {
   borderC = 1;
+}
+function border2C() {
+  borderC2 = 1;
+}
+function border3C() {
+  borderC3 = 1;
+}
+function border4C() {
+  borderC4 = 1;
+}
+function border5C() {
+  borderC5 = 1;
+}
+function border6C() {
+  borderC6 = 1;
 }
 //////Zero for border sector///////////////////////////////////////////////////////////////////////////
 function border0() {
@@ -2272,6 +2601,11 @@ function deliteBackgroundM() {
 
   first.style.display = "none";
 }
+function deliteBackgroundM2() {
+  let first = document.querySelector(".background-border-m2");
+
+  first.style.display = "none";
+}
 function deliteBackgroundS() {
   let first = document.querySelector(".background-border-s");
 
@@ -2292,12 +2626,40 @@ function deliteBackgroundC() {
 
   first.style.display = "none";
 }
+function deliteBackgroundC2() {
+  let first = document.querySelector(".navbar-right .background-border-c2");
+
+  first.style.display = "none";
+}
+function deliteBackgroundC3() {
+  let first = document.querySelector(".navbar-right .background-border-c3");
+
+  first.style.display = "none";
+}
+function deliteBackgroundC4() {
+  let first = document.querySelector(".navbar-right .background-border-c4");
+
+  first.style.display = "none";
+}
+function deliteBackgroundC5() {
+  let first = document.querySelector(".navbar-right .background-border-c5");
+
+  first.style.display = "none";
+}
+function deliteBackgroundC6() {
+  let first = document.querySelector(".navbar-right .background-border-c6");
+
+  first.style.display = "none";
+}
 function deliteBlocks() {
   if (border) {
     deliteBackgroundD();
   }
   if (borderM) {
     deliteBackgroundM();
+  }
+  if (borderM2) {
+    deliteBackgroundM2();
   }
   if (borderS) {
     deliteBackgroundS();
@@ -2308,8 +2670,20 @@ function deliteBlocks() {
   if (borderL) {
     deliteBackgroundL();
   }
-  if (borderC) {
-    deliteBackgroundC();
+  if (borderC2) {
+    deliteBackgroundC2();
+  }
+  if (borderC3) {
+    deliteBackgroundC3;
+  }
+  if (borderC4) {
+    deliteBackgroundC4();
+  }
+  if (borderC5) {
+    deliteBackgroundC5();
+  }
+  if (borderC6) {
+    deliteBackgroundC6();
   }
 }
 ///Blocks Sizing/////////////////////////////////////////////////////////////////////////////////

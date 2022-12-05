@@ -267,7 +267,8 @@ span {
 /* Background border///////////////////////////////////////////////////////////////////////////////////////////////// */
 .background-border-d {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: none;
+  display: block;
+
   position: relative;
   width: 175px;
   height: 120px;
@@ -276,7 +277,7 @@ span {
 }
 .background-border-m {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: none;
+  display: block;
   position: relative;
   width: 175px;
   height: 120px;
@@ -303,7 +304,7 @@ span {
 }
 .background-border-s {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: none;
+  display: block;
   position: relative;
   width: 175px;
   height: 120px;
@@ -312,7 +313,7 @@ span {
 }
 .background-border-doc {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: none;
+  display: block;
   position: relative;
   width: 175px;
   height: 120px;
@@ -321,7 +322,7 @@ span {
 }
 .background-border-l {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: none;
+  display: block;
   position: relative;
   width: 175px;
   height: 120px;
@@ -330,7 +331,7 @@ span {
 }
 .background-border-c {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
-  display: none;
+  display: block;
   position: relative;
   width: 175px;
   height: 120px;
@@ -849,7 +850,7 @@ span {
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
   position: absolute;
-  left: 135px;
+  left: 142px;
   top: 170px;
   box-sizing: border-box;
 }
@@ -1202,14 +1203,15 @@ span {
 }
 
 .new-round-buttom {
+  border: solid white 0.1px;
   color: aliceblue;
   background: transparent;
   border-radius: 20%;
   position: absolute;
   left: calc(50% - 50px);
   top: 50px;
-  width: 113px;
-  height: 113px;
+  width: 100px;
+  height: 100px;
   display: block;
   cursor: pointer;
   z-index: 3;
@@ -1229,20 +1231,22 @@ span {
   z-index: 0;
 }
 .close-pick-btn {
-  border: solid rgb(255, 255, 255) 2px;
-  color: aliceblue;
-  box-shadow: black inset 0px 0px 12px;
-  background: rgb(58, 7, 7);
+  border: solid rgb(255, 255, 255) 1px;
+  box-shadow: black inset 0px 0px 50px;
+  color: rgb(133, 133, 133);
+  background: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
   border-radius: 20%;
   position: absolute;
   top: 20px;
   right: 187px;
   width: 50px;
   height: 50px;
-  display: block;
+  display: none;
   cursor: pointer;
   z-index: 6;
-  visibility: hidden;
+  animation: 0.5s show ease;
 }
 .p-btn {
   background: transparent;
@@ -1266,16 +1270,14 @@ span {
 .pop {
   background-color: rgb(0, 0, 0);
   width: 180px;
-  height: 700px;
+  height: 730px;
   border-radius: 1%;
   position: absolute;
   top: 0px;
   right: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  visibility: hidden;
+  display: block;
   z-index: 3;
+  /* animation: 1s show ease; */
 }
 
 .text-position,
@@ -1310,6 +1312,8 @@ samp {
   border: solid 1px white;
   position: absolute;
   border-radius: 10%;
+  display: none;
+  animation: 1s show ease;
 }
 .avatars-of-sheriff {
   width: 160px;
@@ -1337,7 +1341,10 @@ samp {
   height: 113px;
   border: solid 1px white;
   position: absolute;
+  margin-top: 5px;
+  display: none;
   border-radius: 10%;
+  animation: 1.7s show ease;
 }
 .avatars-of-don img,
 .avatars-of-mafia img,
