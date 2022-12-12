@@ -36,7 +36,7 @@ h1 {
   z-index: -1;
 }
 
-.navbar-left {
+.navbarleft {
   background: black;
   width: 160px;
   height: 844px;
@@ -75,20 +75,27 @@ h1 {
   height: 844px;
   /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 0px;
+  right: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   /* overflow: hiddenc; */
   z-index: 2;
 }
 
-.navbar-left img {
-  width: 59%;
-  height: 94%;
+.navbar-left-img {
+  position: absolute;
+  left: 0px;
+  width: 73%;
+  height: 99%;
   border-radius: 4%;
-  /* margin: 4px 5px; */
+}
+.navbar-right-img {
+  position: absolute;
+  right: 0px;
+  width: 73%;
+  height: 99%;
+  border-radius: 4%;
 }
 .navbar-right-migrate img {
   width: 100%;
@@ -99,8 +106,8 @@ h1 {
 .navbar-right-img {
   position: absolute;
   right: 0px;
-  width: 59%;
-  height: 94%;
+  width: 73%;
+  height: 99%;
   border-radius: 4%;
 }
 
@@ -144,11 +151,22 @@ h1 {
   /* background: rgba(177, 177, 177, 0.403); */
 }
 /* Crosses///////////////////////////////////////////////////////////////////////// */
-
+.border3 {
+  border: solid 1px rgba(255, 255, 255, 0.956);
+  width: 130px;
+  height: 120px;
+  border-radius: 10%;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  box-sizing: border-box;
+  z-index: 3;
+  /* background: rgba(177, 177, 177, 0.403); */
+}
 .cross-kill {
   background: rgba(0, 0, 0, 0.523);
-  width: 140px;
-  height: 10px;
+  width: 93px;
+  height: 117px;
   display: none;
 
   position: absolute;
@@ -158,18 +176,29 @@ h1 {
 }
 .cross-mafia-kill {
   background: rgba(0, 0, 0, 0.523);
-  width: 73px;
-  height: 113px;
+  width: 93px;
+  height: 117px;
   display: none;
   position: absolute;
   /* top: 2px; */
   /* left: 2px; */
   z-index: 2;
 }
+.cross-mafia-kill2 {
+  border-radius: 15%;
+
+  width: 93px;
+  height: 117px;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
 .cross-sheriff-kill {
   background: rgba(0, 0, 0, 0.523);
-  width: 73px;
-  height: 113px;
+  width: 93px;
+  height: 117px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -178,8 +207,8 @@ h1 {
 }
 .cross-doctor-kill {
   background: rgba(0, 0, 0, 0.523);
-  width: 73px;
-  height: 113px;
+  width: 93px;
+  height: 117px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -188,8 +217,8 @@ h1 {
 }
 .cross-lady-kill {
   background: rgba(0, 0, 0, 0.523);
-  width: 73px;
-  height: 113px;
+  width: 93px;
+  height: 117px;
   display: none;
   position: absolute;
   /* top: 2px; */
@@ -198,15 +227,24 @@ h1 {
 }
 .cross-civil-kill {
   background: rgba(0, 0, 0, 0.523);
-  width: 73px;
-  height: 113px;
+  width: 93px;
+  height: 117px;
   display: none;
   position: absolute;
   /* top: 2px; */
   /* left: 2px; */
   z-index: 1;
 }
-
+.cross-civil-kill2 {
+  border-radius: 15%;
+  width: 63px;
+  height: 83px;
+  display: none;
+  position: absolute;
+  top: px;
+  right: 0px;
+  z-index: 1;
+}
 span {
   position: absolute;
   left: 6px;
@@ -232,7 +270,7 @@ span {
   display: block;
   position: relative;
   width: 165px;
-  height: 110px;
+  height: 120px;
   border-radius: 10%;
   animation: 1s show ease;
 }
@@ -241,10 +279,10 @@ span {
   display: block;
   position: relative;
   width: 165px;
-  height: 110px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 
 .background-border-m2 {
@@ -252,7 +290,7 @@ span {
   display: none;
   position: relative;
   width: 165px;
-  height: 103px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
 }
@@ -270,46 +308,46 @@ span {
   display: block;
   position: relative;
   width: 165px;
-  height: 110px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 .background-border-doc {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
   display: block;
   position: relative;
   width: 165px;
-  height: 110px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 .background-border-l {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
   display: block;
   position: relative;
   width: 165px;
-  height: 110px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 .background-border-c {
   display: block;
   position: relative;
   width: 165px;
-  height: 110px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 .background-border-c2 {
   /* border: solid rgba(255, 255, 255, 0.125) 1px; */
   display: none;
   position: relative;
   width: 165px;
-  height: 100px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
   margin-top: 2px;
@@ -319,7 +357,7 @@ span {
   display: none;
   position: relative;
   width: 165px;
-  height: 100px;
+  height: 120px;
   animation: 1s show ease;
   border-radius: 10%;
   margin-top: 2px;
@@ -329,7 +367,7 @@ span {
   display: none;
   position: relative;
   width: 165px;
-  height: 100px;
+  height: 120px;
   animation: 1s show ease;
   margin-top: 2px;
   border-radius: 10%;
@@ -339,7 +377,7 @@ span {
   display: none;
   position: relative;
   width: 165px;
-  height: 100px;
+  height: 120px;
   animation: 1s show ease;
   margin-top: 2px;
 
@@ -350,7 +388,7 @@ span {
   display: none;
   position: relative;
   width: 165px;
-  height: 100px;
+  height: 120px;
   animation: 1s show ease;
   margin-top: 2px;
 
@@ -358,38 +396,42 @@ span {
 }
 /* Border score /////////////////////////////////////////////////////////////////////////////////// */
 .border-score-d {
-  /* border: solid white 1px; */
-  /* border: solid rgba(255, 255, 255, 0.125) 1px; */
   background: black;
   width: 20px;
-  height: 100px;
+  height: 120px;
   position: absolute;
+  top: 5px;
   right: 0px;
-  top: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0px;
 }
-.border-score-d img,
-.border-score-m img,
-.border-score-s img,
-.border-score-doc img,
-.border-score-l img,
-.border-score-c img {
-  margin: 0px;
-}
+
 .border-score-m {
   /* border: solid white 1px; */
   background: black;
   width: 20px;
-  height: 100px;
+  height: 120px;
   position: absolute;
   right: 0px;
   top: px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.border-score-m2 {
+  /* border: solid white 1px; */
+  background: black;
+  width: 20px;
+  height: 120px;
+  position: absolute;
+  left: -3px;
+  top: px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scale(-1, 1);
 }
 .border-score-s {
   /* border: solid white 1px; */
@@ -401,43 +443,64 @@ span {
   right: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .border-score-doc {
   /* border: solid white 1px; */
   background: black;
   width: 20px;
-  height: 100px;
+  height: 120px;
   position: absolute;
   top: 0px;
   right: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .border-score-l {
   /* border: solid white 1px; */
   background: black;
   width: 20px;
-  height: 100px;
+  height: 120px;
   position: absolute;
   top: 0px;
   right: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .border-score-c {
   /* border: solid white 1px; */
   background: black;
   width: 20px;
-  height: 100px;
+  height: 120px;
   position: absolute;
   top: 0px;
   right: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.border-score-c2 {
+  /* border: solid white 1px; */
+  background: black;
+  width: 20px;
+  height: 120px;
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scale(-1, 1);
+}
+.border-score-d img,
+.border-score-m img,
+.border-score-s img,
+.border-score-doc img,
+.border-score-l img,
+.border-score-c img {
+  margin: 0px;
 }
 .k-score {
   border-radius: 20%;
@@ -933,16 +996,7 @@ span {
   border-radius: 20%;
   display: none;
 }
-.avatar-midle-lady {
-  border: solid white 1px;
-  width: 113px;
-  height: 113px;
-  position: relative;
-  top: 5px;
-  border-radius: 20%;
-  background: rgba(255, 255, 255, 0.062);
-  visibility: visible;
-}
+
 .avatar-midle-mafia {
   border: solid white 1px;
   width: 113px;
@@ -950,7 +1004,6 @@ span {
   position: relative;
   bottom: 8px;
   border-radius: 20%;
-  background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
 .avatar-round-table-c2 img,
@@ -967,19 +1020,27 @@ span {
   visibility: visible;
 }
 .avatar-midle img {
-  border: solid white 1px;
   width: 113px;
   height: 113px;
   border-radius: 20%;
   background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
-.avatar-midle-lady img {
-  border: solid white 1px;
+.avatar-midle-lady {
+  position: relative;
+
   width: 113px;
   height: 113px;
   border-radius: 20%;
-  background: rgba(255, 255, 255, 0.062);
+  visibility: visible;
+}
+
+.avatar-midle-lady img {
+  border: solid white 1px;
+  position: relative;
+  width: 113px;
+  height: 113px;
+  border-radius: 20%;
   visibility: visible;
 }
 .avatar-midle-mafia img {
@@ -1098,7 +1159,17 @@ span {
   box-sizing: border-box;
   z-index: 4;
 }
-
+.btn-flex2 {
+  height: 100%;
+  width: 45px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 4;
+}
 .new-round-buttom {
   border: solid white 0.1px;
   color: aliceblue;
@@ -1119,7 +1190,7 @@ span {
   background: black;
   border-radius: 20%;
   position: absolute;
-  top: 15%;
+  top: 20px;
   right: 187px;
   width: 50px;
   height: 50px;
@@ -1137,7 +1208,7 @@ span {
   font-size: 14px;
   font-weight: 700;
   border-radius: 20%;
-  top: 15%;
+  top: 20px;
   right: 187px;
   width: 50px;
   height: 50px;
@@ -1278,6 +1349,7 @@ samp {
   }
 
   body {
+    height: 940px;
     width: 390px;
   }
   /* .fnt {
@@ -1368,18 +1440,7 @@ samp {
     height: 99%;
     border-radius: 4%;
   }
-  /* .navbarleft-second {
-    border: solid white 1px;
-    background: transparent;
-    width: 30px;
-    height: 700px;
-    position: absolute;
-    top: 5px;
-    left: 155px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  } */
+
   .border-score {
     background: black;
     border: solid white 1px;
@@ -1436,32 +1497,32 @@ samp {
   /* Crosses///////////////////////////////////////////////////////////////////////// */
 
   .cross-kill {
-    background: rgba(0, 0, 0, 0.523);
-    width: 86px;
-    height: 86px;
-    border-radius: 5%;
+    width: 64px;
+    height: 83px;
+    border-radius: 15%;
     display: none;
 
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
   }
   .cross-mafia-kill {
-    background: rgba(0, 0, 0, 0.523);
-    width: 86px;
-    height: 86px;
-    border-radius: 5%;
+    width: 64px;
+    height: 83px;
+    border-radius: 15%;
     display: none;
 
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
   }
+
   .cross-mafia-kill2 {
-    background: rgba(0, 0, 0, 0.523);
-    width: 59%;
+    border-radius: 15%;
+
+    width: 62px;
     height: 85px;
     display: none;
     position: absolute;
@@ -1471,62 +1532,60 @@ samp {
   }
   .cross-sheriff-kill {
     background: rgba(0, 0, 0, 0.523);
-    width: 86px;
-    height: 86px;
-    border-radius: 5%;
+    width: 64px;
+    height: 83px;
+    border-radius: 15%;
     display: none;
 
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
   }
   .cross-doctor-kill {
-    background: rgba(0, 0, 0, 0.523);
-    width: 86px;
-    height: 86px;
-    border-radius: 5%;
+    width: 64px;
+    height: 83px;
+    border-radius: 15%;
     display: none;
 
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
   }
   .cross-lady-kill {
-    background: rgba(0, 0, 0, 0.523);
-    width: 86px;
-    height: 86px;
-    border-radius: 5%;
+    width: 64px;
+    height: 83px;
+    border-radius: 15%;
     display: none;
 
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
   }
   .cross-civil-kill {
-    background: rgba(0, 0, 0, 0.523);
-    width: 86px;
-    height: 86px;
-    border-radius: 5%;
+    width: 64px;
+    height: 83px;
+    border-radius: 15%;
     display: none;
 
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
   }
   .cross-civil-kill2 {
-    background: rgba(0, 0, 0, 0.523);
-    width: 59%;
-    height: 85px;
+    border-radius: 15%;
+    width: 63px;
+    height: 83px;
     display: none;
     position: absolute;
-    top: 0px;
+    top: px;
     right: 0px;
     z-index: 1;
   }
+
   .text-right {
     position: absolute;
     right: 6px;
@@ -2363,26 +2422,7 @@ samp {
 
     animation: 2s show ease;
   }
-  /* .avatar1 {
-    width: 20%;
-    height: 70%;
-    border-radius: 20%;
-    background: rgba(255, 255, 255, 0.062);
-    position: absolute;
-    left: calc(47% - 5%);
-    top: calc(30% - 5%);
-     z-index: 1;
-   } */
-  /* .avatar2 {
-    width: 20%;
-    height: 70%;
-    border-radius: 20%;
-    background: rgba(255, 255, 255, 0.062);
-    position: absolute;
-    left: calc(59% - 5%);
-    top: calc(30% - 5%);
-    z-index: 1; 
-  }*/
+
   .btn-kill {
     border-radius: 20%;
     color: #ffff;
@@ -2491,15 +2531,15 @@ samp {
     z-index: 3;
   }
   .pick-btn {
+    width: 50px;
+    height: 50px;
     border: solid rgb(255, 255, 255) 1px;
     color: aliceblue;
     background: black;
     border-radius: 20%;
     position: absolute;
-    top: 10px;
-    right: -5px;
-    width: 50px;
-    height: 50px;
+    top: 240px;
+    right: 100px;
     display: block;
     cursor: pointer;
     z-index: 6;
@@ -2514,8 +2554,8 @@ samp {
     font-size: 14px;
     font-weight: 700;
     border-radius: 20%;
-    top: 10px;
-    right: -5px;
+    bottom: 0px;
+    right: 0px;
     width: 50px;
     height: 50px;
     display: none;

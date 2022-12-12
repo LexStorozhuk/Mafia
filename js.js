@@ -551,7 +551,7 @@ function killMafia() {
     second = document.querySelector(".k-score-m");
     third = document.querySelector(".navbarleft .background-border-m .border");
     fourth = document.querySelector(".cross-mafia-kill");
-    fifth = document.querySelector(".avatar-midle-mafia");
+    fifth = document.querySelector(".blockof-avatars .avatar-midle-mafia");
     sixth = document.querySelector(".background-border-m .btn-flex .btn-kill");
 
     firstBlock.style.visibility = "hidden";
@@ -608,23 +608,21 @@ function killDoctor() {
 }
 function killLady() {
   if (cKL > 1) {
-    let back = document.querySelector(
+    let first = document.querySelector(
       ".background-border-l .btn-flex .btn-kill"
     );
-    firstBlock = document.querySelector(".k-score-l img");
-    second = document.querySelector(".k-score-l ");
-    third = document.querySelector(".navbarleft .background-border-l .border");
-    fourth = document.querySelector(
-      ".blockof-avatars1 .avatar:nth-of-type(2) img"
-    );
-    fifth = document.querySelector(".cross-lady-kill");
+    second = document.querySelector(".k-score-l img");
+    third = document.querySelector(".k-score-l ");
+    fourth = document.querySelector(".navbarleft .background-border-l .border");
+    fifth = document.querySelector(".blockof-avatars1 .avatar-midle-lady img ");
+    sixth = document.querySelector(".cross-lady-kill");
 
-    back.style.background = "black";
-    firstBlock.style.visibility = "hidden";
-    second.style.background = "black";
+    first.style.background = "black";
+    second.style.visibility = "hidden";
     third.style.background = "black";
-    fourth.style.visibility = "visible";
-    fifth.style.display = "none";
+    fourth.style.background = "black";
+    fifth.style.visibility = "visible";
+    sixth.style.display = "none";
 
     cKL = 0;
     borderL = 0;
@@ -978,7 +976,7 @@ function partyMafia() {
     cPM = 0;
   }
 }
-function partyfSheriff() {
+function partySheriff() {
   if (cPS > 1) {
     let firstBlock = document.querySelector(".p-score-s img");
     second = document.querySelector(".p-score-s");
@@ -1303,6 +1301,7 @@ function partySheriffImg() {
 
   firstBlock.style.visibility = "visible";
   second.style.background = "#2B1534";
+  third.style.background = "#2B1534";
   fourth.style.background = "#2F1637";
 }
 function ratSheriffImg() {
@@ -1401,7 +1400,7 @@ function killLadyImg() {
   second = document.querySelector(".k-score-l");
   third = document.querySelector(".navbarleft .background-border-l .border");
   fourth = document.querySelector(".cross-lady-kill");
-  fifth = document.querySelector(".blockof-avatars1 .avatar-midle-lady");
+  fifth = document.querySelector(".blockof-avatars1 .avatar-midle-lady img");
   sixth = document.querySelector(".background-border-l .btn-flex .btn-kill");
 
   firstBlock.style.visibility = "visible";
@@ -1556,7 +1555,7 @@ function killMafiaImg2() {
   fourth = document.querySelector(
     ".navbar-right .background-border-m2 .cross-mafia-kill2"
   );
-  fifth = document.querySelector(".avatar-round-table-m");
+  fifth = document.querySelector(".blockof-avatars .avatar-midle-mafia");
   sixth = document.querySelector(
     ".navbar-right .background-border-m2 .btn-flex2 .btn-kill"
   );
