@@ -237,53 +237,43 @@ function addCivil() {
       ".navbar-right-migrate .background-border-c2"
     );
     second = document.querySelector(".avatar-round-table-c2");
-    seventh = document.querySelector(".navbar-right-migrate ");
 
     first.style.display = "block";
     second.style.display = "block";
-    seventh.style.height = "300px";
   }
   if (blockOfCivil === 2) {
     let third = document.querySelector(
       ".navbar-right-migrate .background-border-c3"
     );
     fourth = document.querySelector(".avatar-round-table-c3");
-    seventh = document.querySelector(".navbar-right-migrate ");
 
     third.style.display = "block";
     fourth.style.display = "block";
-    seventh.style.height = "400px";
   }
   if (blockOfCivil === 3) {
     let fourth = document.querySelector(
       " .navbar-right-migrate .background-border-c4"
     );
     fifth = document.querySelector(".avatar-round-table-c4");
-    seventh = document.querySelector(".navbar-right-migrate ");
     fourth.style.display = "block";
     fifth.style.display = "block";
-    seventh.style.height = "520px";
   }
   if (blockOfCivil === 4) {
     let fifth = document.querySelector(
       ".navbar-right-migrate .background-border-c5"
     );
     sixth = document.querySelector(".avatar-round-table-c5");
-    seventh = document.querySelector(".navbar-right-migrate ");
 
     fifth.style.display = "block";
     sixth.style.display = "block";
-    seventh.style.height = "620px";
   }
   if (blockOfCivil === 5) {
     let sixth = document.querySelector(
       ".navbar-right-migrate .background-border-c6"
     );
     seventh = document.querySelector(".avatar-round-table-c6");
-    eight = document.querySelector(".navbar-right-migrate ");
     sixth.style.display = "block";
     seventh.style.display = "block";
-    eight.style.height = "730px";
   }
   if (blockOfCivil === 6) {
     let first = document.querySelector(
@@ -304,15 +294,24 @@ function addCivil() {
     sixth = document.querySelector(
       ".navbar-right-migrate .background-border-c6"
     );
-    seventh = document.querySelector(".navbar-right-migrate ");
+    n8 = document.querySelector(".avatar-round-table-c2");
+    n9 = document.querySelector(".avatar-round-table-c3");
+    n10 = document.querySelector(".avatar-round-table-c4");
+    n11 = document.querySelector(".avatar-round-table-c5");
+    n12 = document.querySelector(".avatar-round-table-c6");
 
     first.style.display = "none";
-    // second.style.display = "none";
     third.style.display = "none";
     fourth.style.display = "none";
     fifth.style.display = "none";
     sixth.style.display = "none";
-    seventh.style.height = "150px";
+
+    n8.style.display = "none";
+    n9.style.display = "none";
+    n10.style.display = "none";
+    n11.style.display = "none";
+    n12.style.display = "none";
+
     blockOfCivil = 0;
   }
 }
@@ -1544,19 +1543,22 @@ function ratCivilImg() {
 }
 ////Block for Mafia2 in right-navbar//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function killMafiaImg2() {
+  cKM2++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .k-score-m img"
+    ".navbar-right .background-border-m2 .border-score-m2 .k-score-m img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .k-score-m"
+    ".navbar-right .background-border-m2 .border-score-m2 .k-score-m"
   );
-  third = document.querySelector(".navbar-right .background-border-m2 .border");
+  third = document.querySelector(
+    ".navbar-right .background-border-m2 .border3"
+  );
   fourth = document.querySelector(
-    ".navbar-right .background-border-m2 .cross-mafia-kill"
+    ".navbar-right .background-border-m2 .cross-mafia-kill2"
   );
   fifth = document.querySelector(".avatar-round-table-m");
   sixth = document.querySelector(
-    ".navbar-right .background-border-m2 .btn-flex .btn-kill"
+    ".navbar-right .background-border-m2 .btn-flex2 .btn-kill"
   );
 
   firstBlock.style.visibility = "visible";
@@ -1567,20 +1569,20 @@ function killMafiaImg2() {
   sixth.style.background = "#AF2222";
   if (cKM2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .k-score-m img"
+      ".navbar-right .background-border-m2 .border-score-m2 .k-score-m img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .k-score-m"
+      ".navbar-right .background-border-m2 .border-score-m2 .k-score-m"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-m2 .border"
+      ".navbar-right .background-border-m2 .border3"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-m2 .cross-mafia-kill"
+      ".navbar-right .background-border-m2 .cross-mafia-kill2"
     );
     fifth = document.querySelector(".avatar-round-table-m");
     sixth = document.querySelector(
-      ".navbar-right .background-border-m2 .btn-flex .btn-kill"
+      ".navbar-right .background-border-m2 .btn-flex2 .btn-kill"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -1589,6 +1591,7 @@ function killMafiaImg2() {
     fourth.style.display = "none";
     fifth.style.display = "block";
     sixth.style.background = "black";
+    cKM2 = 0;
   }
 }
 
@@ -1596,19 +1599,21 @@ function healMafiaImg2() {
   cHM2++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .h-score-m img"
+    ".navbar-right .background-border-m2 .border-score-m2 .h-score-m img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .h-score-m"
+    ".navbar-right .background-border-m2 .border-score-m2 .h-score-m"
   );
-  third = document.querySelector(".navbar-right .background-border-m2 .border");
-  fourth = document.querySelector(".cross-mafia-kill");
+  third = document.querySelector(
+    ".navbar-right .background-border-m2 .border3"
+  );
+  fourth = document.querySelector(".cross-mafia-kill2");
   fifth = document.querySelector(".avatar-round-table-m ");
   sixth = document.querySelector(
-    ".navbar-right .background-border-m2 .btn-flex .btn-heal"
+    ".navbar-right .background-border-m2 .btn-flex2 .btn-heal"
   );
   seventh = document.querySelector(
-    ".navbar-right .background-border-m2 .cross-mafia-kill"
+    ".navbar-right .background-border-m2 .cross-mafia-kill2"
   );
 
   firstBlock.style.visibility = "visible";
@@ -1625,19 +1630,19 @@ function healMafiaImg2() {
   }
   if (cHM2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .h-score-m img"
+      ".navbar-right .background-border-m2 .border-score-m2 .h-score-m img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .h-score-m"
+      ".navbar-right .background-border-m2 .border-score-m2 .h-score-m"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-m2 .border"
+      ".navbar-right .background-border-m2 .border3"
     );
     sixth = document.querySelector(
-      ".navbar-right .background-border-m2 .btn-flex .btn-heal"
+      ".navbar-right .background-border-m2 .btn-flex2 .btn-heal"
     );
     seventh = document.querySelector(
-      ".navbar-right .background-border-m2 .cross-mafia-kill"
+      ".navbar-right .background-border-m2 .cross-mafia-kill2"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -1652,33 +1657,35 @@ function healMafiaImg2() {
 }
 
 function inspectMafiaImg2() {
+  cIM2++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .i-score-m img"
+    ".navbar-right .background-border-m2 .border-score-m2 .i-score-m img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .i-score-m"
+    ".navbar-right .background-border-m2 .border-score-m2 .i-score-m"
   );
-  third = document.querySelector(".navbar-right .background-border-m2 .border");
+  third = document.querySelector(
+    ".navbar-right .background-border-m2 .border3"
+  );
   fourth = document.querySelector(
-    ".navbar-right .background-border-m2 .btn-flex .btn-inspect"
+    ".navbar-right .background-border-m2 .btn-flex2 .btn-inspect"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
   third.style.background = "#00103D";
   fourth.style.background = "#00103D";
-  cIM2++;
   if (cIM2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .i-score-m img"
+      ".navbar-right .background-border-m2 .border-score-m2 .i-score-m img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .i-score-m"
+      ".navbar-right .background-border-m2 .border-score-m2 .i-score-m"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-m2 .border"
+      ".navbar-right .background-border-m2 .border3"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-m2 .btn-flex .btn-inspect"
+      ".navbar-right .background-border-m2 .btn-flex2 .btn-inspect"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -1687,34 +1694,36 @@ function inspectMafiaImg2() {
   }
 }
 function partyMafiaImg2() {
+  cPM2++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .p-score-m img"
+    ".navbar-right .background-border-m2 .border-score-m2 .p-score-m img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-m2 .border-score-m .p-score-m"
+    ".navbar-right .background-border-m2 .border-score-m2 .p-score-m"
   );
-  third = document.querySelector(".navbar-right .background-border-m2 .border");
+  third = document.querySelector(
+    ".navbar-right .background-border-m2 .border3"
+  );
   fourth = document.querySelector(
-    ".navbar-right .background-border-m2 .btn-flex .btn-party"
+    ".navbar-right .background-border-m2 .btn-flex2 .btn-party"
   );
 
   firstBlock.style.visibility = "visible";
   second.style.background = "#2B1534";
   third.style.background = "#2B1534";
   fourth.style.background = "#2B1534";
-  cPM2++;
   if (cPM2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .p-score-m img"
+      ".navbar-right .background-border-m2 .border-score-m2 .p-score-m img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-m2 .border-score-m .p-score-m"
+      ".navbar-right .background-border-m2 .border-score-m2 .p-score-m"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-m2 .border"
+      ".navbar-right .background-border-m2 .border3"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-m2 .btn-flex .btn-party"
+      ".navbar-right .background-border-m2 .btn-flex2 .btn-party"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -1725,7 +1734,7 @@ function partyMafiaImg2() {
 }
 function ratBackgroundMaf2() {
   let firstBlock = document.querySelector(
-    ".navbarleft .background-border-m .border"
+    ".navbarleft .background-border-m .border3"
   );
 
   firstBlock.style.background = "grey";
@@ -1743,44 +1752,46 @@ function crossKillCivil2() {
   firstBlock.style.display = "block";
 }
 function killCivilImg2() {
+  cKC2++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c2 .k-score-c img"
+    ".navbar-right .background-border-c2 .border-score-c2 .k-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c2 .border"
+    ".navbar-right .background-border-c2 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c2 .btn-flex .btn-kill"
+    ".navbar-right .background-border-c2 .btn-flex2 .btn-kill"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c2 .border-score-c .k-score-c"
+    ".navbar-right .background-border-c2 .border-score-c2 .k-score-c"
   );
   fifth = document.querySelector(
-    ".navbar-right .background-border-c2 .cross-civil-kill"
+    ".navbar-right .background-border-c2 .cross-civil-kill2"
   );
-  sixth = document.querySelector(".avatar-round-table-c2");
+  // sixth = document.querySelector(".avatar-round-table-c2");
 
   firstBlock.style.visibility = "visible";
   second.style.background = "#AF2222";
   third.style.background = "#AF2222";
   fourth.style.background = "#AF2222";
   fifth.style.display = "block";
-  sixth.style.display = "none";
+  // sixth.style.display = "none";
+
   if (cKC2 > 1) {
     let firstBlock = document.querySelector(
       ".navbar-right .background-border-c2 .k-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c2 .border"
+      ".navbar-right .background-border-c2 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c2 .btn-flex .btn-kill"
+      ".navbar-right .background-border-c2 .btn-flex2 .btn-kill"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c2 .border-score-c .k-score-c"
+      ".navbar-right .background-border-c2 .border-score-c2 .k-score-c"
     );
     fifth = document.querySelector(
-      ".navbar-right .background-border-c2 .cross-civil-kill"
+      ".navbar-right .background-border-c2 .cross-civil-kill2"
     );
     sixth = document.querySelector(".avatar-round-table-c2");
 
@@ -1790,8 +1801,8 @@ function killCivilImg2() {
     fourth.style.background = "black";
     fifth.style.display = "none";
     sixth.style.display = "block";
-    cKC2 = 0;
   }
+  cKC2 = 0;
 }
 function healCivilImg2() {
   cHC2++;
@@ -1799,16 +1810,16 @@ function healCivilImg2() {
     ".navbar-right .background-border-c2 .h-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c2 .border"
+    ".navbar-right .background-border-c2 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c2 .btn-flex .btn-heal"
+    ".navbar-right .background-border-c2 .btn-flex2 .btn-heal"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c2 .border-score-c .h-score-c"
+    ".navbar-right .background-border-c2 .border-score-c2 .h-score-c"
   );
   sixth = document.querySelector(
-    ".navbar-right .background-border-c2 .cross-civil-kill"
+    ".navbar-right .background-border-c2 .cross-civil-kill2"
   );
 
   firstBlock.style.visibility = "visible";
@@ -1827,16 +1838,16 @@ function healCivilImg2() {
       ".navbar-right .background-border-c2 .h-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c2 .border"
+      ".navbar-right .background-border-c2 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c2 .btn-flex .btn-heal"
+      ".navbar-right .background-border-c2 .btn-flex2 .btn-heal"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c2 .border-score-c .h-score-c"
+      ".navbar-right .background-border-c2 .border-score-c2 .h-score-c"
     );
     sixth = document.querySelector(
-      ".navbar-right .background-border-c2 .cross-civil-kill"
+      ".navbar-right .background-border-c2 .cross-civil-kill2"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -1852,16 +1863,16 @@ function inspectCivilImg2() {
   cIC2++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c2 .i-score-c img"
+    ".navbar-right .background-border-c2 .border-score-c2 .i-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c2 .border"
+    ".navbar-right .background-border-c2 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c2 .btn-flex .btn-inspect"
+    ".navbar-right .background-border-c2 .btn-flex2 .btn-inspect"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c2 .border-score-c .i-score-c"
+    ".navbar-right .background-border-c2 .border-score-c2 .i-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
@@ -1869,16 +1880,16 @@ function inspectCivilImg2() {
   fourth.style.background = "#00103D";
   if (cIC2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c2 .i-score-c img"
+      ".navbar-right .background-border-c2 .border-score-c2 .i-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c2 .border"
+      ".navbar-right .background-border-c2 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c2 .btn-flex .btn-inspect"
+      ".navbar-right .background-border-c2 .btn-flex2 .btn-inspect"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c2 .border-score-c .i-score-c"
+      ".navbar-right .background-border-c2 .border-score-c2 .i-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -1891,78 +1902,79 @@ function partyCivilImg2() {
   cPC2++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c2 .p-score-c img"
+    ".navbar-right .background-border-c2 .border-score-c2 .p-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c2 .border"
+    ".navbar-right .background-border-c2 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c2 .btn-flex .btn-party"
+    ".navbar-right .background-border-c2 .btn-flex2 .btn-party"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c2 .border-score-c .p-score-c"
+    ".navbar-right .background-border-c2 .border-score-c2 .p-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#2F1637";
   third.style.background = "#2F1637";
   fourth.style.background = "#2F1637";
-  cPC2++;
   if (cPC2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c2 .p-score-c img"
+      ".navbar-right .background-border-c2 .border-score-c2 .p-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c2 .border"
+      ".navbar-right .background-border-c2 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c2 .btn-flex .btn-party"
+      ".navbar-right .background-border-c2 .btn-flex2 .btn-party"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c2 .border-score-c .p-score-c"
+      ".navbar-right .background-border-c2 .border-score-c2 .p-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cPC2 = 0;
   }
 }
 function ratCivilImg2() {
+  cRC2++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c2 .r-score-c img"
+    ".navbar-right .background-border-c2 .border-score-c2 .r-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c2 .border"
+    ".navbar-right .background-border-c2 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c2 .btn-flex .btn-rat"
+    ".navbar-right .background-border-c2 .btn-flex2 .btn-rat"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c2 .border-score-c .r-score-c"
+    ".navbar-right .background-border-c2 .border-score-c2 .r-score-c"
   );
 
   firstBlock.style.visibility = "visible";
   second.style.background = "#4a4a4a";
   third.style.background = "#4a4a4a";
   fourth.style.background = "#4a4a4a";
-  cRC2++;
   if (cRC2 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c2 .r-score-c img"
+      ".navbar-right .background-border-c2 .border-score-c2 .r-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c2 .border"
+      ".navbar-right .background-border-c2 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c2 .btn-flex .btn-rat"
+      ".navbar-right .background-border-c2 .btn-flex2 .btn-rat"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c2 .border-score-c .r-score-c"
+      ".navbar-right .background-border-c2 .border-score-c2 .r-score-c"
     );
 
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cRC2 = 0;
   }
 }
 ///////////////civil3///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1973,19 +1985,19 @@ function crossKillCivil3() {
 }
 function killCivilImg3() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c3 .k-score-c img"
+    ".navbar-right .background-border-c3 .border-score-c2 .k-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c3 .border"
+    ".navbar-right .background-border-c3 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c3 .btn-flex .btn-kill"
+    ".navbar-right .background-border-c3 .btn-flex2 .btn-kill"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c3 .border-score-c .k-score-c"
+    ".navbar-right .background-border-c3 .border-score-c2 .k-score-c"
   );
   fifth = document.querySelector(
-    ".navbar-right .background-border-c3 .cross-civil-kill"
+    ".navbar-right .background-border-c3 .cross-civil-kill2"
   );
   sixth = document.querySelector(".avatar-round-table-c3");
   firstBlock.style.visibility = "visible";
@@ -1996,19 +2008,19 @@ function killCivilImg3() {
   sixth.style.display = "none";
   if (cKC3 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c3 .k-score-c img"
+      ".navbar-right .background-border-c3 .border-score-c2 .k-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c3 .border"
+      ".navbar-right .background-border-c3 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c3 .btn-flex .btn-kill"
+      ".navbar-right .background-border-c3 .btn-flex2 .btn-kill"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c3 .border-score-c .k-score-c"
+      ".navbar-right .background-border-c3 .border-score-c2 .k-score-c"
     );
     fifth = document.querySelector(
-      ".navbar-right .background-border-c3 .cross-civil-kill"
+      ".navbar-right .background-border-c3 .cross-civil-kill2"
     );
     sixth = document.querySelector(".avatar-round-table-c2");
 
@@ -2024,19 +2036,19 @@ function killCivilImg3() {
 function healCivilImg3() {
   cHC3++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c3 .h-score-c img"
+    ".navbar-right .background-border-c3 .border-score-c2 .h-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c3 .border"
+    ".navbar-right .background-border-c3 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c3 .btn-flex .btn-heal"
+    ".navbar-right .background-border-c3 .btn-flex2 .btn-heal"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c3 .border-score-c .h-score-c"
+    ".navbar-right .background-border-c3 .border-score-c2 .h-score-c"
   );
   sixth = document.querySelector(
-    ".navbar-right .background-border-c3 .cross-civil-kill"
+    ".navbar-right .background-border-c3 .cross-civil-kill2"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2052,19 +2064,19 @@ function healCivilImg3() {
   }
   if (cHC3 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c3 .h-score-c img"
+      ".navbar-right .background-border-c3 .border-score-c2 .h-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c3 .border"
+      ".navbar-right .background-border-c3 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c3 .btn-flex .btn-heal"
+      ".navbar-right .background-border-c3 .btn-flex2 .btn-heal"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c3 .border-score-c .h-score-c"
+      ".navbar-right .background-border-c3 .border-score-c2 .h-score-c"
     );
     sixth = document.querySelector(
-      ".navbar-right .background-border-c3 .cross-civil-kill"
+      ".navbar-right .background-border-c3 .cross-civil-kill2"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -2080,16 +2092,16 @@ function inspectCivilImg3() {
   cIC3++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c3 .i-score-c img"
+    ".navbar-right .background-border-c3 .border-score-c2 .i-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c3 .border"
+    ".navbar-right .background-border-c3 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c3 .btn-flex .btn-inspect"
+    ".navbar-right .background-border-c3 .btn-flex2 .btn-inspect"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c3 .border-score-c .i-score-c"
+    ".navbar-right .background-border-c3 .border-score-c2 .i-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
@@ -2097,16 +2109,16 @@ function inspectCivilImg3() {
   fourth.style.background = "#00103D";
   if (cIC3 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c3 .i-score-c img"
+      ".navbar-right .background-border-c3 .border-score-c2 .i-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c3 .border"
+      ".navbar-right .background-border-c3 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c3 .btn-flex .btn-inspect"
+      ".navbar-right .background-border-c3 .btn-flex2 .btn-inspect"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c3 .border-score-c .i-score-c"
+      ".navbar-right .background-border-c3 .border-score-c2 .i-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2117,16 +2129,16 @@ function inspectCivilImg3() {
 }
 function partyCivilImg3() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c3 .p-score-c img"
+    ".navbar-right .background-border-c3 .border-score-c2 .p-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c3 .border"
+    ".navbar-right .background-border-c3 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c3 .btn-flex .btn-party"
+    ".navbar-right .background-border-c3 .btn-flex2 .btn-party"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c3 .border-score-c .p-score-c"
+    ".navbar-right .background-border-c3 .border-score-c2 .p-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#2F1637";
@@ -2135,16 +2147,16 @@ function partyCivilImg3() {
   cPC3++;
   if (cPC3 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c3 .p-score-c img"
+      ".navbar-right .background-border-c3 .border-score-c2 .p-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c3 .border"
+      ".navbar-right .background-border-c3 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c3 .btn-flex .btn-party"
+      ".navbar-right .background-border-c3 .btn-flex2 .btn-party"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c3 .border-score-c .p-score-c"
+      ".navbar-right .background-border-c3 .border-score-c2 .p-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2154,16 +2166,16 @@ function partyCivilImg3() {
 }
 function ratCivilImg3() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c3 .r-score-c img"
+    ".navbar-right .background-border-c3 .border-score-c2 .r-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c3 .border"
+    ".navbar-right .background-border-c3 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c3 .btn-flex .btn-rat"
+    ".navbar-right .background-border-c3 .btn-flex2 .btn-rat"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c3 .border-score-c .r-score-c"
+    ".navbar-right .background-border-c3 .border-score-c2 .r-score-c"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2173,16 +2185,16 @@ function ratCivilImg3() {
   cRC3++;
   if (cRC3 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c3 .r-score-c img"
+      ".navbar-right .background-border-c3 .border-score-c2 .r-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c3 .border"
+      ".navbar-right .background-border-c3 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c3 .btn-flex .btn-rat"
+      ".navbar-right .background-border-c3 .btn-flex2 .btn-rat"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c3 .border-score-c .r-score-c"
+      ".navbar-right .background-border-c3 .border-score-c2 .r-score-c"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -2198,19 +2210,19 @@ function crossKillCivil4() {
 }
 function killCivilImg4() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c4 .k-score-c img"
+    ".navbar-right .background-border-c4 .border-score-c2 .k-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c4 .border"
+    ".navbar-right .background-border-c4 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c4 .btn-flex .btn-kill"
+    ".navbar-right .background-border-c4 .btn-flex2 .btn-kill"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c4 .border-score-c .k-score-c"
+    ".navbar-right .background-border-c4 .border-score-c2 .k-score-c"
   );
   fifth = document.querySelector(
-    ".navbar-right .background-border-c4 .cross-civil-kill"
+    ".navbar-right .background-border-c4 .cross-civil-kill2"
   );
   sixth = document.querySelector(".avatar-round-table-c4");
 
@@ -2222,19 +2234,19 @@ function killCivilImg4() {
   sixth.style.display = "none";
   if (cKC4 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c4 .k-score-c img"
+      ".navbar-right .background-border-c4 .border-score-c2 .k-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c4 .border"
+      ".navbar-right .background-border-c4 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c4 .btn-flex .btn-kill"
+      ".navbar-right .background-border-c4 .btn-flex2 .btn-kill"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c4 .border-score-c .k-score-c"
+      ".navbar-right .background-border-c4 .border-score-c2 .k-score-c"
     );
     fifth = document.querySelector(
-      ".navbar-right .background-border-c4 .cross-civil-kill"
+      ".navbar-right .background-border-c4 .cross-civil-kill2"
     );
     sixth = document.querySelector(".avatar-round-table-c4");
 
@@ -2250,19 +2262,19 @@ function killCivilImg4() {
 function healCivilImg4() {
   cHC4++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c4 .h-score-c img"
+    ".navbar-right .background-border-c4 .border-score-c2 .h-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c4 .border"
+    ".navbar-right .background-border-c4 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c4 .btn-flex .btn-heal"
+    ".navbar-right .background-border-c4 .btn-flex2 .btn-heal"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c4 .border-score-c .h-score-c"
+    ".navbar-right .background-border-c4 .border-score-c2 .h-score-c"
   );
   sixth = document.querySelector(
-    ".navbar-right .background-border-c4 .cross-civil-kill"
+    ".navbar-right .background-border-c4 .cross-civil-kill2"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2278,19 +2290,19 @@ function healCivilImg4() {
   }
   if (cHC4 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c4 .h-score-c img"
+      ".navbar-right .background-border-c4 .border-score-c2 .h-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c4 .border"
+      ".navbar-right .background-border-c4 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c4 .btn-flex .btn-heal"
+      ".navbar-right .background-border-c4 .btn-flex2 .btn-heal"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c4 .border-score-c .h-score-c"
+      ".navbar-right .background-border-c4 .border-score-c2 .h-score-c"
     );
     sixth = document.querySelector(
-      ".navbar-right .background-border-c4 .cross-civil-kill"
+      ".navbar-right .background-border-c4 .cross-civil-kill2"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -2306,16 +2318,16 @@ function inspectCivilImg4() {
   cIC4++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c4 .i-score-c img"
+    ".navbar-right .background-border-c4 .border-score-c2 .i-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c4 .border"
+    ".navbar-right .background-border-c4 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c4 .btn-flex .btn-inspect"
+    ".navbar-right .background-border-c4 .btn-flex2 .btn-inspect"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c4 .border-score-c .i-score-c"
+    ".navbar-right .background-border-c4 .border-score-c2 .i-score-c"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2327,13 +2339,13 @@ function inspectCivilImg4() {
       ".navbar-right .background-border-c4 .i-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c4 .border"
+      ".navbar-right .background-border-c4 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c4 .btn-flex .btn-inspect"
+      ".navbar-right .background-border-c4 .btn-flex2 .btn-inspect"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c4 .border-score-c .i-score-c"
+      ".navbar-right .background-border-c4 .border-score-c2 .i-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2343,79 +2355,82 @@ function inspectCivilImg4() {
   }
 }
 function partyCivilImg4() {
+  cPC4++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c4 .p-score-c img"
+    ".navbar-right .background-border-c4 .border-score-c2 .p-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c4 .border"
+    ".navbar-right .background-border-c4 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c4 .btn-flex .btn-party"
+    ".navbar-right .background-border-c4 .btn-flex2 .btn-party"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c4 .border-score-c .p-score-c"
+    ".navbar-right .background-border-c4 .border-score-c2 .p-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#2F1637";
   third.style.background = "#2F1637";
   fourth.style.background = "#2F1637";
-  cPC4++;
+
   if (cPC4 > 1) {
     let firstBlock = document.querySelector(
       ".navbar-right .background-border-c4 .p-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c4 .border"
+      ".navbar-right .background-border-c4 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c4 .btn-flex .btn-party"
+      ".navbar-right .background-border-c4 .btn-flex2 .btn-party"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c4 .border-score-c .p-score-c"
+      ".navbar-right .background-border-c4 .border-score-c2 .p-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cPC4 = 0;
   }
 }
 function ratCivilImg4() {
+  cRC4++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c4 .r-score-c img"
+    ".navbar-right .background-border-c4 .border-score-c2 .r-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c4 .border"
+    ".navbar-right .background-border-c4 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c4 .btn-flex .btn-rat"
+    ".navbar-right .background-border-c4 .btn-flex2 .btn-rat"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c4 .border-score-c .r-score-c"
+    ".navbar-right .background-border-c4 .border-score-c2 .r-score-c"
   );
 
   firstBlock.style.visibility = "visible";
   second.style.background = "#4a4a4a";
   third.style.background = "#4a4a4a";
   fourth.style.background = "#4a4a4a";
-  cRC4++;
   if (cRC4 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c4 .r-score-c img"
+      ".navbar-right .background-border-c4 .border-score-c2 .r-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c4 .border"
+      ".navbar-right .background-border-c4 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c4 .btn-flex .btn-rat"
+      ".navbar-right .background-border-c4 .btn-flex2 .btn-rat"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c4 .border-score-c .r-score-c"
+      ".navbar-right .background-border-c4 .border-score-c2 .r-score-c"
     );
 
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cRC4 = 0;
   }
 } ///////////////civil5////////////////////////////////////////////////////////////////////////
 function crossKillCivil5() {
@@ -2425,19 +2440,19 @@ function crossKillCivil5() {
 }
 function killCivilImg5() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c5 .k-score-c img"
+    ".navbar-right .background-border-c5 .border-score-c2 .k-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c5 .border"
+    ".navbar-right .background-border-c5 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c5 .btn-flex .btn-kill"
+    ".navbar-right .background-border-c5 .btn-flex2 .btn-kill"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c5 .border-score-c .k-score-c"
+    ".navbar-right .background-border-c5 .border-score-c2 .k-score-c"
   );
   fifth = document.querySelector(
-    ".navbar-right .background-border-c5 .cross-civil-kill"
+    ".navbar-right .background-border-c5 .cross-civil-kill2"
   );
   sixth = document.querySelector(".avatar-round-table-c5");
   firstBlock.style.visibility = "visible";
@@ -2448,19 +2463,19 @@ function killCivilImg5() {
   sixth.style.display = "none";
   if (cKC5 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c5 .k-score-c img"
+      ".navbar-right .background-border-c5 .border-score-c2 .k-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c5 .border"
+      ".navbar-right .background-border-c5 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c5 .btn-flex .btn-kill"
+      ".navbar-right .background-border-c5 .btn-flex2 .btn-kill"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c5 .border-score-c .k-score-c"
+      ".navbar-right .background-border-c5 .border-score-c2 .k-score-c"
     );
     fifth = document.querySelector(
-      ".navbar-right .background-border-c5 .cross-civil-kill"
+      ".navbar-right .background-border-c5 .cross-civil-kill2"
     );
     sixth = document.querySelector(".avatar-round-table-c5");
 
@@ -2476,19 +2491,19 @@ function killCivilImg5() {
 function healCivilImg5() {
   cHC5++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c5 .h-score-c img"
+    ".navbar-right .background-border-c5 .border-score-c2 .h-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c5 .border"
+    ".navbar-right .background-border-c5 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c5 .btn-flex .btn-heal"
+    ".navbar-right .background-border-c5 .btn-flex2 .btn-heal"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c5 .border-score-c .h-score-c"
+    ".navbar-right .background-border-c5 .border-score-c2 .h-score-c"
   );
   sixth = document.querySelector(
-    ".navbar-right .background-border-c5 .cross-civil-kill"
+    ".navbar-right .background-border-c5 .cross-civil-kill2"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2504,19 +2519,19 @@ function healCivilImg5() {
   }
   if (cHC5 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c5 .h-score-c img"
+      ".navbar-right .background-border-c5 .border-score-c2 .h-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c5 .border"
+      ".navbar-right .background-border-c5 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c5 .btn-flex .btn-heal"
+      ".navbar-right .background-border-c5 .btn-flex2 .btn-heal"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c5 .border-score-c .h-score-c"
+      ".navbar-right .background-border-c5 .border-score-c2 .h-score-c"
     );
     sixth = document.querySelector(
-      ".navbar-right .background-border-c5 .cross-civil-kill"
+      ".navbar-right .background-border-c5 .cross-civil-kill2"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -2532,16 +2547,16 @@ function inspectCivilImg5() {
   cIC5++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c5 .i-score-c img"
+    ".navbar-right .background-border-c5 .border-score-c2 .i-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c5 .border"
+    ".navbar-right .background-border-c5 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c5 .btn-flex .btn-inspect"
+    ".navbar-right .background-border-c5 .btn-flex2 .btn-inspect"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c5 .border-score-c .i-score-c"
+    ".navbar-right .background-border-c5 .border-score-c2 .i-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
@@ -2549,16 +2564,16 @@ function inspectCivilImg5() {
   fourth.style.background = "#00103D";
   if (cIC5 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c5 .i-score-c img"
+      ".navbar-right .background-border-c5 .border-score-c2 .i-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c5 .border"
+      ".navbar-right .background-border-c5 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c5 .btn-flex .btn-inspect"
+      ".navbar-right .background-border-c5 .btn-flex2 .btn-inspect"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c5 .border-score-c .i-score-c"
+      ".navbar-right .background-border-c5 .border-score-c2 .i-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2569,16 +2584,17 @@ function inspectCivilImg5() {
 }
 function partyCivilImg5() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c5 .p-score-c img"
+    ".navbar-right .background-border-c5 .border-score-c2 .p-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c5 .border"
+    ".navbar-right .background-border-c5 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c5 .btn-flex .btn-party"
+    ".navbar-right .background-border-c5 .btn-flex2 .btn-party"
   );
+  2;
   fourth = document.querySelector(
-    ".navbar-right .background-border-c5 .border-score-c .p-score-c"
+    ".navbar-right .background-border-c5 .border-score-c2 .p-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#2F1637";
@@ -2587,16 +2603,16 @@ function partyCivilImg5() {
   cPC5++;
   if (cPC5 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c5 .p-score-c img"
+      ".navbar-right .background-border-c5 .border-score-c2 .p-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c5 .border"
+      ".navbar-right .background-border-c5 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c5 .btn-flex .btn-party"
+      ".navbar-right .background-border-c5 .btn-flex2 .btn-party"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c5 .border-score-c .p-score-c"
+      ".navbar-right .background-border-c5 .border-score-c2 .p-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2606,16 +2622,16 @@ function partyCivilImg5() {
 }
 function ratCivilImg5() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c5 .r-score-c img"
+    ".navbar-right .background-border-c5 .border-score-c2 .r-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c5 .border"
+    ".navbar-right .background-border-c5 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c5 .btn-flex .btn-rat"
+    ".navbar-right .background-border-c5 .btn-flex2 .btn-rat"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c5 .border-score-c .r-score-c"
+    ".navbar-right .background-border-c5 .border-score-c2 .r-score-c"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2625,22 +2641,23 @@ function ratCivilImg5() {
   cRC5++;
   if (cRC5 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c5 .r-score-c img"
+      ".navbar-right .background-border-c5 .border-score-c2 .r-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c5 .border"
+      ".navbar-right .background-border-c5 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c5 .btn-flex .btn-rat"
+      ".navbar-right .background-border-c5 .btn-flex2 .btn-rat"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c5 .border-score-c .r-score-c"
+      ".navbar-right .background-border-c5 .border-score-c2 .r-score-c"
     );
 
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cRC5 = 0;
   }
 } ///////////////civil6////////////////////////////////////////////////////////////////////////
 function crossKillCivil6() {
@@ -2650,19 +2667,19 @@ function crossKillCivil6() {
 }
 function killCivilImg6() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c6 .k-score-c img"
+    ".navbar-right .background-border-c6 .border-score-c2 .k-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c6 .border"
+    ".navbar-right .background-border-c6 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c6 .btn-flex .btn-kill"
+    ".navbar-right .background-border-c6 .btn-flex2 .btn-kill"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c6 .border-score-c .k-score-c"
+    ".navbar-right .background-border-c6 .border-score-c2 .k-score-c"
   );
   fifth = document.querySelector(
-    ".navbar-right .background-border-c6 .cross-civil-kill"
+    ".navbar-right .background-border-c6 .cross-civil-kill2"
   );
   sixth = document.querySelector(".avatar-round-table-c6");
 
@@ -2674,19 +2691,19 @@ function killCivilImg6() {
   sixth.style.display = "none";
   if (cKC6 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c6 .k-score-c img"
+      ".navbar-right .background-border-c6 .border-score-c2 .k-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c6 .border"
+      ".navbar-right .background-border-c6 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c6 .btn-flex .btn-kill"
+      ".navbar-right .background-border-c6 .btn-flex2 .btn-kill"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c6 .border-score-c .k-score-c"
+      ".navbar-right .background-border-c6 .border-score-c2 .k-score-c"
     );
     fifth = document.querySelector(
-      ".navbar-right .background-border-c6 .cross-civil-kill"
+      ".navbar-right .background-border-c6 .cross-civil-kill2"
     );
     sixth = document.querySelector(".avatar-round-table-c6");
 
@@ -2702,19 +2719,19 @@ function killCivilImg6() {
 function healCivilImg6() {
   cHC6++;
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c6 .h-score-c img"
+    ".navbar-right .background-border-c6 .border-score-c2 .h-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c6 .border"
+    ".navbar-right .background-border-c6 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c6 .btn-flex .btn-heal"
+    ".navbar-right .background-border-c6 .btn-flex2 .btn-heal"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c6 .border-score-c .h-score-c"
+    ".navbar-right .background-border-c6 .border-score-c2 .h-score-c"
   );
   sixth = document.querySelector(
-    ".navbar-right .background-border-c6 .cross-civil-kill"
+    ".navbar-right .background-border-c6 .cross-civil-kill2"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2730,19 +2747,19 @@ function healCivilImg6() {
   }
   if (cHC6 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c6 .h-score-c img"
+      ".navbar-right .background-border-c6 .border-score-c2 .h-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c6 .border"
+      ".navbar-right .background-border-c6 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c6 .btn-flex .btn-heal"
+      ".navbar-right .background-border-c6 .btn-flex2 .btn-heal"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c6 .border-score-c .h-score-c"
+      ".navbar-right .background-border-c6 .border-score-c2 .h-score-c"
     );
     sixth = document.querySelector(
-      ".navbar-right .background-border-c6 .cross-civil-kill"
+      ".navbar-right .background-border-c6 .cross-civil-kill2"
     );
 
     firstBlock.style.visibility = "hidden";
@@ -2758,16 +2775,16 @@ function inspectCivilImg6() {
   cIC6++;
 
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c6 .i-score-c img"
+    ".navbar-right .background-border-c6 .border-score-c2 .i-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c6 .border"
+    ".navbar-right .background-border-c6 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c6 .btn-flex .btn-inspect"
+    ".navbar-right .background-border-c6 .btn-flex2 .btn-inspect"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c6 .border-score-c .i-score-c"
+    ".navbar-right .background-border-c6 .border-score-c2 .i-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#00103D";
@@ -2775,16 +2792,16 @@ function inspectCivilImg6() {
   fourth.style.background = "#00103D";
   if (cIC6 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c6 .i-score-c img"
+      ".navbar-right .background-border-c6 .border-score-c2 .i-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c6 .border"
+      ".navbar-right .background-border-c6 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c6 .btn-flex .btn-inspect"
+      ".navbar-right .background-border-c6 .btn-flex2 .btn-inspect"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c6 .border-score-c .i-score-c"
+      ".navbar-right .background-border-c6 .border-score-c2 .i-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2795,16 +2812,16 @@ function inspectCivilImg6() {
 }
 function partyCivilImg6() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c6 .p-score-c img"
+    ".navbar-right .background-border-c6 .border-score-c2 .p-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c6 .border"
+    ".navbar-right .background-border-c6 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c6 .btn-flex .btn-party"
+    ".navbar-right .background-border-c6 .btn-flex2 .btn-party"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c6 .border-score-c .p-score-c"
+    ".navbar-right .background-border-c6 .border-score-c2 .p-score-c"
   );
   firstBlock.style.visibility = "visible";
   second.style.background = "#2F1637";
@@ -2813,16 +2830,16 @@ function partyCivilImg6() {
   cPC6++;
   if (cPC6 > 1) {
     let firstBlock = document.querySelector(
-      ".navbar-right .background-border-c6 .p-score-c img"
+      ".navbar-right .background-border-c6 .border-score-c2 .p-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c6 .border"
+      ".navbar-right .background-border-c6 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c6 .btn-flex .btn-party"
+      ".navbar-right .background-border-c6 .btn-flex2 .btn-party"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c6 .border-score-c .p-score-c"
+      ".navbar-right .background-border-c6 .border-score-c2 .p-score-c"
     );
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
@@ -2832,16 +2849,16 @@ function partyCivilImg6() {
 }
 function ratCivilImg6() {
   let firstBlock = document.querySelector(
-    ".navbar-right .background-border-c6 .r-score-c img"
+    ".navbar-right .background-border-c6 .border-score-c2 .r-score-c img"
   );
   second = document.querySelector(
-    ".navbar-right .background-border-c6 .border"
+    ".navbar-right .background-border-c6 .border3"
   );
   third = document.querySelector(
-    ".navbar-right .background-border-c6 .btn-flex .btn-rat"
+    ".navbar-right .background-border-c6 .btn-flex2 .btn-rat"
   );
   fourth = document.querySelector(
-    ".navbar-right .background-border-c6 .border-score-c .r-score-c"
+    ".navbar-right .background-border-c6 .border-score-c2 .r-score-c"
   );
 
   firstBlock.style.visibility = "visible";
@@ -2854,19 +2871,20 @@ function ratCivilImg6() {
       ".navbar-right .background-border-c6 .r-score-c img"
     );
     second = document.querySelector(
-      ".navbar-right .background-border-c6 .border"
+      ".navbar-right .background-border-c6 .border3"
     );
     third = document.querySelector(
-      ".navbar-right .background-border-c6 .btn-flex .btn-rat"
+      ".navbar-right .background-border-c6 .btn-flex2 .btn-rat"
     );
     fourth = document.querySelector(
-      ".navbar-right .background-border-c6 .border-score-c .r-score-c"
+      ".navbar-right .background-border-c6 .border-score-c2 .r-score-c"
     );
 
     firstBlock.style.visibility = "hidden";
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cRC6 = 0;
   }
 }
 
