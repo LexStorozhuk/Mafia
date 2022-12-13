@@ -2493,9 +2493,9 @@ samp {
   }
 
   .btn-flex {
-    height: 100%;
+    height: 85px;
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 40px;
     display: flex;
     flex-direction: column;
@@ -2504,7 +2504,7 @@ samp {
     z-index: 4;
   }
   .btn-flex2 {
-    height: 100%;
+    height: 82px;
     width: 45px;
     position: absolute;
     top: 5px;
