@@ -1441,18 +1441,7 @@ samp {
     border-radius: 7%;
   }
 
-  .border-score {
-    background: black;
-    border: solid white 1px;
-    width: 20px;
-    height: 113px;
-    position: absolute;
-    top: 5px;
-    left: 155px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+
 
   /* Border////////////////////////////////////////////////////////////////////////////////// */
   .border {
@@ -1507,7 +1496,7 @@ samp {
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 2;
   }
   .cross-mafia-kill {
@@ -1518,7 +1507,7 @@ samp {
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 2;
   }
 
@@ -1542,7 +1531,7 @@ samp {
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 2;
   }
   .cross-doctor-kill {
@@ -1553,7 +1542,7 @@ samp {
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 2;
   }
   .cross-lady-kill {
@@ -1564,7 +1553,7 @@ samp {
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 2;
   }
   .cross-civil-kill {
@@ -1575,7 +1564,7 @@ samp {
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     z-index: 2;
   }
   .cross-civil-kill2 {
@@ -1746,7 +1735,7 @@ samp {
     height: 85px;
     position: absolute;
     right: 17px;
-    top: 0px;
+    top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1767,7 +1756,7 @@ samp {
     height: 85px;
     position: absolute;
     right: 17px;
-    top: 1px;
+    top:5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1791,7 +1780,7 @@ samp {
     width: 20px;
     height: 85px;
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 17px;
     display: flex;
     flex-direction: column;
@@ -1803,7 +1792,7 @@ samp {
     width: 20px;
     height: 85px;
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 17px;
     display: flex;
     flex-direction: column;
@@ -1815,7 +1804,7 @@ samp {
     width: 20px;
     height: 85px;
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 17px;
     display: flex;
     flex-direction: column;
@@ -1827,6 +1816,7 @@ samp {
     width: 20px;
     height: 85px;
     position: absolute;
+    top: 5px;
     right: 17px;
     display: flex;
     flex-direction: column;
@@ -2428,6 +2418,7 @@ samp {
 
   .btn-kill {
     width: 50px;
+    height: 15px;
     border-radius: 20%;
     color: #ffff;
     border: solid rgb(255, 255, 255) 1px;
@@ -2442,6 +2433,7 @@ samp {
   }
   .btn-heal {
     width: 50px;
+    height: 15px;
 
     border-radius: 20%;
     box-shadow: black inset 0px 0px 12px;
@@ -2457,6 +2449,7 @@ samp {
   }
   .btn-inspect {
     width: 50px;
+    height: 15px;
 
     box-shadow: black inset 0px 0px 12px;
     border-radius: 20%;
@@ -2472,6 +2465,7 @@ samp {
   }
   .btn-party {
     width: 50px;
+    height: 15px;
 
     box-shadow: black inset 0px 0px 12px;
     border-radius: 20%;
@@ -2487,6 +2481,7 @@ samp {
   }
   .btn-rat {
     width: 50px;
+    height: 15px;
 
     box-shadow: black inset 0px 0px 12px;
     border-radius: 20%;
