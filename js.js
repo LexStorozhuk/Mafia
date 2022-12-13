@@ -1690,6 +1690,7 @@ function inspectMafiaImg2() {
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cIM2 = 0;
   }
 }
 function partyMafiaImg2() {
@@ -1729,6 +1730,7 @@ function partyMafiaImg2() {
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cPM2 = 0;
   }
 }
 function ratBackgroundMaf2() {
@@ -1800,8 +1802,8 @@ function killCivilImg2() {
     fourth.style.background = "black";
     fifth.style.display = "none";
     sixth.style.display = "block";
+    cKC2 = 0;
   }
-  cKC2 = 0;
 }
 function healCivilImg2() {
   cHC2++;
@@ -2127,6 +2129,7 @@ function inspectCivilImg3() {
   }
 }
 function partyCivilImg3() {
+  cPC3++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c3 .border-score-c2 .p-score-c img"
   );
@@ -2143,7 +2146,6 @@ function partyCivilImg3() {
   second.style.background = "#2F1637";
   third.style.background = "#2F1637";
   fourth.style.background = "#2F1637";
-  cPC3++;
   if (cPC3 > 1) {
     let firstBlock = document.querySelector(
       ".navbar-right .background-border-c3 .border-score-c2 .p-score-c img"
@@ -2161,9 +2163,11 @@ function partyCivilImg3() {
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cPC3 = 0;
   }
 }
 function ratCivilImg3() {
+  cRC3++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c3 .border-score-c2 .r-score-c img"
   );
@@ -2181,7 +2185,6 @@ function ratCivilImg3() {
   second.style.background = "#4a4a4a";
   third.style.background = "#4a4a4a";
   fourth.style.background = "#4a4a4a";
-  cRC3++;
   if (cRC3 > 1) {
     let firstBlock = document.querySelector(
       ".navbar-right .background-border-c3 .border-score-c2 .r-score-c img"
@@ -2200,6 +2203,7 @@ function ratCivilImg3() {
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cRC3 = 0;
   }
 } ///////////////civil4///////////////////////////////////////////////////////////////////////////////////////////////////////////
 function crossKillCivil4() {
@@ -2582,6 +2586,7 @@ function inspectCivilImg5() {
   }
 }
 function partyCivilImg5() {
+  cPC5++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c5 .border-score-c2 .p-score-c img"
   );
@@ -2599,7 +2604,6 @@ function partyCivilImg5() {
   second.style.background = "#2F1637";
   third.style.background = "#2F1637";
   fourth.style.background = "#2F1637";
-  cPC5++;
   if (cPC5 > 1) {
     let firstBlock = document.querySelector(
       ".navbar-right .background-border-c5 .border-score-c2 .p-score-c img"
@@ -2617,6 +2621,7 @@ function partyCivilImg5() {
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cPC5 = 0;
   }
 }
 function ratCivilImg5() {
@@ -2810,6 +2815,7 @@ function inspectCivilImg6() {
   }
 }
 function partyCivilImg6() {
+  cPC6++;
   let firstBlock = document.querySelector(
     ".navbar-right .background-border-c6 .border-score-c2 .p-score-c img"
   );
@@ -2826,7 +2832,6 @@ function partyCivilImg6() {
   second.style.background = "#2F1637";
   third.style.background = "#2F1637";
   fourth.style.background = "#2F1637";
-  cPC6++;
   if (cPC6 > 1) {
     let firstBlock = document.querySelector(
       ".navbar-right .background-border-c6 .border-score-c2 .p-score-c img"
@@ -2844,6 +2849,7 @@ function partyCivilImg6() {
     second.style.background = "black";
     third.style.background = "black";
     fourth.style.background = "black";
+    cPC6 = 0;
   }
 }
 function ratCivilImg6() {
@@ -3028,19 +3034,19 @@ function deliteBlocks() {
   if (borderL) {
     deliteBackgroundL();
   }
-  if (borderC2) {
+  if (cKC2) {
     deliteBackgroundC2();
   }
-  if (borderC3) {
-    deliteBackgroundC3;
+  if (cKC3) {
+    deliteBackgroundC3();
   }
-  if (borderC4) {
+  if (cKC4) {
     deliteBackgroundC4();
   }
-  if (borderC5) {
+  if (cKC5) {
     deliteBackgroundC5();
   }
-  if (borderC6) {
+  if (cKC6) {
     deliteBackgroundC6();
   }
 }
