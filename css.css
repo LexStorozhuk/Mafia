@@ -1151,7 +1151,7 @@ span {
 }
 
 .btn-flex {
-  height: 100%;
+  height: 120px;
   position: absolute;
   top: 0px;
   right: 23px;
@@ -1161,7 +1161,7 @@ span {
   z-index: 4;
 }
 .btn-flex2 {
-  height: 100%;
+  height: 120px;
   width: 45px;
   position: absolute;
   top: 5px;
@@ -1339,7 +1339,7 @@ samp {
     opacity: 1;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 25px;
     margin-top: 5px;
@@ -2427,6 +2427,7 @@ samp {
   }
 
   .btn-kill {
+    width: 50px;
     border-radius: 20%;
     color: #ffff;
     border: solid rgb(255, 255, 255) 1px;
@@ -2440,6 +2441,8 @@ samp {
     font-weight: 100;
   }
   .btn-heal {
+    width: 50px;
+
     border-radius: 20%;
     box-shadow: black inset 0px 0px 12px;
     color: #ffff;
@@ -2453,6 +2456,8 @@ samp {
     cursor: pointer;
   }
   .btn-inspect {
+    width: 50px;
+
     box-shadow: black inset 0px 0px 12px;
     border-radius: 20%;
     color: #ffff;
@@ -2466,6 +2471,8 @@ samp {
     cursor: pointer;
   }
   .btn-party {
+    width: 50px;
+
     box-shadow: black inset 0px 0px 12px;
     border-radius: 20%;
     color: #ffff;
@@ -2479,6 +2486,8 @@ samp {
     cursor: pointer;
   }
   .btn-rat {
+    width: 50px;
+
     box-shadow: black inset 0px 0px 12px;
     border-radius: 20%;
     color: #ffff;
@@ -2549,7 +2558,8 @@ samp {
   }
   .close-pick-btn {
     position: absolute;
-    text-align: center;
+    top: 240px;
+    right: 100px;
     border: solid rgb(255, 255, 255) 1px;
     box-shadow: black inset 0px 0px 50px;
     color: rgb(133, 133, 133);
@@ -2557,8 +2567,7 @@ samp {
     font-size: 14px;
     font-weight: 700;
     border-radius: 20%;
-    bottom: 0px;
-    right: 0px;
+   
     width: 50px;
     height: 50px;
     display: none;
