@@ -86,7 +86,7 @@ function hidepick() {
   let first = document.querySelector(".pop");
   second = document.querySelector(".close-pick-btn");
   third = document.querySelector(".navbar-right-migrate");
-  fourth = document.querySelector(".position-pick");
+  fourth = document.querySelector(".pick-btn");
   
   first.style.display = "none";
   second.style.display = "none";
@@ -197,7 +197,8 @@ function pick() {
   third = document.querySelector(".avatars-of-mafia");
   fourth = document.querySelector(".avatars-of-civil");
   fifth = document.querySelector(".navbar-right-migrate");
-  sixth = document.querySelector(".position-pick");
+  sixth = document.querySelector(".pick-btn");
+  seventh = document.querySelector(".position-pick .h6-position");
 
   first.style.display = "block";
   second.style.display = "block";
@@ -205,6 +206,7 @@ function pick() {
   fourth.style.display = "block";
   fifth.style.visibility = "visible";
   sixth.style.display = "none";
+  seventh.style.display = "none";
 
 }
 function addDon() {

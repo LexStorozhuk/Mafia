@@ -1333,8 +1333,75 @@ samp {
     /* text-align: center; */
     position: absolute;
     left: calc(207px - 15px);
-    z-index: 3;
+    z-index: 5;
+    margin: 0px;
   }
+  .pick-btn {
+    width: 162px;
+    height: 70px;
+    border: none;
+    color: rgba(240, 248, 255, 0);
+    background: transparent;
+    border-radius: 20%;
+    top: 0px;
+    right: 0px;
+    display: block;
+    cursor: pointer;
+    z-index: 6;
+    padding: 0px;
+    
+  }
+  .position-pick{
+    width: 162px;
+    height: 60px;
+    color: aliceblue;
+    background: black;
+    border-radius: 20%;
+    position: absolute;
+    top: 5px;
+    right: 95px;
+    display: block;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .h1-position{
+  width: 94px;
+  height: 46px;
+  position: absolute;
+  top: 10px;
+  left: calc(207px - 15px);
+  z-index: 4;
+  margin: 0px;
+  color:aliceblue;
+  z-index: 2;
+  }
+  .h6-position {
+  position: absolute;
+  bottom: 5px;
+  left: 53px;
+  margin: 0px;
+  font-size: 8px;
+  opacity: 0.2;
+  animation-name: glowing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  display: block;
+  
+}
+@keyframes glowing {
+  0%, 100% {
+    opacity: 0.7;
+    filter: blur(0.1px);
+  }
+  20%, 80% {
+    opacity: 0.1;
+    filter: blur(0.1px);
+  }
+  40%, 60% {
+    opacity: 0.7;
+    filter: blur(0.1px);
+  }
+}
 span {
   position: absolute;
   right: 2px;
@@ -2415,7 +2482,7 @@ span {
   .pop {
     background-color: rgb(0, 0, 0);
     width: 180px;
-    height: 235px;
+    height: 272px;
     border-radius: 9%;
     position: absolute;
     top: 0px;
@@ -2423,7 +2490,8 @@ span {
     display: none;
     z-index: 3;
 
-    animation: 2s show ease;
+    animation: 0.5s show ease;
+
   }
 
   .btn-kill {
@@ -2547,47 +2615,21 @@ span {
     cursor: pointer;
     z-index: 3;
   }
-  .position-pick{
-    width: 150px;
-    height: 100px;
-    color: aliceblue;
-    background: black;
-    border-radius: 20%;
-    position: absolute;
-    top: 110px;
-    right: 100px;
-    display: block;
-    cursor: pointer;
-    z-index: 6;
-  }
-  .pick-btn {
-    width: 150px;
-    height: 57px;
-    border: solid rgb(255, 255, 255) 1px;
-    color: aliceblue;
-    background: black;
-    border-radius: 20%;
-    top: 0px;
-    right: 0px;
-    display: block;
-    cursor: pointer;
-    z-index: 6;
-    font-size: 24px;
-    font-weight: bold;
-    
-  }
+
+
   .close-pick-btn {
-    width: 150px;
-    height: 57px;
+    width: 50px;
+    height: 30px;
     color: aliceblue;
+    
 
     border: solid rgb(255, 255, 255) 1px;
-    box-shadow: black inset 0px 0px 50px;
+    box-shadow: #ffffff14 inset 0px 0px 30px;
     border-radius: 20%;
     
     position: absolute;
-    top: 110px;
-    right: 100px;
+    top: 237px;
+    right: 30px;
    
     display: block;
     cursor: pointer;
@@ -2601,7 +2643,7 @@ span {
     z-index: 7;
     position: absolute;
     top: 0px;
-    left: 4px;
+    left: 12px;
     transform: scale(-1,1);
 
   }
@@ -2611,7 +2653,7 @@ span {
     z-index: 7;
     position: absolute;
     top: 0px;
-    right: 33px;
+    right: 25px;
 
   }
  .pick-btn-png img,
