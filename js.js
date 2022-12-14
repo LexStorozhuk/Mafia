@@ -86,10 +86,12 @@ function hidepick() {
   let first = document.querySelector(".pop");
   second = document.querySelector(".close-pick-btn");
   third = document.querySelector(".navbar-right-migrate");
-
+  fourth = document.querySelector(".pick-btn");
+  
   first.style.display = "none";
   second.style.display = "none";
   third.style.visibility = "hidden";
+  fourth.style.display = "block";
 
   if (blockOfCivil >= 1) {
     let first = document.querySelector(
@@ -195,12 +197,15 @@ function pick() {
   third = document.querySelector(".avatars-of-mafia");
   fourth = document.querySelector(".avatars-of-civil");
   fifth = document.querySelector(".navbar-right-migrate");
+  sixth = document.querySelector(".pick-btn");
 
   first.style.display = "block";
   second.style.display = "block";
   third.style.display = "block";
   fourth.style.display = "block";
   fifth.style.visibility = "visible";
+  sixth.style.display = "none";
+
 }
 function addDon() {
   let first = document.querySelector(".background-border-d");
