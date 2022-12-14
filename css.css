@@ -927,17 +927,39 @@ span {
   padding: 5px 5px;
   justify-content: space-around;
 }
+.blockof-avatars-left{
+  width: 63px;
+  height:400px;
+  position: absolute;
+  top: 60px;
+  left: 65px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scale(-1,1);
+}
+.blockof-avatars-right{
+  width: 63px;
+  height: 400px;
+  position: absolute;
+  top: 60px;
+  right: 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
 .avatar img {
   border: solid white 1px;
   width: 90px;
   height: 90px;
   border-radius: 40%;
-  background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
 
 .avatar-round-table-c2 {
-  background: rgba(255, 255, 255, 0.062);
   width: 80px;
   height: 80px;
 
@@ -946,7 +968,6 @@ span {
   border-radius: 20%;
 }
 .avatar-round-table-c3 {
-  background: rgba(255, 255, 255, 0.062);
   width: 80px;
   height: 80px;
   
@@ -954,7 +975,6 @@ span {
   z-index: 2;
 }
 .avatar-round-table-c4 {
-  background: rgba(255, 255, 255, 0.062);
   width: 80px;
   height: 80px;
   top: 70px;
@@ -962,19 +982,16 @@ span {
   border-radius: 20%;
 }
 .avatar-round-table-c5 {
-  background: rgba(255, 255, 255, 0.062);
   width: 80px;
   height: 80px;
   border-radius: 20%;
 }
 .avatar-round-table-c6 {
-  background: rgba(255, 255, 255, 0.062);
   width: 80px;
   height: 80px;
   border-radius: 20%;
 }
 .avatar-round-table-m {
-  background: rgba(255, 255, 255, 0.062);
   width: 80px;
   height: 80px;
   z-index: 2;
@@ -989,24 +1006,28 @@ span {
   bottom: 8px;
   border-radius: 20%;
 }
+.avatar-round-table-c6 img,
+.avatar-round-table-m img {
+  border: solid white 1px;
+  width: 113px;
+  height: 113px;
+  border-radius: 40%;
+  visibility: visible;
+}
 .avatar-round-table-c2 img,
 .avatar-round-table-c3 img,
 .avatar-round-table-c4 img,
-.avatar-round-table-c5 img,
-.avatar-round-table-c6 img,
-.avatar-round-table-m img {
+.avatar-round-table-c5 img {
   border: solid white 1px;
   width: 90px;
   height: 90px;
   border-radius: 40%;
-  background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
 .avatar-midle img {
   width: 113px;
   height: 113px;
   border-radius: 20%;
-  background: rgba(255, 255, 255, 0.062);
   visibility: visible;
 }
 .avatar-midle-lady {
@@ -1031,7 +1052,6 @@ span {
   width: 113px;
   height: 113px;
   border-radius: 20%;
-  background: rgba(255, 255, 255, 0.062);
 }
 .pop {
   background-color: black;
@@ -2817,7 +2837,7 @@ span {
 
 
   .close-pick-btn {
-    width: 50px;
+    width: 60px;
     height: 30px;
     color: aliceblue;
     
@@ -2828,11 +2848,11 @@ span {
     
     position: absolute;
     top: 237px;
-    right: 30px;
+    right: 20px;
    
     display: block;
     cursor: pointer;
-    z-index: 7;
+    z-index: 10;
     animation: 0.5s show ease;
     display: none;
   }
