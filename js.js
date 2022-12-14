@@ -86,7 +86,7 @@ function hidepick() {
   let first = document.querySelector(".pop");
   second = document.querySelector(".close-pick-btn");
   third = document.querySelector(".navbar-right-migrate");
-  fourth = document.querySelector(".pick-btn");
+  fourth = document.querySelector(".position-pick");
   
   first.style.display = "none";
   second.style.display = "none";
@@ -197,7 +197,7 @@ function pick() {
   third = document.querySelector(".avatars-of-mafia");
   fourth = document.querySelector(".avatars-of-civil");
   fifth = document.querySelector(".navbar-right-migrate");
-  sixth = document.querySelector(".pick-btn");
+  sixth = document.querySelector(".position-pick");
 
   first.style.display = "block";
   second.style.display = "block";
