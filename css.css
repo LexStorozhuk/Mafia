@@ -1259,10 +1259,12 @@ span {
   border: none;
   border-radius: 15px;
 }
-/* .p-btn :hover {
-   opacity: 0.5;
+.p-btn :hover {
+   opacity: 0.9;
    box-shadow: -5px -2px 0px rgb(54, 54, 54);
-  } */
+   transform: translateX(5px);
+
+  }
   .p-btn:active {
    box-shadow: 3px 0px rgb(34, 34, 34);
    /* transform: translateY(0px); */
@@ -1632,10 +1634,10 @@ samp {
     border-radius: 20%;
     position: absolute;
     top: 5px;
-    right: 95px;
+    left: 140px;
     display: block;
     cursor: pointer;
-    z-index: 4;
+    z-index: 2;
   }
   .h1-position{
   width: 94px;
@@ -2691,7 +2693,7 @@ span {
     height: 60px;
     position: relative;
     top: 0px;
-    left: 0px;
+    right: 2px;
     border-radius: 20%;
   }
   .avatar-midle-lady {
