@@ -2707,7 +2707,6 @@ span {
   .avatar-midle-mafia {
     width: 70px;
     height: 70px;
-    border: solid white 1px;
     position: relative;
     top: -10px;
 
@@ -2727,7 +2726,7 @@ span {
     width: 60px;
     height: 60px;
     background: rgba(255, 255, 255, 0.062);
-    visibility: visible;
+    visibility: hidden;
   }
   .avatar-midle img {
     border: solid white 1px;
@@ -2755,13 +2754,13 @@ span {
   .pop {
     background-color: rgb(0, 0, 0);
     width: 162px;
-    height: 272px;
+    height: 235px;
     border-radius: 9%;
     position: absolute;
     top: 0px;
     right: -84px;
     display: block;
-    z-index: 1;
+    z-index: 10;
 
     animation: 0.5s show ease;
 
@@ -2902,11 +2901,11 @@ span {
     
     position: absolute;
     top: 237px;
-    right: 20px;
+    right: -80px;
    
     display: block;
     cursor: pointer;
-    z-index: 7;
+    z-index: 10;
     animation: 0.5s show ease;
     display: flex;
     align-items: center;

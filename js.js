@@ -1204,7 +1204,7 @@ function healMafiaImg() {
   second = document.querySelector(".h-score-m");
   third = document.querySelector(".navbarleft .background-border-m .border");
   fourth = document.querySelector(".cross-mafia-kill");
-  fifth = document.querySelector(".blockof-avatars .avatar-midle-mafia ");
+  fifth = document.querySelector(".blockof-avatars .avatar-midle-mafia img");
   sixth = document.querySelector(".background-border-m .btn-flex .btn-heal");
 
   firstBlock.style.visibility = "visible";
@@ -1275,7 +1275,7 @@ function healSheriffImg() {
   second = document.querySelector(".h-score-s");
   third = document.querySelector(".navbarleft .background-border-s .border");
   fourth = document.querySelector(".cross-sheriff-kill");
-  fifth = document.querySelector(".avatar:nth-of-type(3) img");
+  fifth = document.querySelector(".blockof-avatars  .avatar:nth-of-type(3) img");
   sixth = document.querySelector(".background-border-s .btn-flex .btn-heal");
 
   firstBlock.style.visibility = "visible";
