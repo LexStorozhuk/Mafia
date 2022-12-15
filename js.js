@@ -89,9 +89,9 @@ function hidepick() {
   fourth = document.querySelector(".pick-btn");
   
   first.style.display = "none";
-  second.style.display = "none";
+  second.style.visibility = "hidden";
   third.style.visibility = "hidden";
-  fourth.style.display = "block";
+  fourth.style.visibility = "visible";
 
   if (blockOfCivil >= 1) {
     let first = document.querySelector(
@@ -201,11 +201,11 @@ function pick() {
   seventh = document.querySelector(".position-pick .h6-position");
 
   first.style.display = "block";
-  second.style.display = "block";
+  second.style.visibility = "visible";
   third.style.display = "block";
   fourth.style.display = "block";
   fifth.style.visibility = "visible";
-  sixth.style.display = "none";
+  sixth.style.visibility = "hidden";
   seventh.style.display = "none";
 
 }
@@ -1624,7 +1624,7 @@ function healMafiaImg2() {
   second.style.background = "#286214";
   third.style.background = "#286214";
   fourth.style.display = "none";
-  fifth.style.visability = "visible";
+  fifth.style.visibility = "visible";
   sixth.style.background = "#286214";
   seventh.style.display = "none";
   if (cKM2 >= 1) {
