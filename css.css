@@ -1688,10 +1688,7 @@ span {
   z-index: 6;
   transform: scale(1, 1);
 }
-  body {
-    height: 940px;
-    width: 414px;
-  } 
+
 
   .overlay {
     background-color: red;
@@ -1745,7 +1742,7 @@ span {
     /* box-shadow: rgb(254, 254, 254) -0px -0px 1px; */
     position: absolute;
     top: 5px;
-    right: 0px;
+    right: -75px;
     display: flex;
     flex-direction: column;
     /* overflow: hiddenc; */
