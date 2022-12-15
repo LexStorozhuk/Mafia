@@ -2903,10 +2903,27 @@ transform: scale(-1,1);
   }
   
   .p-btn {
-    background: transparent;
+    width: 100px;
+    height: 110px;
+    border-radius: 30%;
+    font-size: 24px;
+    text-align: center;
     cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000000;
     border: none;
+    border-radius: 15px;
   }
+  /* .p-btn :hover {
+     opacity: 0.5;
+     box-shadow: -5px -2px 0px rgb(54, 54, 54);
+    } */
+    .p-btn:active {
+     box-shadow: 3px 0px rgb(34, 34, 34);
+     transform: translateY(4px);
+     transform: translateX(-4px);
+    }
   .new-img {
     position: absolute;
     left: calc(50% - 50px);
@@ -2998,7 +3015,7 @@ transform: scale(-1,1);
   .avatars-of-civil img {
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 5px;
     border-radius: 30%;
     width: 100px;
     height: 110px;
